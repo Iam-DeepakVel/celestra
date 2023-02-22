@@ -1,7 +1,8 @@
 import React from "react";
+import Hero from "./components/hero/hero";
 
 function App() {
-  return <div className="text-4xl">CELESTRA</div>;
+  return <Hero />;
 }
 
 export default App;
