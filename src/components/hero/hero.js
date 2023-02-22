@@ -1,5 +1,4 @@
 import logo from "../../assets/logo.png";
-import fire from "../../assets/fire.mp4";
 import "./hero.css";
 const hero = () => {
   return (
@@ -7,7 +6,7 @@ const hero = () => {
       <div className="overlay"></div>
       <video
         className=" w-full h-full object-cover"
-        src={fire}
+        src="https://res.cloudinary.com/cloudwings/video/upload/v1677068936/Celestra/fire_qvnjn7.mp4"
         autoPlay
         loop
         muted
