@@ -1,9 +1,8 @@
 import logo from "../../assets/logo.png";
 import "./hero.css";
-const hero = () => {
+const Hero = () => {
   return (
     <div className="w-full h-screen">
-      <div className="overlay"></div>
       <video
         className=" w-full h-full object-cover"
         src="https://res.cloudinary.com/cloudwings/video/upload/v1677068936/Celestra/fire_qvnjn7.mp4"
@@ -22,4 +21,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;
