@@ -1,0 +1,19 @@
+.hero-text-color {
+  color: #fd9347;
+}
+
+@font-face {
+  font-family: CelestraHeroFont;
+  src: url("../../assets/Glitchinside.otf");
+}
+.celestraHeroFont {
+  font-family: CelestraHeroFont;
+}
+
+#hero-container {
+  background: radial-gradient(
+    circle closest-corner at center 50%,
+    #411212,
+    black 100%
+  );
+}
