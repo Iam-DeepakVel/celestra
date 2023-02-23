@@ -1,5 +1,18 @@
-.hero-text-color {
-  color: #fd9347;
+.dynamic-text-shadow {
+  /*  larger font size, more shadow distance  */
+  text-shadow: 0.1em 0.1em 0.2rem #be2520;
+}
+.dynamic-celestra-shadow {
+  /*  larger font size, more shadow distance  */
+  text-shadow: 0.12em 0.12em 0 #be2520;
+}
+
+.dynamic-celestra-white-shadow {
+  text-shadow: -4px 8px 0 white;
+}
+
+.dynamic-celestra-white-shadow-mobile{
+    text-shadow: -4px 4px 0 white;
 }
 
 @font-face {
@@ -11,9 +24,13 @@
 }
 
 #hero-container {
-  background: radial-gradient(
-    circle closest-corner at center 50%,
-    #411212,
-    black 100%
-  );
+  background-image: url("../../assets/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+}
+
+.celestra-radius {
+  border-radius: 0% 45% 0% 45% / 0% 200% 0% 200%;
 }
