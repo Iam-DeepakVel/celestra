@@ -126,6 +126,11 @@ const Events = () => {
     setIsHovering(false);
   };
 
+  const handleTouchStart = (id) => {
+    setIsHovering(true);
+    setCurrentCard(id);
+  };
+
   return (
     <div className="cont">
       <div className="px-4 py-12  bg-black max-w-screen-7xl">
@@ -158,6 +163,7 @@ const Events = () => {
               <div
                 onMouseOver={() => handleMouseEnter(event.id)}
                 onMouseLeave={handleMouseLeave}
+                onTouchStart={() => handleTouchStart(event.id)}
                 className="relative"
               >
                 <img src={event.image} alt="slide_image" />
