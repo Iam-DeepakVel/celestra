@@ -58,7 +58,7 @@ const Venue = () => {
               <p className="text-sm tracking-widest">Fifteen Plus</p>
             </div>
           </div>
-          <div className="h-1 ml-1 w-[55%] lg:w-[42%]  bg-red-500 rounded-full"></div>
+          <div className="h-1 ml-1 w-[55%] lg:w-[38%]  bg-red-500 rounded-full"></div>
         </li>
       </ul>
     </div>

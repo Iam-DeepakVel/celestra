@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <div
         id="hero-container"
-        className="flex flex-col pb-10 items-center p-4 min-h-screen max-w-screen-7xl mx-auto"
+        className="flex flex-col pb-10 items-center p-4 h-screen max-w-screen-7xl mx-auto"
       >
         {/* CIT Logo */}
         <div className="mb-3 lg:absolute lg:left-3 lg:top-4">
@@ -31,10 +31,10 @@ const Hero = () => {
 
         <div className="flex flex-col-reverse lg:mt-12 lg:flex-row w-full justify-around px-10 items-center">
           <div className="flex flex-col mt-4  justify-center items-center gap-7 text-white celestraHeroFont tracking-widest">
-            <h2 className="text-center text-xl dynamic-text-shadow lg:text-4xl">
+            <h2 className="text-center text-xl dynamic-text-shadow lg:text-3xl">
               Prepare Yourself for the
             </h2>
-            <h1 className="text-center text-2xl lg:text-5xl dynamic-text-shadow">
+            <h1 className="text-center text-2xl lg:text-4xl dynamic-text-shadow">
               Big Event
             </h1>
             <h1 className="text-center text-4xl  dynamic-celestra-shadow lg:text-7xl tracking-wider  ">
@@ -46,9 +46,9 @@ const Hero = () => {
             <h1 className="text-4xl lg:text-7xl tracking-wider">
               2<span className="text-red-500">k</span>23
             </h1>
-            <button className="w-[90%] lg:w-[45%] h-14 rounded-xl text-white text-xl tracking-widest bg-gradient-to-b from-[#fb3e38] via-[#fffdfd00] to-[#fb3e38]">
-              <span className="text-red-500 text-3xl">J</span>oin the Fu
-              <span className="text-3xl">n</span>
+            <button className="w-[90%] lg:w-[60%] h-14 rounded-xl text-white text-xl tracking-widest bg-gradient-to-b from-[#fb3e38] via-[#fffdfd00] to-[#fb3e38]">
+              <span className="text-red-500 text-3xl">J</span>oin the  Exc
+              <span className="text-3xl text-red-500">it</span>ement
             </button>
           </div>
           {/* Celestra Logo */}
@@ -56,7 +56,7 @@ const Hero = () => {
             src={logo}
             alt="celestra-logo"
             id="logo"
-            className=" rounded-full lg:w-[40%]"
+            className=" rounded-full w-[80%] lg:max-w-[40%]"
           />
         </div>
       </div>

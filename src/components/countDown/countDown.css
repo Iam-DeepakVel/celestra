@@ -1,0 +1,7 @@
+#countDown-container {
+  background-image: url("../../assets/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+}

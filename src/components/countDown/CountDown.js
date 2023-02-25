@@ -43,8 +43,8 @@ const CountDown = () => {
   }, []);
 
   return (
-    <div className="px-6 py-10 sm:px-6 sm:py-8 h-auto max-w-screen-7xl mx-auto bg-black">
-      <h3 className="text-2xl lg:text-6xl pb-12 text-center text-white tracking-widest celestraHeroFont">
+    <div id="countDown-container" className="px-6 py-10 sm:px-6 sm:py-8 h-auto max-w-screen-7xl mx-auto bg-black">
+      <h3 className="text-2xl lg:text-5xl pb-12 text-center text-white tracking-widest celestraHeroFont">
         <span className="text-4xl lg:text-6xl text-red-500">C</span>ounter Until The Big
         Event
       </h3>

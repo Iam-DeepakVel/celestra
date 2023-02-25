@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 * {
   margin: 0;
@@ -13,6 +13,17 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: red;
+  background: none;
+}
+
+::selection {
+  color: red;
+  background: none;
 }
 
 @tailwind base;
