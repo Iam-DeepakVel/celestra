@@ -193,7 +193,6 @@ const Events = () => {
               </div>
             </SwiperSlide>
           ))}
-
           {/* Slide Controller */}
           <div className="slider-controler">
             <div className="swiper-button-prev slider-arrow">

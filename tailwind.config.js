@@ -13,13 +13,14 @@ module.exports = {
         "hero-orange": "#FE7719",
         "hero-middle-brown": "#30181A",
         "hero-bottom-brown": "#551516",
-        "celestra-fire":"#FED4AD"
+        "celestra-fire": "#FED4AD",
       },
     },
     fontFamily: {
       celestra_glitch: ["Rubik Glitch"],
       celestra_VT: ["VT323"],
+      poppins: ["poppins"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
