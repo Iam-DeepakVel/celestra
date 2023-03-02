@@ -1,9 +1,25 @@
 // technical
-
+import Clecodeing from "../../src/assets/event-images/coding-contest.jpg";
+import Reversecode from "../../src/assets/event-images/reverse-coding.jpg";
+import Debug from "../../src/assets/event-images/debugging.jpg";
+import Codejam from "../../src/assets/event-images/code-jam.jpg";
+import WebDesign from "../../src/assets/event-images/web-design.jpg";
+import Technicalquiz from "../../src/assets/event-images/technical-quiz.jpg";
+import Ideathon from "../../src/assets/event-images/ideathon.jpg";
 // non-technical
-
+import Snapword from "../../src/assets/event-images/snap-word.jpg";
+import AnimeQuiz from "../../src/assets/event-images/animequiz.jpg";
+import Crossfire from "../../src/assets/event-images/crossfire.jpg";
+import Moviequiz from "../../src/assets/event-images/moviequiz.jpg";
+import Pictionary from "../../src/assets/event-images/pictionary.jpeg";
 // flagship
-
+import Seminar from "../../src/assets/event-images/seminar.jpg";
+import Workshop from "../../src/assets/event-images/workshop.jpg";
+import PaperPresentation from "../../src/assets/event-images/paperpresentation.jpg";
+import TableTennis from "../../src/assets/event-images/tabletennis.jpg";
+import Valorant from "../../src/assets/event-images/volorant.jpeg";
+import Bgmi from "../../src/assets/event-images/bgmi.jpg";
+// technical
 export const technicalEvents = [
   {
     id: 1,
@@ -11,166 +27,151 @@ export const technicalEvents = [
     href: "/events/celestra-coding",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    imageUrl: Clecodeing,
   },
   {
     id: 2,
-    title: "Debugging",
-    href: "/events/debugging",
+    title: "Technical Quiz",
+    href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    imageUrl: Technicalquiz,
   },
   {
     id: 3,
-    title: "Third",
-    href: "/",
+    title: "Reverse Coding",
+    href: "/events/debugging",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    imageUrl: Reversecode,
   },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 4,
+    title: "Debugging",
     href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    imageUrl: Debug,
   },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 5,
+    title: "Ideathon",
     href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    imageUrl: Ideathon,
   },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 6,
+    title: "Code Jam",
     href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    imageUrl: Codejam,
   },
-];
+  {
+    id: 7,
+    title: "Web Designing",
+    href: "/",
+    description:
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+    imageUrl: WebDesign,
+  },
 
+
+];
+// non-technical
 export const nonTechnicalEvents = [
   {
     id: 1,
-    title: "Celestra Coding",
+    title: "Snap Word",
     href: "/events/celestra-coding",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
+    imageUrl:Snapword,
+    },
   {
-    id: 1,
-    title: "Debugging",
+    id: 2,
+    title: "Anime Quiz",
     href: "/events/debugging",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
+    imageUrl:AnimeQuiz,
+      },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 3,
+    title: "Cross Fire",
     href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
+    imageUrl:Crossfire,
+      },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 4,
+    title: "Movie Quiz",
     href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
+    imageUrl:Moviequiz,
+       },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 5,
+    title: "Pictionary",
     href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
-  {
-    id: 1,
-    title: "Boost your conversion rate",
-    href: "/",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
-];
+    imageUrl:Pictionary,
+       },
 
+];
+//flagships events
 export const flagshipEvents = [
   {
     id: 1,
-    title: "Celestra Coding",
+    title: "Seminar",
     href: "/events/celestra-coding",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
+    imageUrl:Seminar,
+      },
   {
-    id: 1,
-    title: "Debugging",
+    id: 2,
+    title: "Workshop",
     href: "/events/debugging",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
+    imageUrl:Workshop,
+       },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 3,
+    title: "Paper Presentation",
     href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
+    imageUrl:PaperPresentation,
+      },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 4,
+    title: "Table Tennis",
     href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
+    imageUrl:TableTennis,
+      },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 5,
+    title: "Valorant",
     href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
+    imageUrl:Valorant,
+      },
   {
-    id: 1,
-    title: "Boost your conversion rate",
+    id: 6,
+    title: "BGMI",
     href: "/",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
+    imageUrl:Bgmi,
+       },
 ];
