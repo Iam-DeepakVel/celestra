@@ -3,10 +3,19 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+import { TfiControlBackward } from "react-icons/tfi";
 
 export default function ContactUs() {
   return (
     <div className="relative isolate min-h-screen bg-black">
+      {/* Back to events button */}
+      <a
+        href="/events"
+        className="absolute flex items-center gap-2 celestraHeroFont top-6 left-6 sm:top-10 sm:left-8"
+      >
+        <TfiControlBackward size={25} color="white" />
+        <h2 className="text-white tracking-widest text-xl">Explore</h2>
+      </a>
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:py-48 lg:px-8">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -70,10 +79,14 @@ export default function ContactUs() {
               Celestra 2k23
             </h2>
             <p className="mt-6 text-lg leading-8 font-poppins text-gray-300">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-              nesciunt sapiente iusto dolores quam reprehenderit veniam, quae at
-              architecto accusantium ut totam, aspernatur eaque rem sed magni
-              optio facilis illo?
+              The Department of Information Technology at Coimbatore Institute
+              of Technology, Coimbatore hosts a highly anticipated
+              National-level Technical Symposium.
+              <br />
+              <br />
+              This event attracts numerous participants from various colleges
+              who showcase their talents in a range of technical, non-technical,
+              and entertaining events.
             </p>
             <dl className="mt-10 space-y-4 font-poppins text-base leading-7 text-gray-300">
               <div className="flex gap-x-4">
@@ -85,9 +98,11 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  Coimbatore Institute of Technology
+                  Coimbatore Institute of Technology,
                   <br />
-                  Coimbatore, 14
+                  Civil Aerodrome post,
+                  <br />
+                  Coimbatore - 641014
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -99,8 +114,11 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  <a className="hover:text-white" href="tel:+91 7397706858">
-                    +91 7397706858
+                  <a
+                    className="hover:text-white"
+                    href="tel:+91 70105 67021 , +91 79040 97972"
+                  >
+                    +91 70105 67021 , +91 79040 97972
                   </a>
                 </dd>
               </div>

@@ -22,7 +22,7 @@ export default function AllEvents() {
         {/* Menu */}
         <div
           onClick={() => setOpen(!open)}
-          className="relative flex  items-center gap-2 mb-3 mr-4 lg:absolute lg:right-10 lg:top-28 cursor-pointer"
+          className="relative flex  items-center gap-2 mb-3 mr-4 lg:absolute lg:right-10 lg:top-24 cursor-pointer"
         >
           <p className="text-xl text-white celestraHeroFont tracking-widest">
             {" "}

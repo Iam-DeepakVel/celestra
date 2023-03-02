@@ -15,44 +15,95 @@ import { TbUnlink } from "react-icons/tb";
 const events = [
   {
     name: "Celestra Coding",
-    time: "9:00 AM to 10:30 AM",
+    time: "Mar 17, 9:00 AM",
     venue: "IT-201",
   },
   {
-    name: "Celestra Coding",
-    time: "9:00 AM to 10:30 AM",
+    name: "Reverse Coding",
+    time: "Mar 17, 10:30 AM",
+    venue: "IT-206",
+  },
+  {
+    name: "Bug Busters",
+    time: "Mar 17, 12:00 PM",
+    venue: "IT-442",
+  },
+  {
+    name: "Code Jam",
+    time: "Mar 17, 1:30 PM",
+    venue: "IT-443",
+  },
+  {
+    name: "Web Designing",
+    time: "Mar 17, 3:00 PM",
+    venue: "IT-444",
+  },
+  {
+    name: "Technical Quiz",
+    time: "Mar 17, 4:00 PM",
     venue: "IT-201",
   },
   {
-    name: "Celestra Coding",
-    time: "9:00 AM to 10:30 AM",
+    name: "Ideathon",
+    time: "Mar 17, 5:00 PM",
+    venue: "IT-206",
+  },
+  {
+    name: "Movie Quiz",
+    time: "Mar 18, 9:00 AM",
+    venue: "IT-442",
+  },
+  {
+    name: "Anime Quiz",
+    time: "Mar 18, 10:30 AM",
+    venue: "IT-443",
+  },
+  {
+    name: "Cross Fire",
+    time: "Mar 18, 12:00 PM",
+    venue: "IT-444",
+  },
+  {
+    name: "Snap Word",
+    time: "Mar 18, 1:30 PM",
     venue: "IT-201",
   },
   {
-    name: "Celestra Coding",
-    time: "9:00 AM to 10:30 AM",
-    venue: "IT-201",
+    name: "Pictionary",
+    time: "Mar 18, 3:00 PM",
+    venue: "IT-206",
   },
   {
-    name: "Celestra Coding",
-    time: "9:00 AM to 10:30 AM",
-    venue: "IT-201",
+    name: "Seminar",
+    time: "Mar 18, 4:00 PM",
+    venue: "IT-442",
   },
   {
-    name: "Celestra Coding",
-    time: "9:00 AM to 10:30 AM",
-    venue: "IT-201",
+    name: "Workshop",
+    time: "Mar 18, 5:00 PM",
+    venue: "IT-443",
   },
   {
-    name: "Celestra Coding",
-    time: "9:00 AM to 10:30 AM",
-    venue: "IT-201",
+    name: "Paper Presentation",
+    time: "Mar 18, 5:00 PM",
+    venue: "IT-444",
   },
   {
-    name: "Celestra Coding",
-    time: "9:00 AM to 10:30 AM",
-    venue: "IT-201",
+    name: "Table Tennis",
+    time: "Mar 18, 5:00 PM",
+    venue: "IT-444",
   },
+  {
+    name: "Valorant",
+    time: "Mar 18, 5:00 PM",
+    venue: "IT-444",
+  },
+  {
+    name: "BGMI",
+    time: "Mar 18, 5:00 PM",
+    venue: "IT-444",
+  },
+
 ];
 
 const Chronoline = () => {
@@ -90,7 +141,7 @@ const Chronoline = () => {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <div className="timeline bg-black">
+      <div className="timeline bg-black font-poppins">
         <nav className="flex items-center  bg-black justify-between pb-10 md:px-4">
           <img
             src={logo}
@@ -183,13 +234,13 @@ const Chronoline = () => {
                 <h3 className="text-3xl tracking-widest celestraHeroFont mb-4">
                   {event.name}
                 </h3>
-                <span className="flex items-center justify-between ">
+                <span className="flex items-center gap-10">
                   <p className="flex items-center gap-2 text-xl">
                     {" "}
-                    <GiTimeBomb size={30} /> {event.time}
+                    <GiTimeBomb size={25} /> {event.time}
                   </p>
-                  <p className="flex items-center gap-3 text-xl">
-                    <TiLocation size={30} /> {event.venue}
+                  <p className="flex items-center gap-1 text-xl">
+                    <TiLocation size={25} /> {event.venue}
                   </p>
                 </span>
               </div>

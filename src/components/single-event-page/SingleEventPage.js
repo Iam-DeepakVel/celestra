@@ -3,10 +3,19 @@ import { CgChevronDoubleRight } from "react-icons/cg";
 import { RiMedal2Line, RiMedal2Fill } from "react-icons/ri";
 import { FaPlaceOfWorship } from "react-icons/fa";
 import { MdWifiCalling3 } from "react-icons/md";
+import { TfiControlBackward } from "react-icons/tfi";
 
 export default function SingleEventPage({ eventDetails }) {
   return (
     <div className="bg-black min-h-screen py-24 sm:py-20">
+      {/* Back to events button */}
+      <a
+        href="/events"
+        className="absolute flex items-center gap-2 celestraHeroFont top-6 left-6 sm:top-10 sm:left-8"
+      >
+        <TfiControlBackward size={25} color="white" />
+        <h2 className="text-white tracking-widest text-xl">Explore</h2>
+      </a>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-y-16 gap-x-8 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-4">

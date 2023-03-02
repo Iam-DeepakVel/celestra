@@ -126,10 +126,10 @@ const Hero = () => {
         <div className="flex flex-col-reverse lg:mt-12 lg:flex-row w-full justify-around px-10 items-center">
           <div className="flex flex-col mt-4  justify-center items-center gap-7 text-white celestraHeroFont tracking-widest">
             <h2 className="text-center text-xl dynamic-text-shadow lg:text-3xl">
-              Prepare Yourself for the
+              Plug in and power up for the
             </h2>
             <h1 className="text-center text-2xl lg:text-4xl dynamic-text-shadow">
-              Big Event
+              Grand Event
             </h1>
             <h1 className="text-center text-4xl  dynamic-celestra-shadow lg:text-7xl tracking-wider  ">
               <span className="text-6xl lg:text-8xl dynamic-celestra-white-shadow-mobile lg:dynamic-celestra-white-shadow text-red-500">

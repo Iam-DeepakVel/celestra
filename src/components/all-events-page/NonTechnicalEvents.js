@@ -6,7 +6,7 @@ export default function NonTechnicalEvents() {
     <>
       <div className="celestraHeroFont text-center">
         <h2 className="text-3xl font-bold tracking-wider text-white sm:text-4xl">
-          Non Technical Events
+        <span className="text-5xl text-red-600">N</span>on - <span className="text-5xl text-red-600">T</span>echnical <span className="text-5xl text-red-600">E</span>vents 
         </h2>
         <p className="mt-2 text-lg leading-8 text-white tracking-wider">
           unleash your knowledge with our non-technical events!!

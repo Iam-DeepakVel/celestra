@@ -135,7 +135,7 @@ const Events = () => {
     <div className="cont">
       <div className="px-4 py-12  bg-black max-w-screen-7xl">
         <h1 className="text-4xl md:text-5xl lg:text-6xl pb-4 text-center text-white tracking-widest celestraHeroFont">
-          <span className="text-7xl text-red-500 ">E</span>vents
+          <span className="text-6xl text-red-500 ">E</span>vents Gallery
         </h1>
         <Swiper
           effect={"coverflow"}
@@ -187,8 +187,6 @@ const Events = () => {
                     oding Event
                   </h2>
                   <p className="text-md mb-4">{event.description}</p>
-                  {/* Explore Button */}
-                  {event.button}
                 </div>
               </div>
             </SwiperSlide>
