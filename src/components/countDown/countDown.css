@@ -1,5 +1,6 @@
 #countDown-container {
-  background-image: url("../../assets/bg2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/bg4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;

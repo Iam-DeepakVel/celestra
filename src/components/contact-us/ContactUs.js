@@ -3,21 +3,29 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+import { Helmet } from "react-helmet";
 import { TfiControlBackward } from "react-icons/tfi";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function ContactUs() {
   return (
     <div className="relative isolate min-h-screen bg-black">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>CELESTRA | Contact Us</title>
+      </Helmet>
       {/* Back to events button */}
-      <a
+      <motion.a
+        whileTap={{ scale: 0.6 }}
         href="/events"
-        className="absolute flex items-center gap-2 celestraHeroFont top-6 left-6 sm:top-10 sm:left-8"
+        className="absolute hidden  lg:flex items-center gap-2 celestraHeroFont top-6 left-6 sm:top-10 sm:left-8"
       >
         <TfiControlBackward size={25} color="white" />
         <h2 className="text-white tracking-widest text-xl">Explore</h2>
-      </a>
+      </motion.a>
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:py-48 lg:px-8">
+        <div className="relative px-6 pt-10 pb-20 sm:pt-20 lg:static lg:py-48 lg:px-8">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-white/5 lg:w-1/2">
               <svg
@@ -75,10 +83,30 @@ export default function ContactUs() {
                 </defs>
               </svg>
             </div>
-            <h2 className="text-3xl font-bold text-white celestraHeroFont tracking-widest">
+            <motion.h2
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 1.2 }}
+              variants={{
+                hidden: { opacity: 0, x: -120 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="text-3xl font-bold text-white celestraHeroFont tracking-widest"
+            >
               Celestra 2k23
-            </h2>
-            <p className="mt-6 text-lg leading-8 font-poppins text-gray-300">
+            </motion.h2>
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 1.7 }}
+              variants={{
+                hidden: { opacity: 0, x: -120 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="mt-6 text-lg leading-8 font-poppins text-gray-300"
+            >
               The Department of Information Technology at Coimbatore Institute
               of Technology, Coimbatore hosts a highly anticipated
               National-level Technical Symposium.
@@ -87,9 +115,19 @@ export default function ContactUs() {
               This event attracts numerous participants from various colleges
               who showcase their talents in a range of technical, non-technical,
               and entertaining events.
-            </p>
+            </motion.p>
             <dl className="mt-10 space-y-4 font-poppins text-base leading-7 text-gray-300">
-              <div className="flex gap-x-4">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.9 }}
+                variants={{
+                  hidden: { opacity: 0, x: -120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="flex gap-x-4"
+              >
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <BuildingOffice2Icon
@@ -104,8 +142,18 @@ export default function ContactUs() {
                   <br />
                   Coimbatore - 641014
                 </dd>
-              </div>
-              <div className="flex gap-x-4">
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 2.1 }}
+                variants={{
+                  hidden: { opacity: 0, x: -120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="flex gap-x-4"
+              >
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <PhoneIcon
@@ -121,8 +169,18 @@ export default function ContactUs() {
                     +91 70105 67021 , +91 79040 97972
                   </a>
                 </dd>
-              </div>
-              <div className="flex gap-x-4">
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 2.3 }}
+                variants={{
+                  hidden: { opacity: 0, x: -120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="flex gap-x-4"
+              >
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <EnvelopeIcon
@@ -135,10 +193,10 @@ export default function ContactUs() {
                     className="hover:text-white"
                     href="mailto:celestra2k23@gmail.com"
                   >
-                    celestra2k23@gmail.com
+                    itcelestra2k23@gmail.com
                   </a>
                 </dd>
-              </div>
+              </motion.div>
             </dl>
           </div>
         </div>
@@ -148,7 +206,17 @@ export default function ContactUs() {
           className="px-6 pb-24 pt-20 sm:pb-32 lg:py-48 font-poppins lg:px-8 "
         >
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-            <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 1.2 }}
+              variants={{
+                hidden: { opacity: 0, x: 120 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2"
+            >
               <div>
                 <label
                   htmlFor="first-name"
@@ -234,21 +302,31 @@ export default function ContactUs() {
                   />
                 </div>
               </div>
-            </div>
-            <div className="mt-8 flex justify-end gap-6">
-              <a
-                href="/"
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 1.4 }}
+              variants={{
+                hidden: { opacity: 0, x: 120 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="mt-8 flex justify-end gap-6"
+            >
+              <Link
+                to={"/"}
                 className="rounded-md border-red-500 border celestraHeroFont tracking-widest px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500"
               >
                 Back to Home
-              </a>
+              </Link>
               <button
                 type="submit"
                 className="rounded-md bg-red-500 celestraHeroFont tracking-widest px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500"
               >
                 Send message
               </button>
-            </div>
+            </motion.div>
           </div>
         </form>
       </div>

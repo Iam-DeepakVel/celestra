@@ -1,0 +1,117 @@
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.fstContainer{
+    display: flex;
+    padding: 5px;
+    width: auto;
+    justify-content: space-around;
+}
+
+.scndContainer{
+    display: flex;
+    padding: 5px;
+}
+
+.contentBox{
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.cpyryt-icon, .heart-icon{
+    padding: 2px;
+}
+
+.nav-btn{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: auto;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+button{
+    padding: 2px;
+    text-align: left;
+}
+
+.headding{
+    padding: 2px;
+}
+
+.abt-content{
+    display: flex;
+    width: 200px;
+    text-align: center;
+    flex-direction: column;
+}
+
+button{
+    display: inline-block;
+    position: relative;
+}
+
+.about-us{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+  
+button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #be2520;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+}
+
+.contact-content{
+    display: flex;
+    margin: auto;
+    padding: 2px;
+    
+}
+
+.icon, .icon-content{
+    padding: 5px;
+}
+
+
+.insta-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.cpyryt-content{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.cpyrytContent{
+    width: fit-content;
+    margin: auto;
+}

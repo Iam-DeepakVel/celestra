@@ -43,30 +43,68 @@ const CountDown = () => {
   }, []);
 
   return (
-    <div id="countDown-container" className="px-6 py-10 sm:px-6 sm:py-8 h-auto max-w-screen-7xl mx-auto bg-black">
-      <h3 className="text-2xl lg:text-5xl pb-12 text-center text-white tracking-widest celestraHeroFont">
-        <span className="text-4xl lg:text-6xl text-red-500">C</span>ounter Until The Big
-        Event
+    <div
+      id="countDown-container"
+      className="px-6 py-10 sm:px-6 sm:py-8 h-auto max-w-screen-7xl mx-auto bg-black"
+    >
+      <h3
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1.2 }}
+        variants={{
+          hidden: { opacity: 0, y: -100 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="text-2xl lg:text-5xl pb-12 text-center text-white tracking-widest celestraHeroFont"
+      >
+        <span className="text-4xl lg:text-6xl text-red-500">C</span>ounter Until
+        The Big Event
       </h3>
       <ul className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 place-content-center gap-20">
-     
-        <li className="flex flex-col items-center text-white celestraHeroFont">
-          <span className="text-7xl text-red-500 tracking-widest">
-            {days}
-          </span>
+        <li
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1.2 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="flex flex-col items-center text-white celestraHeroFont"
+        >
+          <span className="text-7xl text-red-500 tracking-widest">{days}</span>
           <div className="text-2xl tracking-wider">
             <span className="text-3xl text-red-500">D</span>ays
           </div>
         </li>
-        <li className="flex flex-col items-center text-white celestraHeroFont">
-          <span className="text-7xl text-red-500 tracking-widest">
-            {hours}
-          </span>
+        <li
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1.2 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="flex flex-col items-center text-white celestraHeroFont"
+        >
+          <span className="text-7xl text-red-500 tracking-widest">{hours}</span>
           <div className="text-2xl tracking-wider">
             <span className="text-3xl text-red-500">H</span>ours
           </div>
         </li>
-        <li className="flex flex-col items-center text-white celestraHeroFont">
+        <li
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1.2 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="flex flex-col items-center text-white celestraHeroFont"
+        >
           <span className="text-7xl text-red-500 tracking-widest">
             {minutes}
           </span>
@@ -74,7 +112,17 @@ const CountDown = () => {
             <span className="text-3xl text-red-500">M</span>inutes
           </div>
         </li>
-        <li className="flex flex-col items-center text-white celestraHeroFont">
+        <li
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1.2 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="flex flex-col items-center text-white celestraHeroFont"
+        >
           <span className="text-7xl text-red-500 tracking-widest">
             {seconds}
           </span>
@@ -82,7 +130,6 @@ const CountDown = () => {
             <span className="text-3xl text-red-500">S</span>econds
           </div>
         </li>
-       
       </ul>
     </div>
   );

@@ -1,19 +1,19 @@
 {
-  "short_name": "Celestra",
-  "name": "Celestra",
+  "short_name": "Celestra2k23",
+  "name": "Celestra2k23 - A National Level Technical Symposium",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "celestra-logo.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "celestra-logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "celestra-logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }

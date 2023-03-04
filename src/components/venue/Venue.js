@@ -1,11 +1,13 @@
-import React from "react";
 import { BsCalendarWeek } from "react-icons/bs";
 import { MdShareLocation, MdFoodBank } from "react-icons/md";
 import { SiEventstore } from "react-icons/si";
 
 const Venue = () => {
   return (
-    <div className="px-6 py-14 md:px-10 md:py-24 h-auto max-w-screen-7xl mx-auto bg-black">
+    <div
+      id="venue-container"
+      className="px-6 py-14 md:px-10 md:py-24 h-auto max-w-screen-7xl mx-auto bg-black"
+    >
       <ul className="grid grid-cols-1 lg:pl-10 lg:grid-cols-4 gap-20">
         <li className="flex flex-col gap-3 -mb-4">
           <div className="flex gap-4">
@@ -39,10 +41,9 @@ const Venue = () => {
             <div className=" text-white celestraHeroFont">
               <h2 className="text-md tracking-widest">
                 {" "}
-                <span className="text-2xl text-red-500">F</span>ood{" "}
-                <span className="text-2xl text-red-500">S</span>tall
+                <span className="text-2xl text-red-500">E</span>vents{" "}
               </h2>
-              <p className="text-sm tracking-wider">More Delicious Dishes</p>
+              <p className="text-sm tracking-wider">Fifteen plus</p>
             </div>
           </div>
           <div className="h-1 ml-2 w-[35%] sm:w-[17%] lg:w-[45%] bg-red-500 rounded-full"></div>
@@ -53,9 +54,9 @@ const Venue = () => {
             <div className=" text-white celestraHeroFont">
               <h2 className="text-md tracking-widest">
                 {" "}
-                <span className="text-2xl text-red-500">E</span>vents
+                <span className="text-2xl text-red-500">G</span>ames
               </h2>
-              <p className="text-sm tracking-widest">Fifteen Plus</p>
+              <p className="text-sm tracking-widest">Immersive world</p>
             </div>
           </div>
           <div className="h-1 ml-1 w-[55%] lg:w-[38%]  bg-red-500 rounded-full"></div>

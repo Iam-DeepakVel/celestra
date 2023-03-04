@@ -6,21 +6,11 @@
   /*  larger font size, more shadow distance  */
   text-shadow: 0.12em 0.12em 0 #be2520;
 }
-
 .dynamic-celestra-white-shadow {
   text-shadow: -4px 8px 0 white;
 }
-
-.dynamic-celestra-white-shadow-mobile{
-    text-shadow: -4px 4px 0 white;
-}
-
-@font-face {
-  font-family: CelestraHeroFont;
-  src: url("../../assets/Glitchinside.otf");
-}
-.celestraHeroFont {
-  font-family: CelestraHeroFont;
+.dynamic-celestra-white-shadow-mobile {
+  text-shadow: -4px 4px 0 white;
 }
 
 #hero-container {
@@ -31,6 +21,12 @@
   background-position: center;
 }
 
-.celestra-radius {
-  border-radius: 0% 45% 0% 45% / 0% 200% 0% 200%;
+#dropDown-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/bg4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
 }
+

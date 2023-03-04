@@ -4,26 +4,38 @@ import { RiMedal2Line, RiMedal2Fill } from "react-icons/ri";
 import { FaPlaceOfWorship } from "react-icons/fa";
 import { MdWifiCalling3 } from "react-icons/md";
 import { TfiControlBackward } from "react-icons/tfi";
+import { motion } from "framer-motion";
 
 export default function SingleEventPage({ eventDetails }) {
   return (
     <div className="bg-black min-h-screen py-24 sm:py-20">
       {/* Back to events button */}
-      <a
+      <motion.a
+        whileTap={{ scale: 0.6 }}
         href="/events"
         className="absolute flex items-center gap-2 celestraHeroFont top-6 left-6 sm:top-10 sm:left-8"
       >
         <TfiControlBackward size={25} color="white" />
         <h2 className="text-white tracking-widest text-xl">Explore</h2>
-      </a>
+      </motion.a>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-y-16 gap-x-8 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1.3 }}
+            variants={{
+              hidden: { opacity: 0, x: -120 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="lg:pr-4 font-poppins"
+          >
             <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
               <img
                 className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
                 src={eventDetails.image}
-                alt=""
+                alt={eventDetails.eventName}
               />
               <div className="absolute inset-0 bg-gray-900 mix-blend-multiply" />
               <svg
@@ -63,62 +75,139 @@ export default function SingleEventPage({ eventDetails }) {
                   />
                   <use href="#0ef284b8-28c2-426e-9442-8655d393522e" x={86} />
                 </svg>
-                <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
+                <blockquote className="mt-6 text-lg font-semibold leading-8 text-white">
                   <p>{eventDetails.description}</p>
                 </blockquote>
               </figure>
             </div>
-          </div>
+          </motion.div>
           <div>
             <div className="text-base leading-7lg:max-w-lg">
               {/* Event Type */}
-              <p className="text-lg font-semibold leading-7 font-poppins text-white">
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: 120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="text-lg font-semibold tracking-wider leading-7 font-poppins text-white"
+              >
                 {eventDetails.type}
-              </p>
+              </motion.p>
               {/* Event Name */}
-              <h1 className="mt-2 text-3xl font-bold  text-white celestraHeroFont tracking-widest sm:text-4xl">
+              <motion.h1
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 0.7 }}
+                variants={{
+                  hidden: { opacity: 0, x: 120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="mt-2 text-3xl font-bold  text-white celestraHeroFont tracking-widest sm:text-4xl"
+              >
                 {eventDetails.eventName}
-              </h1>
+              </motion.h1>
               {/* Time ,Date , Venue Section */}
-              <div className="flex gap-4">
-                <div className="flex items-center gap-2 px-2 bg-red-500 w-[40%] sm:w-[35%] h-12 rounded-xl mt-4">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 0.9 }}
+                variants={{
+                  hidden: { opacity: 0, x: 120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="flex gap-4"
+              >
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="flex items-center gap-2 px-2 bg-red-500 w-[40%] sm:w-[35%] h-12 rounded-xl mt-4"
+                >
                   <GrTechnology size={20} color="red" />
                   <p className="text-black text-lg font-poppins font-bold">
                     {eventDetails.dateTime}
                   </p>
-                </div>
-                <div className="flex items-center gap-3 px-4  border-red-500 border w-[40%] sm:w-[35%] h-12 rounded-xl mt-4">
+                </motion.div>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="flex items-center gap-3 px-4  border-red-500 border w-[40%] sm:w-[35%] h-12 rounded-xl mt-4"
+                >
                   <FaPlaceOfWorship size={20} color="white" />
                   <div className="text-white text-lg font-poppins font-bold">
                     <span>Venue:</span>
                     <span className="ml-2">{eventDetails.venue}</span>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
               {/* Rules Section */}
               <div className="max-w-xl text-white">
-                <h2 className="text-xl sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold mt-6">
+                <motion.h2
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.1 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 120 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  className="text-xl sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold mt-6"
+                >
                   Rules
-                </h2>
+                </motion.h2>
                 {/* Rule Mapping */}
                 {eventDetails.rules.map((rule) => (
-                  <div className="mt-6 flex gap-1 font-poppins">
+                  <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.5 }}
+                    transition={{ duration: 1.3 }}
+                    variants={{
+                      hidden: { opacity: 0, x: 120 },
+                      visible: { opacity: 1, x: 0 },
+                    }}
+                    key={rule}
+                    className="mt-6 flex gap-1 font-poppins"
+                  >
                     <span>
                       <CgChevronDoubleRight size={20} color="red" />
                     </span>
                     <p className="mt-[2px] sm:mt-0 text-lg ">{rule}</p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
             {/* Price Section */}
             <div>
-              <h2 className="text-xl sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold mt-12">
+              <motion.h2
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: 120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="text-xl sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold mt-12"
+              >
                 Prize
-              </h2>
+              </motion.h2>
 
               {/* Medal Secion */}
-              <div className="flex gap-12">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.7 }}
+                variants={{
+                  hidden: { opacity: 0, x: 120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="flex gap-12"
+              >
                 {/* Winner Medal */}
                 <div className="flex mt-4">
                   <RiMedal2Line size={50} color="gold" />
@@ -145,19 +234,40 @@ export default function SingleEventPage({ eventDetails }) {
                     </div>
                   </div>
                 )}
-              </div>
+              </motion.div>
             </div>
 
             {/* Contact Section */}
             <div className="mt-12">
               {/* Heading */}
-              <h2 className="text-xl sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold">
-                <span className="text-4xl">C</span>ontact
-              </h2>
+              <motion.h2
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.9 }}
+                variants={{
+                  hidden: { opacity: 0, x: 120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="text-xl sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold"
+              >
+                Contact
+              </motion.h2>
               <div className="mt-4 flex flex-col justify-center gap-3">
                 {/* Contact Mapping*/}
                 {eventDetails.contact.map((contact) => (
-                  <div className="flex items-center font-poppins gap-2">
+                  <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.5 }}
+                    transition={{ duration: 2 }}
+                    variants={{
+                      hidden: { opacity: 0, x: 120 },
+                      visible: { opacity: 1, x: 0 },
+                    }}
+                    key={contact.phoneNo}
+                    className="flex items-center font-poppins gap-2"
+                  >
                     <MdWifiCalling3 size={25} color="white" />
                     <div className="text-white text-lg flex items-center gap-4">
                       {" "}
@@ -165,14 +275,22 @@ export default function SingleEventPage({ eventDetails }) {
                       {"-"}
                       <span>{contact.phoneNo}</span>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
 
             {/* Register */}
             <div className="mt-10 flex">
-              <a
+              <motion.a
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 2.1 }}
+                variants={{
+                  hidden: { opacity: 0, x: 120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
                 href="/"
                 class="relative px-5 text-center py-2   font-medium celestraHeroFont tracking-widest text-white group"
               >
@@ -181,7 +299,7 @@ export default function SingleEventPage({ eventDetails }) {
                 <span class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-red-600 -rotate-12"></span>
                 <span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-red-400 -rotate-12"></span>
                 <span class="relative">Register Now</span>
-              </a>
+              </motion.a>
             </div>
           </div>
         </div>
