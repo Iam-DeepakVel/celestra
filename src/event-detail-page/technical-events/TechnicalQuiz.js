@@ -8,8 +8,8 @@ const technicalQuiz = {
     "Get ready to test your knowledge and sharpen your skills in the ultimate battle of the brains! The technical quiz at our symposium is not your average quiz - it's a high-octane, adrenaline-fueled showdown that will put your expertise to the test.With questions ranging from cutting-edge technology to the latest industry trends, this quiz will challenge even the most seasoned professionals.",
   type: "Technical Event",
   eventName: "Technical Quiz",
-  dateTime: "March 17, 9:00AM",
-  venue: "IT-201",
+  dateTime: "Mar 17, 2:00 PM to 3:00 PM",
+  venue: "IT-443",
   rules: [
     "Minimum of 2 members per team",
     "Team name must be decided",

@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import CountDown from "../countDown/CountDown";
 import EventsGallery from "../events-gallery/EventsGallery";
+import Footer from "../footer/Footer";
 import Hero from "../hero/Hero";
 import Venue from "../venue/Venue";
 
@@ -16,6 +17,7 @@ const Home = () => {
       <Venue />
       <CountDown />
       <EventsGallery />
+      <Footer />
     </div>
   );
 };

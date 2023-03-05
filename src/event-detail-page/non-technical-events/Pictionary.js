@@ -7,7 +7,7 @@ const pictionary = {
     "Guessing the picture and answer to the questions like what the picture is about. Participants are grouped into 3 members per panel. 15 images for a round(5 images for each participants). If one doesn't answered then the question will be passed to another and to another based on sequence. Participant with higher points will move to next round.",
   type: "Non-Technical Event",
   eventName: "Pictionary",
-  dateTime: "March 18, 3:00PM",
+  dateTime: "March 18, 2:00 PM to 3:00 PM",
   venue: "IT-206",
   rules: [
     "30 seconds to answer a question",

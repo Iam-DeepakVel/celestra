@@ -6,8 +6,8 @@ const movieQuiz = {
   description: "Find the movie by what you choose",
   type: "Non Technical Event",
   eventName: "Movie Quiz",
-  dateTime: "March 17, 1:00 PM",
-  venue: "IT-212",
+  dateTime: "March 18, 3:00 PM to 4:00 PM",
+  venue: "IT-444",
   rules: [
     "Each team will consist of three members.",
     "You will toss a coin to determine whether you will use connecting images or acting to convey the name of the movie.",

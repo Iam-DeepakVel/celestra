@@ -7,8 +7,8 @@ const paperPresentation = {
     "Action is the foundational key to success--Pablo Picasso. Elevate your ideas and let you ideas fly high along with your presentation.",
   type: "Elite Event",
   eventName: "Paper presentation",
-  dateTime: "March 17, 9:00AM",
-  venue: "IT-201",
+  dateTime: "March 18, 9:00 AM to 11:00 AM",
+  venue: "IT-206",
   rules: [
     "Include only one idea per slide",
     "Spend only 1 minute per slide",

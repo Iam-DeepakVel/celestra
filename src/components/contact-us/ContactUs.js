@@ -16,14 +16,18 @@ export default function ContactUs() {
         <title>CELESTRA | Contact Us</title>
       </Helmet>
       {/* Back to events button */}
-      <motion.a
-        whileTap={{ scale: 0.6 }}
-        href="/events"
+      <Link
+        to={"/events"}
         className="absolute hidden  lg:flex items-center gap-2 celestraHeroFont top-6 left-6 sm:top-10 sm:left-8"
       >
         <TfiControlBackward size={25} color="white" />
-        <h2 className="text-white tracking-widest text-xl">Explore</h2>
-      </motion.a>
+        <motion.h2
+          whileTap={{ scale: 0.6 }}
+          className="text-white tracking-widest text-xl"
+        >
+          Explore
+        </motion.h2>
+      </Link>
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-10 pb-20 sm:pt-20 lg:static lg:py-48 lg:px-8">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">

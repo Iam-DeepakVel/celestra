@@ -13,7 +13,7 @@ export default function GamesWrapper({ children, isOnline }) {
   return (
     <div className="bg-black min-h-screen py-4 sm:py-8">
       <nav className="flex items-center justify-between pb-10 md:px-4">
-        <a href="/">
+        <Link to={"/"}>
           <motion.img
             initial="hidden"
             whileInView="visible"
@@ -27,7 +27,7 @@ export default function GamesWrapper({ children, isOnline }) {
             alt="celestra-logo"
             className="lg:absolute lg:left-4 lg:top-6 w-44 md:w-52 rounded-full"
           />
-        </a>
+        </Link>
 
         {/* Menu */}
         <motion.div
@@ -114,42 +114,37 @@ export default function GamesWrapper({ children, isOnline }) {
       </nav>
       <div className="mx-auto max-w-7xl  px-6 lg:px-8">
         {/* Events selection Section */}
-        <div className="text-white celestraHeroFont mb-20 mt-6 flex gap-12  justify-around sm:justify-center lg:gap-12 flex-wrap lg:flex-nowrap ">
-          <motion.a
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
-            transition={{ duration: 1.3 }}
-            variants={{
-              hidden: { opacity: 0, x: -80 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            href="/games/online"
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1.3 }}
+          variants={{
+            hidden: { opacity: 0, x: 80 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="text-white celestraHeroFont mb-20 mt-6 flex gap-12  justify-around sm:justify-center lg:gap-12 flex-wrap lg:flex-nowrap "
+        >
+          <Link
+            to={"/games/online"}
             className={` ${
               isOnline ? "bg-red-600 text-[#111111]" : "border  border-red-600"
             }
               px-6 py-1 flex items-center justify-center rounded-xl text-xl tracking-widest cursor-pointer `}
           >
             Online Games
-          </motion.a>
-          <motion.a
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
-            transition={{ duration: 1.3 }}
-            variants={{
-              hidden: { opacity: 0, x: 80 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            href="/games/offline"
+          </Link>
+
+          <Link
+            to={"/games/offline"}
             className={` ${
               !isOnline ? "bg-red-600 text-[#111111]" : "border  border-red-600"
             }
               px-6 py-4  flex items-center justify-center rounded-xl text-xl tracking-widest cursor-pointer `}
           >
             Offline Games
-          </motion.a>
-        </div>
+          </Link>
+        </motion.div>
       </div>
       {/* Games cards Section */}
       {children}

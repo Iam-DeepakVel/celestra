@@ -5,25 +5,30 @@ import { FaPlaceOfWorship } from "react-icons/fa";
 import { MdWifiCalling3 } from "react-icons/md";
 import { TfiControlBackward } from "react-icons/tfi";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-export default function SingleEventPage({ eventDetails }) {
+export default function SingleEventPage({ eventDetails, isPrize }) {
   return (
     <div className="bg-black min-h-screen py-24 sm:py-20">
       {/* Back to events button */}
-      <motion.a
-        whileTap={{ scale: 0.6 }}
-        href="/events"
+      <Link
+        to={"/events"}
         className="absolute flex items-center gap-2 celestraHeroFont top-6 left-6 sm:top-10 sm:left-8"
       >
         <TfiControlBackward size={25} color="white" />
-        <h2 className="text-white tracking-widest text-xl">Explore</h2>
-      </motion.a>
+        <motion.h2
+          whileTap={{ scale: 0.8 }}
+          className="text-white tracking-widest text-xl"
+        >
+          Explore
+        </motion.h2>
+      </Link>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-y-16 gap-x-8 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.3 }}
             variants={{
               hidden: { opacity: 0, x: -120 },
@@ -102,7 +107,7 @@ export default function SingleEventPage({ eventDetails }) {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.5 }}
-                transition={{ duration: 0.7 }}
+                transition={{ duration: 0.6 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
                   visible: { opacity: 1, x: 0 },
@@ -116,7 +121,7 @@ export default function SingleEventPage({ eventDetails }) {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.5 }}
-                transition={{ duration: 0.9 }}
+                transition={{ duration: 0.65 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
                   visible: { opacity: 1, x: 0 },
@@ -125,7 +130,7 @@ export default function SingleEventPage({ eventDetails }) {
               >
                 <motion.div
                   whileHover={{ scale: 1.1 }}
-                  className="flex items-center gap-2 px-2 bg-red-500 w-[40%] sm:w-[35%] h-12 rounded-xl mt-4"
+                  className="flex items-center gap-2 px-2 bg-red-500 min-w-[40%] sm:min-w-[35%] h-12 rounded-xl mt-4"
                 >
                   <GrTechnology size={20} color="red" />
                   <p className="text-black text-lg font-poppins font-bold">
@@ -134,7 +139,7 @@ export default function SingleEventPage({ eventDetails }) {
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.1 }}
-                  className="flex items-center gap-3 px-4  border-red-500 border w-[40%] sm:w-[35%] h-12 rounded-xl mt-4"
+                  className="flex items-center gap-3 px-4  border-red-500 border min-w-[40%] sm:min-w-[35%] h-12 rounded-xl mt-4"
                 >
                   <FaPlaceOfWorship size={20} color="white" />
                   <div className="text-white text-lg font-poppins font-bold">
@@ -149,7 +154,7 @@ export default function SingleEventPage({ eventDetails }) {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: false, amount: 0.5 }}
-                  transition={{ duration: 1.1 }}
+                  transition={{ duration: 0.7 }}
                   variants={{
                     hidden: { opacity: 0, x: 120 },
                     visible: { opacity: 1, x: 0 },
@@ -164,7 +169,7 @@ export default function SingleEventPage({ eventDetails }) {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.5 }}
-                    transition={{ duration: 1.3 }}
+                    transition={{ duration: 0.8 }}
                     variants={{
                       hidden: { opacity: 0, x: 120 },
                       visible: { opacity: 1, x: 0 },
@@ -181,61 +186,63 @@ export default function SingleEventPage({ eventDetails }) {
               </div>
             </div>
             {/* Price Section */}
-            <div>
-              <motion.h2
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
-                transition={{ duration: 1.5 }}
-                variants={{
-                  hidden: { opacity: 0, x: 120 },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                className="text-xl sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold mt-12"
-              >
-                Prize
-              </motion.h2>
+            {isPrize ? null : (
+              <div>
+                <motion.h2
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 120 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  className="text-xl sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold mt-12"
+                >
+                  Prize
+                </motion.h2>
 
-              {/* Medal Secion */}
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
-                transition={{ duration: 1.7 }}
-                variants={{
-                  hidden: { opacity: 0, x: 120 },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                className="flex gap-12"
-              >
-                {/* Winner Medal */}
-                <div className="flex mt-4">
-                  <RiMedal2Line size={50} color="gold" />
-                  <div className="flex flex-col items-center gap-1 justify-center">
-                    <h2 className="text-lg celestraHeroFont tracking-widest text-white font-semibold">
-                      First Place
-                    </h2>
-                    <h2 className="text-lg  font-poppins tracking-widest text-white font-semibold">
-                      {eventDetails.firstprize}
-                    </h2>
-                  </div>
-                </div>
-                {/* Winner Medal */}
-                {eventDetails.secondprize !== 0 && (
+                {/* Medal Secion */}
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.1 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 120 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  className="flex gap-12"
+                >
+                  {/* Winner Medal */}
                   <div className="flex mt-4">
-                    <RiMedal2Fill size={50} color="silver" />
-                    <div className="flex flex-col items-center gap-1 ">
-                      <h2 className="text-lg  celestraHeroFont tracking-widest text-white font-semibold">
-                        Second Place
+                    <RiMedal2Line size={50} color="gold" />
+                    <div className="flex flex-col items-center gap-1">
+                      <h2 className="text-lg celestraHeroFont tracking-widest text-white font-semibold">
+                        First Place
                       </h2>
                       <h2 className="text-lg  font-poppins tracking-widest text-white font-semibold">
-                        {eventDetails.secondprize}
+                        {eventDetails.firstprize}
                       </h2>
                     </div>
                   </div>
-                )}
-              </motion.div>
-            </div>
+                  {/* Winner Medal */}
+                  {eventDetails.secondprize !== 0 && (
+                    <div className="flex mt-4">
+                      <RiMedal2Fill size={50} color="silver" />
+                      <div className="flex flex-col items-center gap-1 ">
+                        <h2 className="text-lg  celestraHeroFont tracking-widest text-white font-semibold">
+                          Second Place
+                        </h2>
+                        <h2 className="text-lg  font-poppins tracking-widest text-white font-semibold">
+                          {eventDetails.secondprize}
+                        </h2>
+                      </div>
+                    </div>
+                  )}
+                </motion.div>
+              </div>
+            )}
 
             {/* Contact Section */}
             <div className="mt-12">
@@ -244,7 +251,7 @@ export default function SingleEventPage({ eventDetails }) {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.5 }}
-                transition={{ duration: 1.9 }}
+                transition={{ duration: 1.15 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
                   visible: { opacity: 1, x: 0 },
@@ -260,7 +267,7 @@ export default function SingleEventPage({ eventDetails }) {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.5 }}
-                    transition={{ duration: 2 }}
+                    transition={{ duration: 1.2 }}
                     variants={{
                       hidden: { opacity: 0, x: 120 },
                       visible: { opacity: 1, x: 0 },
@@ -286,7 +293,7 @@ export default function SingleEventPage({ eventDetails }) {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.5 }}
-                transition={{ duration: 2.1 }}
+                transition={{ duration: 1.25 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
                   visible: { opacity: 1, x: 0 },

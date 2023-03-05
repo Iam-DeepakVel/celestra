@@ -8,8 +8,8 @@ const bugBusters = {
     "Get ready for the ultimate Bug Bash! Form a team of three and put your collective debugging skills to the test in this exciting competition.Hunt down and fix the trickiest bugs to emerge as the top bug busters!",
   type: "Technical Event",
   eventName: "Bug Busters",
-  dateTime: "March 17, 9:00AM",
-  venue: "IT-444",
+  dateTime: "March 18, 9:00 AM to 11:00 AM",
+  venue: "IT-443",
   rules: [
     "Programming languages given - Python, C, C++, Java",
     "Plagiarism leads to direct disqualification",

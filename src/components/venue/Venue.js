@@ -1,6 +1,6 @@
 import { BsCalendarWeek } from "react-icons/bs";
-import { MdShareLocation, MdFoodBank } from "react-icons/md";
-import { SiEventstore } from "react-icons/si";
+import { MdShareLocation } from "react-icons/md";
+import { SiEventstore, SiRiotgames } from "react-icons/si";
 
 const Venue = () => {
   return (
@@ -33,11 +33,11 @@ const Venue = () => {
               <p className="text-sm tracking-widest">CIT - Coimbatore</p>
             </div>
           </div>
-          <div className="h-1 ml-2 w-[45%] lg:w-[44%]  bg-red-500 rounded-full"></div>
+          <div className="h-1 ml-2 w-[65%] lg:w-[44%]  bg-red-500 rounded-full"></div>
         </li>
         <li className="flex flex-col gap-3 -mb-2">
           <div className="flex gap-4">
-            <MdFoodBank size={50} color="#EF4444" />
+            <SiEventstore size={50} color="#EF4444" />
             <div className=" text-white celestraHeroFont">
               <h2 className="text-md tracking-widest">
                 {" "}
@@ -46,11 +46,11 @@ const Venue = () => {
               <p className="text-sm tracking-wider">Fifteen plus</p>
             </div>
           </div>
-          <div className="h-1 ml-2 w-[35%] sm:w-[17%] lg:w-[45%] bg-red-500 rounded-full"></div>
+          <div className="h-1 ml-2 w-[28%] sm:w-[17%] lg:w-[45%] bg-red-500 rounded-full"></div>
         </li>
         <li className="flex flex-col gap-3 -mb-4 ml-auto lg:ml-0">
           <div className="flex gap-4">
-            <SiEventstore size={50} color="#EF4444" />
+            <SiRiotgames size={50} color="#EF4444" />
             <div className=" text-white celestraHeroFont">
               <h2 className="text-md tracking-widest">
                 {" "}
@@ -59,7 +59,7 @@ const Venue = () => {
               <p className="text-sm tracking-widest">Immersive world</p>
             </div>
           </div>
-          <div className="h-1 ml-1 w-[55%] lg:w-[38%]  bg-red-500 rounded-full"></div>
+          <div className="h-1 ml-1 w-[65%] lg:w-[38%]  bg-red-500 rounded-full"></div>
         </li>
       </ul>
     </div>

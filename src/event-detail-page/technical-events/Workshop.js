@@ -8,8 +8,8 @@ const workshop = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, totam deleniti consequuntur esse error libero omnis voluptatibus saepe facere cumque reprehenderit sint nostrum vitae iure aspernatur, cupiditate fuga mollitia aliquid.",
   type: "Technical Event",
   eventName: "Work Shop",
-  dateTime: "March 17, 9:00AM",
-  venue: "IT-201",
+  dateTime: "March 18, 11:00 AM to 1:00 PM ",
+  venue: "IT-442",
   rules: ["Rule 1", "Rule 2"],
   firstprize: 1000,
   secondprize: 500,
@@ -26,7 +26,7 @@ const workshop = {
 };
 
 const Workshop = () => {
-  return <SingleEventPage eventDetails={workshop} />;
+  return <SingleEventPage eventDetails={workshop} noPrize={true} />;
 };
 
 export default Workshop;

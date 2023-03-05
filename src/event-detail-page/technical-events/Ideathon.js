@@ -5,11 +5,11 @@ import IdeathonImg from "../../assets/event-images/ideathon.jpg";
 const ideathon = {
   image: IdeathonImg,
   description:
-    " IDEATHON is competitive event, where teams or individual pitch their ideas to a panel of judges and compete recognition. The aim of the event is to inspire and empower participants to think outside the box and develop innovative solutions that can have a positive impact on society,making it an ideal platform for aspiring Entrepreneurs. ",
+    "IDEATHON is competitive event, where teams or individual pitch their ideas to a panel of judges and compete recognition. The aim of the event is to inspire and empower participants to think outside the box and develop innovative solutions that can have a positive impact on society,making it an ideal platform for aspiring Entrepreneurs. ",
   type: "Technical Event",
   eventName: "IDEATHON",
-  dateTime: "March 18, 2:00PM",
-  venue: "IT-212",
+  dateTime: "Mar 17, 9:30 AM to 11:30 AM",
+  venue: "IT-206",
   rules: [
     " Each team should prepare a short pitch (PPT) to present their idea to a panel of judges and other participants. The pitch should be well-crafted, engaging, and clearly articulate the proposed solution.",
     "Participants should be organized into teams or individual.",

@@ -38,7 +38,7 @@ export default function OfflineGames() {
           className="mt-2 text-lg leading-8 text-white tracking-wider"
         >
           The beauty of offline games is that they never need an internet
-          connection.
+          connection
         </motion.p>
       </div>
 
