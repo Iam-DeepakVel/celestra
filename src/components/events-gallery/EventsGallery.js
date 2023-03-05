@@ -216,7 +216,7 @@ const Events = () => {
         >
           {/* Event Card */}
           {eventsList?.map((event) => (
-            <SwiperSlide>
+            <SwiperSlide key={event.id}>
               <div
                 onMouseOver={() => handleMouseEnter(event.id)}
                 onMouseLeave={handleMouseLeave}

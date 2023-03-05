@@ -97,7 +97,7 @@ export default function SingleEventPage({
               <motion.p
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
@@ -111,7 +111,7 @@ export default function SingleEventPage({
               <motion.h1
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.6 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
@@ -125,7 +125,7 @@ export default function SingleEventPage({
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.65 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
@@ -158,7 +158,7 @@ export default function SingleEventPage({
                 <motion.h2
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 0.7 }}
                   variants={{
                     hidden: { opacity: 0, x: 120 },
@@ -173,7 +173,7 @@ export default function SingleEventPage({
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.8 }}
                     variants={{
                       hidden: { opacity: 0, x: 120 },
@@ -196,7 +196,7 @@ export default function SingleEventPage({
                 <motion.h2
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 1 }}
                   variants={{
                     hidden: { opacity: 0, x: 120 },
@@ -211,7 +211,7 @@ export default function SingleEventPage({
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 1.1 }}
                   variants={{
                     hidden: { opacity: 0, x: 120 },
@@ -227,7 +227,7 @@ export default function SingleEventPage({
                         First Place
                       </h2>
                       <h2 className="text-lg  font-poppins tracking-widest text-white font-semibold">
-                        {eventDetails.firstprize}
+                        Rs.{eventDetails.firstprize}/-
                       </h2>
                     </div>
                   </div>
@@ -240,7 +240,7 @@ export default function SingleEventPage({
                           Second Place
                         </h2>
                         <h2 className="text-lg  font-poppins tracking-widest text-white font-semibold">
-                          {eventDetails.secondprize}
+                          Rs.{eventDetails.secondprize}/-
                         </h2>
                       </div>
                     </div>
@@ -255,7 +255,7 @@ export default function SingleEventPage({
               <motion.h2
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1.15 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
@@ -271,7 +271,7 @@ export default function SingleEventPage({
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 1.2 }}
                     variants={{
                       hidden: { opacity: 0, x: 120 },
@@ -297,7 +297,7 @@ export default function SingleEventPage({
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 1.25 }}
                   variants={{
                     hidden: { opacity: 0, x: 120 },
@@ -315,7 +315,7 @@ export default function SingleEventPage({
                 <motion.a
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 1.25 }}
                   variants={{
                     hidden: { opacity: 0, x: 120 },

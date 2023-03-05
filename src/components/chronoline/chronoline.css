@@ -4,6 +4,10 @@
   overflow-x: hidden;
   margin: 0 auto;
   position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/bg4.jpg");
+  height: 150%;
+  background-position: center;
 }
 
 @keyframes zoomInOut {
@@ -63,7 +67,6 @@
   height: 0;
   border-style: solid;
 }
-
 
 .timeline ul li:nth-child(odd) div {
   left: 45px;

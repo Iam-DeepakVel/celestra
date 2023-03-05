@@ -229,7 +229,7 @@ const Hero = () => {
                 hidden: { opacity: 0, x: +120 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="text-4xl lg:text-7xl tracking-wider"
+              className="text-4xl lg:text-7xl tracking-widest"
             >
               2<span className="text-red-500">k</span>23
             </motion.h1>

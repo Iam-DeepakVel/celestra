@@ -90,7 +90,7 @@ export default function ContactUs() {
             <motion.h2
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.2 }}
               variants={{
                 hidden: { opacity: 0, x: -120 },
@@ -103,7 +103,7 @@ export default function ContactUs() {
             <motion.p
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.7 }}
               variants={{
                 hidden: { opacity: 0, x: -120 },
@@ -124,7 +124,7 @@ export default function ContactUs() {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1.9 }}
                 variants={{
                   hidden: { opacity: 0, x: -120 },
@@ -150,7 +150,7 @@ export default function ContactUs() {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 2.1 }}
                 variants={{
                   hidden: { opacity: 0, x: -120 },
@@ -177,7 +177,7 @@ export default function ContactUs() {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 2.3 }}
                 variants={{
                   hidden: { opacity: 0, x: -120 },
@@ -213,7 +213,7 @@ export default function ContactUs() {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.2 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },
@@ -310,7 +310,7 @@ export default function ContactUs() {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.4 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },

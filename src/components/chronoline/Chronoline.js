@@ -14,95 +14,88 @@ import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const events = [
+const march17Events = [
   {
     name: "Celestra Coding",
-    time: "Mar 17, 9:00 AM",
-    venue: "IT-201",
-  },
-  {
-    name: "Reverse Coding",
-    time: "Mar 17, 10:30 AM",
-    venue: "IT-206",
-  },
-  {
-    name: "Bug Busters",
-    time: "Mar 17, 12:00 PM",
-    venue: "IT-442",
-  },
-  {
-    name: "Code Jam",
-    time: "Mar 17, 1:30 PM",
-    venue: "IT-443",
-  },
-  {
-    name: "Web Designing",
-    time: "Mar 17, 3:00 PM",
-    venue: "IT-444",
-  },
-  {
-    name: "Technical Quiz",
-    time: "Mar 17, 4:00 PM",
+    time: "9:30 AM to 11:30 AM",
     venue: "IT-201",
   },
   {
     name: "Ideathon",
-    time: "Mar 17, 5:00 PM",
-    venue: "IT-206",
-  },
-  {
-    name: "Movie Quiz",
-    time: "Mar 18, 9:00 AM",
-    venue: "IT-442",
-  },
-  {
-    name: "Anime Quiz",
-    time: "Mar 18, 10:30 AM",
-    venue: "IT-443",
-  },
-  {
-    name: "Cross Fire",
-    time: "Mar 18, 12:00 PM",
-    venue: "IT-444",
-  },
-  {
-    name: "Snap Word",
-    time: "Mar 18, 1:30 PM",
-    venue: "IT-201",
-  },
-  {
-    name: "Pictionary",
-    time: "Mar 18, 3:00 PM",
+    time: "9:30 AM to 11:30 AM",
     venue: "IT-206",
   },
   {
     name: "Seminar",
-    time: "Mar 18, 4:00 PM",
+    time: "11:30 AM to 01:30 PM",
     venue: "IT-442",
   },
   {
+    name: "Anime Quiz",
+    time: "11:30 AM to 12:30 PM",
+    venue: "IT-443",
+  },
+  {
+    name: "Treasure Event",
+    time: "2:00 PM to 4:00 PM",
+    venue: "IT-444",
+  },
+  {
+    name: "Technical Quiz",
+    time: "2:00 PM to 3:00 PM",
+    venue: "IT-201",
+  },
+  {
+    name: "Cross Fire",
+    time: "3:00 PM to 4:00 PM",
+    venue: "IT-206",
+  },
+];
+
+const march18Events = [
+  {
+    name: "Paper Presentation",
+    time: "9:00 AM to 11:00 AM",
+    venue: "IT-442",
+  },
+  {
+    name: "Bug Busters",
+    time: "9:00 AM to 11:00 AM",
+    venue: "IT-443",
+  },
+  {
+    name: "Workshops",
+    time: " 11:00 AM to 1:00 PM",
+    venue: "IT-444",
+  },
+  {
+    name: "Web Masters",
+    time: "2:00 PM to 4:00 PM",
+    venue: "IT-201",
+  },
+  {
+    name: "Pictionary",
+    time: "2:00 PM to 3:00 PM",
+    venue: "IT-206",
+  },
+  {
+    name: "Movie Quiz",
+    time: "3:00 PM to 4:00 PM",
+    venue: "IT-442",
+  }, //remaining online and offline events
+  {
     name: "Workshop",
-    time: "Mar 18, 5:00 PM",
+    time: "5:00 PM",
     venue: "IT-443",
   },
   {
     name: "Paper Presentation",
-    time: "Mar 18, 5:00 PM",
-    venue: "IT-444",
-  },
-  {
-    name: "Table Tennis",
-    time: "Mar 18, 5:00 PM",
+    time: "5:00 PM",
     venue: "IT-444",
   },
   {
     name: "Valorant",
-    time: "Mar 18, 5:00 PM",
-    venue: "IT-444",
-  },
-  {
-    name: "BGMI",
-    time: "Mar 18, 5:00 PM",
+    time: "5:00 PM",
     venue: "IT-444",
   },
 ];
@@ -147,12 +140,12 @@ const Chronoline = () => {
         <title>CELESTRA | Chronoline</title>
       </Helmet>
       <div className="timeline font-poppins">
-        <nav className="flex items-center  bg-black justify-between pb-10 md:px-4">
+        <nav className="flex items-center justify-between md:px-4">
           <Link to={"/"}>
             <motion.img
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.3 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },
@@ -168,7 +161,7 @@ const Chronoline = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.3 }}
             variants={{
               hidden: { opacity: 0, x: -120 },
@@ -268,40 +261,79 @@ const Chronoline = () => {
         <motion.p
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1.3 }}
           variants={{
             hidden: { opacity: 0, x: 120 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="text-4xl mt-20 tracking-wider text-white celestraHeroFont text-center mb-20"
+          className="text-4xl mt-10 lg:mt-20 tracking-wider text-white celestraHeroFont text-center mb-12 lg:mb-20"
         >
           <span className="text-6xl text-[rgb(255,0,0)] tracking-widest">
             C
           </span>
           hronoline
         </motion.p>
-        <ul>
-          {events?.map((event) => (
-            <li>
-              {/* Event Card */}
-              <div>
-                <h3 className="text-3xl tracking-widest celestraHeroFont mb-4">
-                  {event.name}
-                </h3>
-                <span className="flex items-center gap-10">
-                  <p className="flex items-center gap-2 text-xl">
-                    {" "}
-                    <GiTimeBomb size={25} /> {event.time}
-                  </p>
-                  <p className="flex items-center gap-1 text-xl">
-                    <TiLocation size={25} /> {event.venue}
-                  </p>
-                </span>
-              </div>
-            </li>
-          ))}
-        </ul>
+
+        <h2 className="text-white celestraHeroFont text-center text-4xl tracking-widest mb-20">
+          <span className="text-5xl text-red-600">M</span>arch 17
+        </h2>
+        {/* Chronoline Container */}
+        {/* March 17 Events */}
+        <span>
+          <ul>
+            {march17Events?.map((event) => (
+              <li key={event.name}>
+                {/* Event Card */}
+                <div>
+                  <h3 className="text-3xl tracking-widest celestraHeroFont mb-4">
+                    {event.name}
+                  </h3>
+                  <span className="flex items-center gap-10">
+                    <span>
+                      <p className="flex items-center gap-2 text-xl">
+                        {" "}
+                        <GiTimeBomb size={25} /> {event.time}
+                      </p>
+                    </span>
+                    <p className="flex items-center gap-1 text-xl">
+                      <TiLocation size={25} /> {event.venue}
+                    </p>
+                  </span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </span>
+
+        <span>
+          <h2 className="text-white celestraHeroFont text-center text-4xl tracking-widest mt-24 mb-12">
+            <span className="text-5xl text-red-600">M</span>arch 18
+          </h2>
+          <ul>
+            {march18Events?.map((event) => (
+              <li key={event.name}>
+                {/* Event Card */}
+                <div>
+                  <h3 className="text-3xl tracking-widest celestraHeroFont mb-4">
+                    {event.name}
+                  </h3>
+                  <span className="flex items-center gap-10">
+                    <span>
+                      <p className="flex items-center gap-2 text-xl">
+                        {" "}
+                        <GiTimeBomb size={25} /> {event.time}
+                      </p>
+                    </span>
+                    <p className="flex items-center gap-1 text-xl">
+                      <TiLocation size={25} /> {event.venue}
+                    </p>
+                  </span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </span>
       </div>
     </div>
   );

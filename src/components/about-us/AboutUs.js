@@ -67,7 +67,7 @@ const teachers = [
     imageUrl: Devi,
   },
   {
-    name: "Ms.K.Malarvizhi",
+    name: "Dr.K.Malarvizhi",
     role: "Assistant Professor",
     imageUrl: Malarvizhi,
   },
@@ -111,7 +111,7 @@ const About = () => {
           <motion.img
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.3 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
@@ -126,7 +126,7 @@ const About = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1.3 }}
           variants={{
             hidden: { opacity: 0, x: -120 },
@@ -236,7 +236,7 @@ const About = () => {
       <motion.h2
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1.2 }}
         variants={{
           hidden: { opacity: 0, x: -120 },
@@ -252,7 +252,7 @@ const About = () => {
           <motion.img
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.2 }}
             variants={{
               hidden: { opacity: 0, x: -120 },
@@ -260,14 +260,14 @@ const About = () => {
             }}
             src={CitCollege}
             alt="Cit College"
-            className="mb-10 md:mb-0 shadow-lg shadow-white"
+            className="mb-10 shadow-lg shadow-white"
           />
           <div className="about-text">
             <div className="flex flex-col mb-6">
               <motion.h1
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1.2 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
@@ -282,7 +282,7 @@ const About = () => {
             <motion.h5
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.4 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },
@@ -295,7 +295,7 @@ const About = () => {
             <motion.p
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.6 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },
@@ -314,7 +314,7 @@ const About = () => {
             <motion.a
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.8 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },
@@ -341,7 +341,7 @@ const About = () => {
           <motion.img
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.2 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
@@ -356,7 +356,7 @@ const About = () => {
               <motion.h1
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1.2 }}
                 variants={{
                   hidden: { opacity: 0, x: -120 },
@@ -371,7 +371,7 @@ const About = () => {
             <motion.h5
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.4 }}
               variants={{
                 hidden: { opacity: 0, x: -120 },
@@ -384,7 +384,7 @@ const About = () => {
             <motion.p
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.6 }}
               variants={{
                 hidden: { opacity: 0, x: -120 },
@@ -404,7 +404,7 @@ const About = () => {
             <motion.a
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.8 }}
               variants={{
                 hidden: { opacity: 0, x: 50 },
@@ -426,13 +426,15 @@ const About = () => {
         </div>
       </div>
       {/* Staffs section */}
+
       <div className="bg-black mt-32 lg:mt-44 pb-10">
+        <div className="border-t border-red-300 mx-10 md:mx-32 pb-14"></div>
         <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
           <div className="mx-auto max-w-4xl">
             <motion.h2
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.5 }}
               variants={{
                 hidden: { opacity: 0, x: -120 },
@@ -440,18 +442,18 @@ const About = () => {
               }}
               className=" celestraHeroFont tracking-widest  text-3xl font-bold mb-6  text-white sm:text-4xl"
             >
-              Our heartfelt thanks go to
+              Our heartfelt thanks goes to
             </motion.h2>
             <motion.p
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 1.5 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="mt-4 text-lg  text-white celestraHeroFont tracking-widest"
+              className="mt-4 text-xl text-white font-poppins tracking-wide"
             >
               Get to know the faces behind the scenes! Our faculty members are
               the driving force behind this event, with a wealth of experience
@@ -464,7 +466,7 @@ const About = () => {
               <motion.li
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1.5 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
@@ -481,7 +483,9 @@ const About = () => {
                 <h3 className="mt-6 text-[18px] font-semibold leading-7 tracking-wider text-white">
                   {person.name}
                 </h3>
-                <p className="text-sm leading-6 text-white">{person.role}</p>
+                <p className="text-lg mt-2 leading-6 text-white">
+                  {person.role}
+                </p>
               </motion.li>
             ))}
           </ul>

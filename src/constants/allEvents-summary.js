@@ -18,7 +18,7 @@ import Pictionary from "../assets/event-images/pictionary.jpeg";
 import PaperPresentation from "../assets/event-images/paperpresentation.jpg";
 import Valorant from "../assets/event-images/valorant.jpg";
 import FreeFire from "../assets/event-images/freefire.jpg"; //!Changed Bgmi to free fire - change image
-import LaserTagImg from "../assets/event-images/lasertag.jpg"
+import LaserTagImg from "../assets/event-images/lasertag.jpg";
 
 // technical
 export const technicalEvents = [
@@ -63,7 +63,7 @@ export const technicalEvents = [
     title: "Web Masters",
     href: "/events/web-masters",
     description:
-      "Are you a creative web designer looking to showcase your skills and take on a new challenge? Then join us for Web Masters, the ultimate web design competition!",
+      "Do you have a passion for web design? The Web Designing Event is your chance to shine! Create a website using HTML and CSS based on a sample design and features",
     imageUrl: WebMasters,
     date: 18,
   },
@@ -142,7 +142,7 @@ export const eliteEvents = [
     title: "Paper Presentation",
     href: "/events/paper-presentation",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Action is the foundational key to success--Pablo Picasso. Elevate your ideas and let you ideas fly high along with your presentation.",
     imageUrl: PaperPresentation,
     date: 18,
   },
@@ -151,7 +151,7 @@ export const eliteEvents = [
     title: "Free Fire",
     href: "/events/free-fire",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Get ready for a fire-fueled frenzy as you enter the battlegrounds of Free Fire! Jump into the action-packed world of survival shooter games and battle it out with your squad to become the last team standing.",
     imageUrl: FreeFire,
     date: 17,
   },
@@ -161,7 +161,7 @@ export const eliteEvents = [
     title: "Valorant",
     href: "/events/valorant",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Step into the near-future world of Valorant and experience heart-pumping action and intense strategy with your team. Choose your unique agent with special abilities and compete in a tactical shooter game that will test your skills and leave you wanting more.",
     imageUrl: Valorant,
     date: 17,
   },
@@ -170,7 +170,7 @@ export const eliteEvents = [
     title: "Valorant",
     href: "/events/valorant",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Step into the near-future world of Valorant and experience heart-pumping action and intense strategy with your team. Choose your unique agent with special abilities and compete in a tactical shooter game that will test your skills and leave you wanting more.",
     imageUrl: Valorant,
     date: 18,
   },
@@ -179,7 +179,7 @@ export const eliteEvents = [
     title: "Laser Tag",
     href: "/events/laser-tag",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Gear up and get ready to experience the ultimate adrenaline rush with laser tag! Step onto the battlefield and navigate through an immersive arena armed with laser guns, ready to take down your opponents.",
     imageUrl: LaserTagImg,
     date: 17,
   },

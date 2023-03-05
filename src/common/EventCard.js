@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const EventCard = ({ event }) => {
+const EventCard = ({ event, noQuicklook }) => {
   return (
     <motion.article
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 1 }}
       variants={{
         hidden: { opacity: 0, x: 120 },
@@ -26,12 +26,14 @@ const EventCard = ({ event }) => {
         <p>{event.title}</p>
       </h3>
       <p className="text-white mb-4">{event.description}</p>
-      <Link
-        to={event.href}
-        className="bg-[#111111] celestraHeroFont  text-xl text-white text-center rounded-md p-4   hover:bg-red-500 hover:text-black tracking-widest transition-all duration-300 ease-in-out"
-      >
-        Quicklook
-      </Link>
+      {noQuicklook ? null : (
+        <Link
+          to={event.href}
+          className="bg-[#111111] celestraHeroFont  text-xl text-white text-center rounded-md p-4   hover:bg-red-500 hover:text-black tracking-widest transition-all duration-300 ease-in-out"
+        >
+          Quicklook
+        </Link>
+      )}
     </motion.article>
   );
 };

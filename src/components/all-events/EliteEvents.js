@@ -14,7 +14,7 @@ export default function EliteEvents() {
         <motion.h2
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once:true, amount: 0.5 }}
           transition={{ duration: 1.3 }}
           variants={{
             hidden: { opacity: 0, x: -120 },
@@ -28,7 +28,7 @@ export default function EliteEvents() {
         <motion.p
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once:true, amount: 0.5 }}
           transition={{ duration: 1.3 }}
           variants={{
             hidden: { opacity: 0, x: 120 },
@@ -44,7 +44,7 @@ export default function EliteEvents() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once:true, amount: 0.5 }}
           transition={{ duration: 1.5 }}
           variants={{
             hidden: { opacity: 0, x: -120 },

@@ -12,6 +12,7 @@ import arunKumarImg from "../../assets/team-images/board-members/arunKumar.jpg";
 
 // Dev Team
 import deepakImg from "../../assets/team-images/dev-team/deepak.jpg";
+import gunaImg from "../../assets/team-images/dev-team/guna.jpg";
 import { Helmet } from "react-helmet";
 
 const boardMembers = [
@@ -62,10 +63,10 @@ const webDevelopers = [
   },
   {
     name: "Guna",
-    role: "Frontend Developer",
-    imageUrl: GradientAvatar,
-    githubUrl: "#",
-    linkedinUrl: "#",
+    role: "Frontend Developer / UI Designer",
+    imageUrl: gunaImg,
+    githubUrl: "https://github.com/guna-pandi",
+    linkedinUrl: "https://www.linkedin.com/in/guna-p-aa3357245",
   },
   {
     name: "Khabilan",
@@ -128,7 +129,7 @@ export default function OurTeam() {
           <motion.h2
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.5 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
@@ -141,7 +142,7 @@ export default function OurTeam() {
           <motion.p
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.5 }}
             variants={{
               hidden: { opacity: 0, x: -120 },
@@ -159,7 +160,7 @@ export default function OurTeam() {
           <motion.h2
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.5 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
@@ -175,7 +176,7 @@ export default function OurTeam() {
               <motion.li
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
@@ -243,7 +244,7 @@ export default function OurTeam() {
           <motion.h2
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.5 }}
             variants={{
               hidden: { opacity: 0, x: -120 },
@@ -259,7 +260,7 @@ export default function OurTeam() {
               <motion.li
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
@@ -311,7 +312,7 @@ export default function OurTeam() {
           <motion.h2
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 1.5 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
@@ -327,7 +328,7 @@ export default function OurTeam() {
               <motion.li
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 1 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
