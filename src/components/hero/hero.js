@@ -233,8 +233,7 @@ const Hero = () => {
             >
               2<span className="text-red-500">k</span>23
             </motion.h1>
-            <motion.a
-              href="/events"
+            <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -243,11 +242,15 @@ const Hero = () => {
                 hidden: { opacity: 0, y: +120 },
                 visible: { opacity: 1, y: 0 },
               }}
-              className="flex items-center justify-center w-[90%] lg:w-[60%] h-14 rounded-xl text-white text-xl tracking-widest bg-gradient-to-b from-[#fb3e38] via-[#fffdfd00] to-[#fb3e38]"
             >
-              <span className="text-red-500 text-3xl">J</span>oin the Exc
-              <span className="text-3xl text-red-500">it</span>ement
-            </motion.a>
+              <Link
+                to={"/events"}
+                className="w-[90%] lg:w-[60%] py-6 px-6 rounded-xl text-white text-xl tracking-widest bg-gradient-to-b from-[#fb3e38] via-[#fffdfd00] to-[#fb3e38]"
+              >
+                <span className="text-red-500 text-3xl">J</span>oin the Exc
+                <span className="text-3xl text-red-500">it</span>ement
+              </Link>
+            </motion.div>
           </div>
           {/* Celestra Logo */}
           <motion.img

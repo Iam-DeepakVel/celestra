@@ -6,8 +6,13 @@ import { MdWifiCalling3 } from "react-icons/md";
 import { TfiControlBackward } from "react-icons/tfi";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { BiErrorAlt } from "react-icons/bi";
 
-export default function SingleEventPage({ eventDetails, isPrize }) {
+export default function SingleEventPage({
+  eventDetails,
+  noPrize,
+  spotRegistration,
+}) {
   return (
     <div className="bg-black min-h-screen py-24 sm:py-20">
       {/* Back to events button */}
@@ -186,7 +191,7 @@ export default function SingleEventPage({ eventDetails, isPrize }) {
               </div>
             </div>
             {/* Price Section */}
-            {isPrize ? null : (
+            {noPrize ? null : (
               <div>
                 <motion.h2
                   initial="hidden"
@@ -287,26 +292,45 @@ export default function SingleEventPage({ eventDetails, isPrize }) {
               </div>
             </div>
 
-            {/* Register */}
             <div className="mt-10 flex">
-              <motion.a
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
-                transition={{ duration: 1.25 }}
-                variants={{
-                  hidden: { opacity: 0, x: 120 },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                href="/"
-                class="relative px-5 text-center py-2   font-medium celestraHeroFont tracking-widest text-white group"
-              >
-                <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-red-500 group-hover:bg-red-700 group-hover:skew-x-12"></span>
-                <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-red-700 group-hover:bg-red-500 group-hover:-skew-x-12"></span>
-                <span class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-red-600 -rotate-12"></span>
-                <span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-red-400 -rotate-12"></span>
-                <span class="relative">Register Now</span>
-              </motion.a>
+              {spotRegistration ? (
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.25 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 120 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  class="flex items-center gap-4 font-medium celestraHeroFont tracking-widest text-white group"
+                >
+                  <BiErrorAlt size={30} color="#dd524b" />
+                  <p className="text-2xl">
+                    Spot Registration Only
+                    <span className="text-red-500 ml-2 text-2xl">!!</span>{" "}
+                  </p>
+                </motion.div>
+              ) : (
+                <motion.a
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.25 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 120 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  href="/"
+                  class="relative px-5 text-center py-2  font-medium celestraHeroFont tracking-widest text-white group"
+                >
+                  <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-red-500 group-hover:bg-red-700 group-hover:skew-x-12"></span>
+                  <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-red-700 group-hover:bg-red-500 group-hover:-skew-x-12"></span>
+                  <span class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-red-600 -rotate-12"></span>
+                  <span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-red-400 -rotate-12"></span>
+                  <span class="relative">Register Now</span>
+                </motion.a>
+              )}
             </div>
           </div>
         </div>

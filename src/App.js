@@ -31,7 +31,8 @@ import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import celestraLogo from "./assets/logo.png";
-import { FadeLoader } from "react-spinners";
+import { PropagateLoader } from "react-spinners";
+import LaserTag from "./event-detail-page/elite-events/LaserTag";
 
 function App() {
   // Celestra Splash Loader
@@ -46,13 +47,13 @@ function App() {
   return (
     <>
       {loading ? (
-        <div className="flex flex-col  items-center justify-center  bg-gradient-to-b from-[#000000] via-[#c0492bcb] to-[#000000e4]  text-center h-screen bg-black w-full ">
+        <div className="flex flex-col  items-center justify-center  text-center h-screen bg-black w-full ">
           <img
             src={celestraLogo}
             alt="celestra-logo"
             className="w-[65%] lg:w-[25%] mb-6 animate-pulse"
           />
-          <FadeLoader size={100} color="black" loading={loading} />
+          <PropagateLoader size={20} color="#d64d25" loading={loading} />
         </div>
       ) : (
         <>
@@ -86,12 +87,13 @@ function App() {
               <Route path="/events/pictionary" element={<Pictionary />} />
               <Route path="/events/movie-quiz" element={<MovieQuiz />} />
 
-              {/* Flagship Events */}
+              {/* Elite Events */}
               <Route
                 path="/events/paper-presentation"
                 element={<PaperPresentation />}
               />
               <Route path="/events/valorant" element={<Valorant />} />
+              <Route path="/events/laser-tag" element={<LaserTag />} />
 
               {/*Online & Offline Games */}
               <Route path="/games/online" element={<OnlineGames />} />

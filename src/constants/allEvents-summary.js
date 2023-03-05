@@ -1,5 +1,5 @@
 // technical
-import CelestraCoding from "../assets/event-images/celestra-coding.jpg"
+import CelestraCoding from "../assets/event-images/celestra-coding.jpg";
 import BugBusters from "../assets/event-images/bug-busters.jpg";
 import WebMasters from "../assets/event-images/web-masters.jpg";
 import Technicalquiz from "../assets/event-images/technical-quiz.jpg";
@@ -18,6 +18,7 @@ import Pictionary from "../assets/event-images/pictionary.jpeg";
 import PaperPresentation from "../assets/event-images/paperpresentation.jpg";
 import Valorant from "../assets/event-images/valorant.jpg";
 import FreeFire from "../assets/event-images/freefire.jpg"; //!Changed Bgmi to free fire - change image
+import LaserTagImg from "../assets/event-images/lasertag.jpg"
 
 // technical
 export const technicalEvents = [
@@ -173,5 +174,13 @@ export const eliteEvents = [
     imageUrl: Valorant,
     date: 18,
   },
+  {
+    id: 5,
+    title: "Laser Tag",
+    href: "/events/laser-tag",
+    description:
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+    imageUrl: LaserTagImg,
+    date: 17,
+  },
 ];
-

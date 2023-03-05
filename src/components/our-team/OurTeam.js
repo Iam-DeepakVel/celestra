@@ -74,19 +74,12 @@ const webDevelopers = [
     githubUrl: "#",
     linkedinUrl: "#",
   },
-  {
-    name: "Bharath",
-    role: "Backend Developer",
-    imageUrl: GradientAvatar,
-    githubUrl: "#",
-    linkedinUrl: "#",
-  },
 ];
 
 const designTeam = [
   {
-    name: "Leonard Krasner",
-    role: "Senior Designer",
+    name: "Thurkaraman R",
+    role: "Design Head",
     imageUrl: GradientAvatar,
     twitterUrl: "#",
     linkedinUrl: "#",
