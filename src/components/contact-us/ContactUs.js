@@ -170,7 +170,7 @@ export default function ContactUs() {
                     className="hover:text-white"
                     href="tel:+91 70105 67021 , +91 79040 97972"
                   >
-                    +91 70105 67021 , +91 79040 97972
+                    +91 70105 67021 , +91 79040 97972 
                   </a>
                 </dd>
               </motion.div>

@@ -75,6 +75,13 @@ const webDevelopers = [
     githubUrl: "#",
     linkedinUrl: "#",
   },
+  {
+    name: "Bharath S",
+    role: "Backend Developer",
+    imageUrl: GradientAvatar,
+    githubUrl: "#",
+    linkedinUrl: "#",
+  },
 ];
 
 const designTeam = [
@@ -86,29 +93,36 @@ const designTeam = [
     linkedinUrl: "#",
   },
   {
-    name: "Leonard Krasner",
-    role: "Senior Designer",
+    name: "Arun Kumar S",
+    role: "Designer",
     imageUrl: GradientAvatar,
     twitterUrl: "#",
     linkedinUrl: "#",
   },
   {
-    name: "Leonard Krasner",
-    role: "Senior Designer",
+    name: "Sajeev",
+    role: "Designer",
     imageUrl: GradientAvatar,
     twitterUrl: "#",
     linkedinUrl: "#",
   },
   {
-    name: "Leonard Krasner",
-    role: "Senior Designer",
+    name: "Kavikumar",
+    role: "Designer",
     imageUrl: GradientAvatar,
     twitterUrl: "#",
     linkedinUrl: "#",
   },
   {
-    name: "Leonard Krasner",
-    role: "Senior Designer",
+    name: "Harsha Vardhan",
+    role: "Designer",
+    imageUrl: GradientAvatar,
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Aswin S",
+    role: "Designer",
     imageUrl: GradientAvatar,
     twitterUrl: "#",
     linkedinUrl: "#",

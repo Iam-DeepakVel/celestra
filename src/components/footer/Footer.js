@@ -108,7 +108,11 @@ const Footer = () => {
           <p> by IT Devs</p>
         </div>
         <div className="flex items-center gap-4">
-          <a target="_blank" rel="noreferrer" href="/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://instagram.com/_celestra_2k23?igshid=YmMyMTA2M2Y="
+          >
             <GrInstagram size={18} className="social-media" />
           </a>
           <a target="_blank" rel="noreferrer" href="tel:+917010567021">
