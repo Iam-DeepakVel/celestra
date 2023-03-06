@@ -4,7 +4,7 @@ import Brainpower from "../../assets/event-images/brainpower.jpg";
 const brainPower = {
   image: Brainpower,
   description:
-    "Guessing the picture and answer to the questions like what the picture is about. Participants are grouped into 3 members per panel. 15 images for a round(5 images for each participants). If one doesn't answered then the question will be passed to another and to another based on sequence. Participant with higher points will move to next round.",
+    "Brain Power is an unstoppable force of intellect and ingenuity. With an incredible capacity for learning and problem-solving, Brain Power is always one step ahead of the game.Whether it's cracking a complex code or deciphering a difficult puzzle, Brain Power approaches every challenge with confidence and precision..",
   type: "Non-Technical Event",
   eventName: "Brain Power",
   dateTime: "March 18, 12:00 PM to 1:00 PM",
@@ -13,8 +13,9 @@ const brainPower = {
     "Not updated",
     "Not updated",
   ],
-  firstprize: 1000,
-  secondprize: 500,
+  firstprize: 300,
+  secondprize: 200,
+  thirdprize: 0,
   contact: [
     {
       name: "name",

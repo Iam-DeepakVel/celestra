@@ -10,8 +10,9 @@ const treasureHunt = {
   dateTime: "Mar 17, 2:00 PM to 4:00 PM",
   venue: "IT-442",
   rules: ["Rule 1", "Rule 2", "Rule 3", "Rule 4"],
-  firstprize: 1000,
-  secondprize: 500,
+  firstprize: 300,
+  secondprize: 200,
+  thirdprize: 0,
   contact: [
     {
       name: "name1",

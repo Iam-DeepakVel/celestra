@@ -18,7 +18,8 @@ const crossFire = {
     "No discussion among another team allowed during the game",
   ],
   firstprize: 300,
-  secondPrize: 100,
+  secondPrize: 200,
+  thirdprize: 0,
   contact: [
     {
       name: "Rahul",

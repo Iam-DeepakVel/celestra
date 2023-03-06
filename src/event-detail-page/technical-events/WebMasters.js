@@ -11,8 +11,9 @@ const webMasters = {
   dateTime: "Mar 18, 2:00 PM to 4:00 PM",
   venue: "IT-444",
   rules: ["Participants will be provided with a sample design and a list of required features. They will need to use their creativity to design a website that meets these requirements.", "The marking system for this event will be based on creativity. Judges will be looking for originality, unique design elements, and innovative use of color, graphics, and typography.","Participants will only be allowed to use HTML and CSS for their designs. They can optionally use JavaScript, but it will not be a requirement for the event.","Marks will be allotted based on three criteria - creativity, responsiveness, and optimal code. The creativity score will be based on the originality and uniqueness of the design. The responsiveness score will be based on how well the design works on both desktop and mobile devices. The optimal code score will be based on how well the code is organized, efficient, and follows best practices."],
-  firstprize: 750,
-  secondprize: 500,
+  firstprize: 900,
+  secondprize: 600,
+  thirdprize: 0,
   contact: [
     {
       name: "Deepak V",

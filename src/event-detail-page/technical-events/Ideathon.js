@@ -17,8 +17,9 @@ const ideathon = {
     "Time-bound, with a specific timeframe for teams to pitch their ideas. This could range from 10 to 20 minutes , depending on the complexity of the challenge.",
     "A panel of judges will rate your project based on originality, feasibility, impact, and scalability.",
   ],
-  firstprize: 1000,
-  secondprize: 500,
+  firstprize: 1200,
+  secondprize: 800,
+  thirdprize: 0,
   contact: [
     {
       name: "A G Harshavardhan",
@@ -40,7 +41,7 @@ const ideathon = {
 };
 
 const Ideathon = () => {
-  return <SingleEventPage eventDetails={ideathon} />;
+  return <SingleEventPage eventDetails={ideathon} thirdprize={false} />;
 };
 
 export default Ideathon;

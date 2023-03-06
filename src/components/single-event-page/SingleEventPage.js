@@ -245,6 +245,21 @@ export default function SingleEventPage({
                       </div>
                     </div>
                   )}
+
+                  {/* third */}
+                  {eventDetails.thirdprize !== 0 && (
+                    <div className="flex mt-4">
+                      <RiMedal2Fill size={50} color="silver" />
+                      <div className="flex flex-col items-center gap-1 ">
+                        <h2 className="text-lg  celestraHeroFont tracking-widest text-white font-semibold">
+                          Third Place
+                        </h2>
+                        <h2 className="text-lg  font-poppins tracking-widest text-white font-semibold">
+                          Rs.{eventDetails.thirdprize}/-
+                        </h2>
+                      </div>
+                    </div>
+                  )}
                 </motion.div>
               </div>
             )}

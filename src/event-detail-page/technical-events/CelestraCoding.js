@@ -18,6 +18,7 @@ const celestraCoding = {
   ],
   firstprize: 1500,
   secondprize: 1000,
+  thirdprize: 0,
   contact: [
     {
       name: "Khabilan S",

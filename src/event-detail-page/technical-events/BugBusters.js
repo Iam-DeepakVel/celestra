@@ -16,8 +16,9 @@ const bugBusters = {
     "Use of automated debuggers and compilers will be prohibited",
     "Strictly no Internet",
   ],
-  firstprize: 1000,
+  firstprize: 750,
   secondprize: 500,
+  thirdprize: 0,
   contact: [
     {
       name: "Arvind",

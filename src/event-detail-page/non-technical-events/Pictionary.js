@@ -13,8 +13,9 @@ const pictionary = {
     "30 seconds to answer a question",
     "Question will not be repeated more than two times",
   ],
-  firstprize: 1000,
-  secondprize: 500,
+  firstprize: 300,
+  secondprize: 200,
+  thirdprize: 0,
   contact: [
     {
       name: "Thurkaraman R",

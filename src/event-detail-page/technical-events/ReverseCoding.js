@@ -16,8 +16,9 @@ const reverseCoding = {
     "No Update",
     "No Update",
   ],
-  firstprize: 1500,
-  secondprize: 1000,
+  firstprize: 900,
+  secondprize: 600,
+  thirdprize: 0,
   contact: [
     {
       name: "name",

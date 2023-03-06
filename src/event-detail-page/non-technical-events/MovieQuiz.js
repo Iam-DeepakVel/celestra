@@ -14,8 +14,9 @@ const movieQuiz = {
     "If connecting images are chosen, a set of images related to the movie will be projected on the screen. If acting is chosen, the team will have to act out the name of the movie.",
     "The winners will be determined by the team that correctly guesses the highest number of movies.",
   ],
-  firstprize: 1000,
-  secondprize: 750,
+  firstprize: 300,
+  secondprize: 200,
+  thirdprize: 0,
   contact: [
     {
       name: "Darun sanjay",

@@ -5,14 +5,15 @@ import SupersusImg from "../../assets/games-images/online/supersus.png";
 const supersus = {
   image: SupersusImg,
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, totam deleniti consequuntur esse error libero omnis voluptatibus saepe facere cumque reprehenderit sint nostrum vitae iure aspernatur, cupiditate fuga mollitia aliquid.",
+    "Super Sus is a force to be reckoned with. With her lightning-fast reflexes and razor-sharp instincts, she can take on any challenge that comes her way. Her strategic mind is always analyzing the situation, looking for the best course of action.",
   type: "Online Games",
   eventName: "Super SUS",
   dateTime: "March 18, 11:00 AM to 1:00 PM ",
   venue: "IT-442",
   rules: ["Solo participation.", "Players must join the given room code and compete against co-participants.","Players must join the given room code and compete against co-participants."],
-  firstprize: 1000,
-  secondprize: 500,
+  firstprize: 400,
+  secondprize: 200,
+  thirdprize: 100,
   contact: [
     {
       name: "Name1",

@@ -12,6 +12,7 @@ const laserTag = {
   rules: ["Team can have maximum of 3 members.", "Spot registration only."],
   firstprize: 0,
   secondprize: 0,
+  thirdprize: 0,
   contact: [
     {
       name: "Khabilan S",

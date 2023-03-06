@@ -150,7 +150,7 @@ export const nonTechnicalEvents = [
     title: "Snap Word",
     href: "/events/snapword",
     description:
-      "Get ready for a fun-filled pictionary event where you can put your guessing skills to the test! With simple rules and exciting gameplay, this event is perfect for participants of all skill levels. Join us for a chance to showcase your guessing talents and win big!",
+      "Snap Word is a language magician, able to conjure up words and phrases with lightning speed and unparalleled accuracy. With a snap of their fingers, Snap Word can turn a blank page into a masterpiece of prose, leaving their audience awestruck.",
     imageUrl: SnapWord,
     date: 18,
   },
@@ -159,7 +159,7 @@ export const nonTechnicalEvents = [
     title: "Brain Power",
     href: "/events/brainpower",
     description:
-      "Get ready for a fun-filled pictionary event where you can put your guessing skills to the test! With simple rules and exciting gameplay, this event is perfect for participants of all skill levels. Join us for a chance to showcase your guessing talents and win big!",
+      "Brain Power is an unstoppable force of intellect and ingenuity. With an incredible capacity for learning and problem-solving, Brain Power is always one step ahead of the game.",
     imageUrl: BrainPower,
     date: 18,
   },

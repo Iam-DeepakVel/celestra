@@ -23,6 +23,7 @@ const paperPresentation = {
   ],
   firstprize: 1000,
   secondprize: 500,
+  thirdprize: 0,
   contact: [
     {
       name: "Khabilan S",
