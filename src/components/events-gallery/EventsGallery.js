@@ -235,7 +235,7 @@ const Events = () => {
                       ? "opacity-100"
                       : "opacity-0"
                   }`}
-                >
+                > 
                   {event.hoverName}
                   <p className="text-md mb-4">{event.description}</p>
                   {/* Explore Button */}

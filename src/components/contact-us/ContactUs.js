@@ -7,8 +7,42 @@ import { Helmet } from "react-helmet";
 import { TfiControlBackward } from "react-icons/tfi";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactUs() {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  // Scroll to success message
+  const scroll = () => {
+    const section = document.querySelector("#success-message");
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAIL_KEY,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        "7LyaUOyXMwPeUP7aJ"
+      )
+      .then(
+        (result) => {
+          setLoading(false);
+          setSuccess(true);
+          scroll();
+        },
+        (error) => {
+          setSuccess(true);
+        }
+      );
+  };
+
   return (
     <div className="relative isolate min-h-screen bg-black">
       <Helmet>
@@ -142,6 +176,8 @@ export default function ContactUs() {
                 <dd>
                   Coimbatore Institute of Technology,
                   <br />
+                  Avinashi road,
+                  <br />
                   Civil Aerodrome post,
                   <br />
                   Coimbatore - 641014
@@ -166,11 +202,8 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  <a
-                    className="hover:text-white"
-                    href="tel:+91 70105 67021 , +91 79040 97972"
-                  >
-                    +91 70105 67021 , +91 79040 97972 
+                  <a className="hover:text-white" href="tel:+91 70105 67021">
+                    +91 70105 67021 , +91 79040 97972
                   </a>
                 </dd>
               </motion.div>
@@ -195,7 +228,7 @@ export default function ContactUs() {
                 <dd>
                   <a
                     className="hover:text-white"
-                    href="mailto:celestra2k23@gmail.com"
+                    href="mailto:itcelestra2k23@gmail.com"
                   >
                     itcelestra2k23@gmail.com
                   </a>
@@ -204,11 +237,46 @@ export default function ContactUs() {
             </dl>
           </div>
         </div>
+
         <form
-          action="#"
-          method="POST"
+          ref={form}
+          onSubmit={sendEmail}
           className="px-6 pb-24 pt-20 sm:pb-32 lg:py-48 font-poppins lg:px-8 "
         >
+          {/* Success Message */}
+          {success && (
+            <motion.div
+              id="success-message"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.6 }}
+              variants={{
+                hidden: { opacity: 0, x: +120 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              className="bg-green-300 w-full mb-10 max-w-xl mx-auto lg:items-center lg:top-10 lg:right-10 lg:w-[40%] lg:absolute gap-2 px-6 flex items-start  py-4 rounded-lg"
+            >
+              <svg
+                class="flex-shrink-0 inline w-12 h-12"
+                fill="none"
+                stroke="#285231"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+              <p className="text-xl font-poppins">
+                You're amazing! Your information has been submitted
+                successfully!!
+              </p>
+            </motion.div>
+          )}
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <motion.div
               initial="hidden"
@@ -231,8 +299,9 @@ export default function ContactUs() {
                 <div className="mt-2.5">
                   <input
                     type="text"
-                    name="first-name"
+                    name="f_n"
                     id="first-name"
+                    required
                     autoComplete="given-name"
                     className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"
                   />
@@ -248,9 +317,26 @@ export default function ContactUs() {
                 <div className="mt-2.5">
                   <input
                     type="text"
-                    name="last-name"
+                    name="l_n"
                     id="last-name"
-                    autoComplete="family-name"
+                    className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label
+                  htmlFor="email"
+                  className="block text-md sm:text-lg tracking-wide  font-semibold leading-6 text-white"
+                >
+                  College Name
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="text"
+                    required
+                    name="college-name"
+                    id="college"
+                    autoComplete=""
                     className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -266,6 +352,7 @@ export default function ContactUs() {
                   <input
                     type="email"
                     name="email"
+                    required
                     id="email"
                     autoComplete="email"
                     className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"
@@ -285,6 +372,7 @@ export default function ContactUs() {
                     name="phone-number"
                     id="phone-number"
                     autoComplete="tel"
+                    required
                     className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -300,6 +388,7 @@ export default function ContactUs() {
                   <textarea
                     name="message"
                     id="message"
+                    required
                     rows={4}
                     className="block w-full rounded-md border-0 bg-white/5 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"
                     defaultValue={""}
@@ -328,7 +417,7 @@ export default function ContactUs() {
                 type="submit"
                 className="rounded-md bg-red-500 celestraHeroFont tracking-widest px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500"
               >
-                Send Message
+                {`${loading ? "Sending..." : "Send Message"}`}
               </button>
             </motion.div>
           </div>

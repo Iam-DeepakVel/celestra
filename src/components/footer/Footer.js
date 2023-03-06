@@ -38,30 +38,30 @@ const Footer = () => {
           </h3>
           <ul className="flex flex-col items-center text-2xl md:text-xl font-poppins tracking-wide ">
             <li className="footer-items  ">
-              <a className="footer-links" href="/about-us">
+              <Link to={"/about-us"} className="footer-links">
                 <span>A</span>bout <span>U</span>s
-              </a>
+              </Link>
             </li>
             <li className="footer-items ">
-              <a className="footer-links" href="/events">
+              <Link to={"/events"} className="footer-links">
                 <span>E</span>vents
-              </a>
+              </Link>
             </li>
             <li className="footer-items ">
-              <a className="footer-links" href="/games/online">
+              <Link to={"/games/online"} className="footer-links">
                 <span>G</span>ames
-              </a>
+              </Link>
             </li>
             <li className="footer-items  ">
-              <a className="footer-links" href="/chronoline">
+              <Link to={"/chronoline"} className="footer-links">
                 <span>C</span>hronoline
-              </a>
+              </Link>
             </li>
             <li className="footer-items  ">
-              <a className="footer-links" href="/our-team">
+              <Link to={"/our-team"} className="footer-links">
                 <span>O</span>ur
                 <span className=" ml-2">T</span>eam
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -7,7 +7,7 @@ const valorant = {
     "Step into the near-future world of Valorant and experience heart-pumping action and intense strategy with your team. Choose your unique agent with special abilities and compete in a tactical shooter game that will test your skills and leave you wanting more",
   type: "Elite Event",
   eventName: "Valorant",
-  dateTime: "March 17, 9:00AM",
+  dateTime: "Mar 17,18, 6PM-9PM",
   venue: "IT-201",
   rules: [
     "A team must contain minimum of 5 members.",
@@ -19,7 +19,7 @@ const valorant = {
     "It is forbidden to cheat, modify the game files, exploit bugs, and/or use any third-party application which would give an unfair advantage against other users.",
     "All cheats are completely forbidden to use under any circumstance while playing the tournament Using any cheat will result in bans and disqualifications. This includes, but are not limited to:ESP,Radar hacks,Wallhacks,Speed hacks,Aim hacks,Hitbox manipulation,Teleportation(any kind of teleportation, which is not possible in the game).",
     "The usage of a bug/bugs to gain an advantage versus your opponents.",
-    "If any 1 of the teammate does have any of the rule being voilated then the entire team will be banned.",
+    "If any 1 of the teammate does have any of the rule being violated then the entire team will be banned.",
   ],
   firstprize: 500,
   secondprize: 300,
