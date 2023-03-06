@@ -33,15 +33,13 @@ import { useEffect, useState } from "react";
 import celestraLogo from "./assets/logo.png";
 import { PropagateLoader } from "react-spinners";
 import LaserTag from "./event-detail-page/elite-events/LaserTag";
-import SnapWord from './event-detail-page/non-technical-events/SnapWord';
-import BrainPower from './event-detail-page/non-technical-events/BrainPower';
-import ReverseCoding from './event-detail-page/technical-events/ReverseCoding';
+import SnapWord from "./event-detail-page/non-technical-events/SnapWord";
+import BrainPower from "./event-detail-page/non-technical-events/BrainPower";
+import ReverseCoding from "./event-detail-page/technical-events/ReverseCoding";
 import StumbleGuys from "./game-detail-page/online-games/StumbleGuys";
-import BombSquad from './game-detail-page/online-games/BombSquad';
+import BombSquad from "./game-detail-page/online-games/BombSquad";
 import SuperSus from "./game-detail-page/online-games/SuperSus";
-
-
-
+import FreeFire from "./event-detail-page/elite-events/FreeFire";
 
 function App() {
   // Celestra Splash Loader
@@ -88,7 +86,10 @@ function App() {
               <Route path="/events/ideathon" element={<Ideathon />} />
               <Route path="/events/workshop" element={<Workshop />} />
               <Route path="/events/seminar" element={<Seminar />} />
-              <Route path="/events/reverse-coding" element={<ReverseCoding />} />
+              <Route
+                path="/events/reverse-coding"
+                element={<ReverseCoding />}
+              />
 
               {/* Non-Technical Events */}
               <Route path="/events/treasure-hunt" element={<TreasureHunt />} />
@@ -99,7 +100,6 @@ function App() {
               <Route path="/events/snap-word" element={<SnapWord />} />
               <Route path="/events/brain-power" element={<BrainPower />} />
 
-
               {/* Elite Events */}
               <Route
                 path="/events/paper-presentation"
@@ -107,14 +107,17 @@ function App() {
               />
               <Route path="/events/valorant" element={<Valorant />} />
               <Route path="/events/laser-tag" element={<LaserTag />} />
+              <Route path="/events/free-fire" element={<FreeFire />} />
 
               {/*Online & Offline Games */}
               <Route path="/games/online" element={<OnlineGames />} />
               <Route path="/games/offline" element={<OfflineGames />} />
-              <Route path="/games/online/stumble-guys" element={<StumbleGuys />} />
+              <Route
+                path="/games/online/stumble-guys"
+                element={<StumbleGuys />}
+              />
               <Route path="/games/online/bomb-squad" element={<BombSquad />} />
               <Route path="/games/online/super-sus" element={<SuperSus />} />
-
             </Routes>
           </AnimatePresence>
         </>

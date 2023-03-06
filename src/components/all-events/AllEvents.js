@@ -23,12 +23,12 @@ export default function AllEvents() {
         <title>CELESTRA | Events</title>
       </Helmet>
       <nav className="flex items-center justify-between pb-10 md:px-4">
-        <a href="/">
+        <Link to={"/"}>
           <motion.img
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1.3 }}
+            transition={{ duration: 0.8 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
               visible: { opacity: 1, x: 0 },
@@ -37,13 +37,13 @@ export default function AllEvents() {
             alt="celestra-logo"
             className="lg:absolute lg:left-4 lg:top-6 w-44 md:w-52 rounded-full"
           />
-        </a>
+        </Link>
         {/* Menu */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1.3 }}
+          transition={{ duration: 0.8 }}
           variants={{
             hidden: { opacity: 0, x: -120 },
             visible: { opacity: 1, x: 0 },
@@ -136,7 +136,7 @@ export default function AllEvents() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1.3 }}
+          transition={{ duration: 0.7 }}
           variants={{
             hidden: { opacity: 0, x: 120 },
             visible: { opacity: 1, x: 0 },

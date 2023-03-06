@@ -17,7 +17,7 @@ export default function OfflineGames() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1.3 }}
+          transition={{ duration: 0.6 }}
           variants={{
             hidden: { opacity: 0, x: 120 },
             visible: { opacity: 1, x: 0 },
@@ -31,7 +31,7 @@ export default function OfflineGames() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1.3 }}
+          transition={{ duration: 0.6 }}
           variants={{
             hidden: { opacity: 0, x: -120 },
             visible: { opacity: 1, x: 0 },
@@ -46,7 +46,7 @@ export default function OfflineGames() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1.25 }}
+        transition={{ duration: 0.7 }}
         variants={{
           hidden: { opacity: 0, x: 120 },
           visible: { opacity: 1, x: 0 },
@@ -54,7 +54,9 @@ export default function OfflineGames() {
         class="flex items-center justify-center mt-6 gap-4 font-medium celestraHeroFont tracking-widest text-red-600"
       >
         <BiErrorAlt size={30} color="red" />
-        <p className="text-3xl tracking-widest text-center">Spot Registration Only!!</p>
+        <p className="text-3xl tracking-widest text-center">
+          Spot Registration Only!!
+        </p>
       </motion.div>
       {/* Games Card Container */}
       <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr px-8 grid-cols-1 gap-12  sm:mt-20 lg:mx-auto lg:max-w-[90%] lg:grid-cols-3">

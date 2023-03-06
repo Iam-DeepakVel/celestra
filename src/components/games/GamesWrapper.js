@@ -18,7 +18,7 @@ export default function GamesWrapper({ children, isOnline }) {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1.3 }}
+            transition={{ duration: 0.7 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
               visible: { opacity: 1, x: 0 },
@@ -34,7 +34,7 @@ export default function GamesWrapper({ children, isOnline }) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1.3 }}
+          transition={{ duration: 0.7 }}
           variants={{
             hidden: { opacity: 0, x: -120 },
             visible: { opacity: 1, x: 0 },
@@ -118,7 +118,7 @@ export default function GamesWrapper({ children, isOnline }) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1.3 }}
+          transition={{ duration: 0.6 }}
           variants={{
             hidden: { opacity: 0, x: 80 },
             visible: { opacity: 1, x: 0 },
