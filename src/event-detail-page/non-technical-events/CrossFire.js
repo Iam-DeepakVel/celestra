@@ -7,7 +7,7 @@ const crossFire = {
     "Welcome to CrossFire, the ultimate battle of wits and knowledge! Join us for an electrifying three-round event that will put your team's brainpower to the test.",
   type: "Non Technical Event",
   eventName: "Cross fire",
-  dateTime: "Mar 17, 3:00 PM to 4:00 PM",
+  dateTime: "Mar 17, 3:00PM - 4:00PM",
   venue: "IT-207",
   rules: [
     "In the first round, teams will have just 10 seconds to answer tricky questions, with the pressure mounting as the timer ticks down.",
@@ -18,20 +18,20 @@ const crossFire = {
     "No discussion among another team allowed during the game",
   ],
   firstprize: 300,
-  secondPrize: 200,
+  secondprize: 200,
   thirdprize: 0,
   contact: [
-    {
-      name: "Rahul",
-      phoneNo: "9080714151",
-    },
     {
       name: "Madhu siddharth",
       phoneNo: "9150223416",
     },
     {
-      name: "Barath",
-      phoneNo: "7299067698",
+      name: "Rahul",
+      phoneNo: "9080714151",
+    },
+    {
+      name: "Karthikeyan",
+      phoneNo: "8838329008",
     },
   ],
 };

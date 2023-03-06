@@ -88,7 +88,7 @@ function App() {
               <Route path="/events/ideathon" element={<Ideathon />} />
               <Route path="/events/workshop" element={<Workshop />} />
               <Route path="/events/seminar" element={<Seminar />} />
-              <Route path="/events/reversecoding" element={<ReverseCoding />} />
+              <Route path="/events/reverse-coding" element={<ReverseCoding />} />
 
               {/* Non-Technical Events */}
               <Route path="/events/treasure-hunt" element={<TreasureHunt />} />
@@ -96,8 +96,8 @@ function App() {
               <Route path="/events/cross-fire" element={<CrossFire />} />
               <Route path="/events/pictionary" element={<Pictionary />} />
               <Route path="/events/movie-quiz" element={<MovieQuiz />} />
-              <Route path="/events/snapword" element={<SnapWord />} />
-              <Route path="/events/brainpower" element={<BrainPower />} />
+              <Route path="/events/snap-word" element={<SnapWord />} />
+              <Route path="/events/brain-power" element={<BrainPower />} />
 
 
               {/* Elite Events */}
@@ -111,9 +111,9 @@ function App() {
               {/*Online & Offline Games */}
               <Route path="/games/online" element={<OnlineGames />} />
               <Route path="/games/offline" element={<OfflineGames />} />
-              <Route path="/games/online/stumbleguys" element={<StumbleGuys />} />
-              <Route path="/games/online/bombsquad" element={<BombSquad />} />
-              <Route path="/games/online/supersus" element={<SuperSus />} />
+              <Route path="/games/online/stumble-guys" element={<StumbleGuys />} />
+              <Route path="/games/online/bomb-squad" element={<BombSquad />} />
+              <Route path="/games/online/super-sus" element={<SuperSus />} />
 
             </Routes>
           </AnimatePresence>

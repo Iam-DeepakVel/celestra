@@ -81,8 +81,8 @@ export const technicalEvents = [
   },
   {
     id: 7,
-    title: "Reverse Codoing",
-    href: "/events/reversecoding",
+    title: "Reverse Coding",
+    href: "/events/reverse-coding",
     description:
       "Are you a passionate coder looking for an opportunity to showcase your skills? If yes, then join us for our upcoming Competitive Coding Challenge!",
     imageUrl: Reversecoding,
@@ -148,7 +148,7 @@ export const nonTechnicalEvents = [
   {
     id: 6,
     title: "Snap Word",
-    href: "/events/snapword",
+    href: "/events/snap-word",
     description:
       "Snap Word is a language magician, able to conjure up words and phrases with lightning speed and unparalleled accuracy. With a snap of their fingers, Snap Word can turn a blank page into a masterpiece of prose, leaving their audience awestruck.",
     imageUrl: SnapWord,
@@ -157,7 +157,7 @@ export const nonTechnicalEvents = [
   {
     id: 7,
     title: "Brain Power",
-    href: "/events/brainpower",
+    href: "/events/brain-power",
     description:
       "Brain Power is an unstoppable force of intellect and ingenuity. With an incredible capacity for learning and problem-solving, Brain Power is always one step ahead of the game.",
     imageUrl: BrainPower,

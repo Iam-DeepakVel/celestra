@@ -107,7 +107,7 @@ const eventsList = [
     path: "/events/pictionary",
   },
   {
-    id: 6,
+    id: 5,
     name: (
       <h2 className="text-2xl mb-2 tracking-widest text-center">
         {" "}
@@ -128,7 +128,7 @@ const eventsList = [
     path: "/events/workshop",
   },
   {
-    id: 7,
+    id: 6,
     name: (
       <h2 className="text-2xl mb-2 tracking-widest text-center">
         {" "}
@@ -149,7 +149,7 @@ const eventsList = [
     path: "/games/online",
   },
   {
-    id: 8,
+    id: 7,
     name: (
       <h2 className="text-2xl mb-2 tracking-widest text-center">
         {" "}
@@ -235,7 +235,7 @@ const Events = () => {
                       ? "opacity-100"
                       : "opacity-0"
                   }`}
-                > 
+                >
                   {event.hoverName}
                   <p className="text-md mb-4">{event.description}</p>
                   {/* Explore Button */}

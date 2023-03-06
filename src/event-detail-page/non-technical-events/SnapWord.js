@@ -7,7 +7,7 @@ const snapWord = {
     "Snap Word is a language magician, able to conjure up words and phrases with lightning speed and unparalleled accuracy. With a snap of their fingers, Snap Word can turn a blank page into a masterpiece of prose, leaving their audience awestruck.",
   type: "Non-Technical Event",
   eventName: "Snap Word",
-  dateTime: "March 18, 11:00 AM to 12:00 PM",
+  dateTime: "Mar 18, 11:00AM - 12:00PM",
   venue: "IT-206",
   rules: ["2 members per team","Mobile phone with internet connectivity required","Arguments will not be appreciated.", "Decision of event organizers will be final.","At each round,the participants will be eliminated until there is only one winner at the end "],
   firstprize: 300,

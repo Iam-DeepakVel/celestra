@@ -43,7 +43,7 @@ const Venue = () => {
                 {" "}
                 <span className="text-2xl text-red-500">E</span>vents{" "}
               </h2>
-              <p className="text-sm tracking-wider">Fifteen plus</p>
+              <p className="text-sm tracking-wider">Twenty plus</p>
             </div>
           </div>
           <div className="h-1 ml-2 w-[28%] sm:w-[17%] lg:w-[45%] bg-red-500 rounded-full"></div>

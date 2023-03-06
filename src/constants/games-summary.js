@@ -18,7 +18,7 @@ export const onlineGames = [
   {
     id: 1,
     title: "Stumble Guys",
-    href: "/games/online/stumbleguys",
+    href: "/games/online/stumble-guys",
     description:
       "Stumble Guys is a thrilling multiplayer game with quirky characters navigating challenging obstacle courses filled with traps and twists. With fast-paced gameplay and unpredictable challenges, it's a test of skill and agility against players from around the world.",
     imageUrl: StumbleGuys,
@@ -26,7 +26,7 @@ export const onlineGames = [
   {
     id: 2,
     title: "Super SUS",
-    href: "/games/online/supersus",
+    href: "/games/online/super-sus",
     description:
       "Super Sus is a force to be reckoned with. With her lightning-fast reflexes and razor-sharp instincts, she can take on any challenge that comes her way. Her strategic mind is always analyzing the situation, looking for the best course of action.",
     imageUrl: Supersus,
@@ -34,7 +34,7 @@ export const onlineGames = [
   {
     id: 3,
     title: "Bomb squad",
-    href: "/games/online/bombsquad",
+    href: "/games/online/bomb-squad",
     description:
       "The Bomb Squad is a highly trained and specialized unit that deals with the most dangerous and explosive situations imaginable. These brave men and women put their lives on the line every day to protect the public from the threat of bombs and other explosive devices.",
     imageUrl: BombSquad,

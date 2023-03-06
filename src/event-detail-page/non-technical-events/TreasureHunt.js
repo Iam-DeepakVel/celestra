@@ -3,11 +3,10 @@ import TreasureHuntImg from "../../assets/event-images/treasure-hunt.jpg";
 
 const treasureHunt = {
   image: TreasureHuntImg,
-  description:
-    "Get ready for the ultimate Bug Bash! Form a team of three and put your collective debugging skills to the test in this exciting competition.Hunt down and fix the trickiest bugs to emerge as the top bug busters!",
+  description: "Description",
   type: "Non-Technical Event",
   eventName: "Treasure Hunt",
-  dateTime: "Mar 17, 2:00 PM to 4:00 PM",
+  dateTime: "Mar 17, 2:00PM - 4:00PM",
   venue: "IT-442",
   rules: ["Rule 1", "Rule 2", "Rule 3", "Rule 4"],
   firstprize: 300,
@@ -15,16 +14,16 @@ const treasureHunt = {
   thirdprize: 0,
   contact: [
     {
-      name: "name1",
-      phoneNo: "7871605729",
+      name: "Fateen",
+      phoneNo: "9626996595",
     },
     {
-      name: "name2",
-      phoneNo: "6374522560",
+      name: "Tilak Chandar",
+      phoneNo: "7010056926",
     },
     {
-      name: "name3",
-      phoneNo: "8825427528",
+      name: "Hari Haran",
+      phoneNo: "8056735359",
     },
   ],
 };

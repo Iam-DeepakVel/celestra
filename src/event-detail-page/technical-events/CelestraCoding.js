@@ -8,7 +8,7 @@ const celestraCoding = {
     "Are you a passionate coder looking for an opportunity to showcase your skills? If yes, then join us for our upcoming Competitive Coding Challenge!",
   type: "Technical",
   eventName: "Celestra Coding",
-  dateTime: "Mar 17, 9:00 AM to 10:00 AM",
+  dateTime: "Mar 17, 9:30AM - 11:30AM",
   venue: "IT-443",
   rules: [
     "Solo Participation",
@@ -25,8 +25,12 @@ const celestraCoding = {
       phoneNo: "6382889722",
     },
     {
-      name: "Nithin R",
-      phoneNo: "9524649561",
+      name: "Achari Magesh",
+      phoneNo: "9894630749",
+    },
+    {
+      name: "Narendaran",
+      phoneNo: "6369616115",
     },
   ],
 };

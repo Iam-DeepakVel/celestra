@@ -12,6 +12,9 @@ export default function SingleEventPage({
   eventDetails,
   noPrize,
   spotRegistration,
+  formsLink,
+  isDetails,
+  noVenue,
 }) {
   return (
     <div className="bg-black min-h-screen py-24 sm:py-20">
@@ -92,7 +95,7 @@ export default function SingleEventPage({
             </div>
           </motion.div>
           <div>
-            <div className="text-base leading-7lg:max-w-lg">
+            <div className="text-base leading-7 lg:max-w-lg">
               {/* Event Type */}
               <motion.p
                 initial="hidden"
@@ -148,7 +151,7 @@ export default function SingleEventPage({
                 >
                   <FaPlaceOfWorship size={20} color="white" />
                   <div className="text-white text-lg font-poppins font-bold">
-                    <span>Venue:</span>
+                    <span>{noVenue ? "Mode:" : "Venue:"}</span>
                     <span className="ml-2">{eventDetails.venue}</span>
                   </div>
                 </motion.div>
@@ -166,7 +169,7 @@ export default function SingleEventPage({
                   }}
                   className="text-xl sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold mt-6"
                 >
-                  Rules
+                  {isDetails ? "Details" : "Rules"}
                 </motion.h2>
                 {/* Rule Mapping */}
                 {eventDetails.rules.map((rule) => (
@@ -336,7 +339,13 @@ export default function SingleEventPage({
                     hidden: { opacity: 0, x: 120 },
                     visible: { opacity: 1, x: 0 },
                   }}
-                  href="/"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={`${
+                    formsLink
+                      ? formsLink
+                      : "https://docs.google.com/forms/d/e/1FAIpQLSdhesmV8BqH-S29TDZR9Lp980zBvDwfJpTpneya4EdC-L-Zqg/viewform?usp=sf_link"
+                  }`}
                   class="relative px-5 text-center py-2  font-medium celestraHeroFont tracking-widest text-white group"
                 >
                   <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-red-500 group-hover:bg-red-700 group-hover:skew-x-12"></span>

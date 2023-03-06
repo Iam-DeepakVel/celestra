@@ -8,7 +8,7 @@ const technicalQuiz = {
     "Get ready to test your knowledge and sharpen your skills in the ultimate battle of the brains! The technical quiz at our symposium is not your average quiz - it's a high-octane, adrenaline-fueled showdown that will put your expertise to the test.With questions ranging from cutting-edge technology to the latest industry trends, this quiz will challenge even the most seasoned professionals.",
   type: "Technical Event",
   eventName: "Technical Quiz",
-  dateTime: "Mar 17, 2:00 PM to 3:00 PM",
+  dateTime: "Mar 17, 2:00PM - 3:00PM",
   venue: "IT-443",
   rules: [
     "Minimum of 2 members per team",
@@ -22,8 +22,8 @@ const technicalQuiz = {
   thirdprize: 0,
   contact: [
     {
-      name: "Sajeev S.S",
-      phoneNo: "9363391961",
+      name: "Nithin",
+      phoneNo: "9524649561",
     },
     {
       name: "Harresh Raam P.S",

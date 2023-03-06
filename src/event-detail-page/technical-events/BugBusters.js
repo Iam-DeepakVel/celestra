@@ -8,7 +8,7 @@ const bugBusters = {
     "Get ready for the ultimate Bug Bash! Form a team of three and put your collective debugging skills to the test in this exciting competition.Hunt down and fix the trickiest bugs to emerge as the top bug busters!",
   type: "Technical Event",
   eventName: "Bug Busters",
-  dateTime: "March 18, 9:00 AM to 11:00 AM",
+  dateTime: "March 18, 9:00AM - 11:00AM",
   venue: "IT-443",
   rules: [
     "Programming languages given - Python, C, C++, Java",
@@ -25,12 +25,16 @@ const bugBusters = {
       phoneNo: "7871605729",
     },
     {
-      name: "Pratheep",
-      phoneNo: "6374522560",
+      name: "Nithin",
+      phoneNo: "9524649561",
     },
     {
-      name: "Tilak",
-      phoneNo: "8825427528",
+      name: "Fateen",
+      phoneNo: "9626996595",
+    },
+    {
+      name: "Barath",
+      phoneNo: "7299067698",
     },
   ],
 };

@@ -7,7 +7,7 @@ const paperPresentation = {
     "Action is the foundational key to success--Pablo Picasso. Elevate your ideas and let you ideas fly high along with your presentation.",
   type: "Elite Event",
   eventName: "Paper presentation",
-  dateTime: "March 18, 9:00 AM to 11:00 AM",
+  dateTime: "March 18, 9:00AM - 11:00AM",
   venue: "IT-206",
   rules: [
     "Include only one idea per slide",
@@ -34,14 +34,21 @@ const paperPresentation = {
       phoneNo: "7010056926",
     },
     {
-      name: "Arvind Srinivas K G",
-      phoneNo: "7871605729",
+      name: "Achari Magesh",
+      phoneNo: "9894630749",
     },
   ],
 };
 
 const PaperPresentation = () => {
-  return <SingleEventPage eventDetails={paperPresentation} />;
+  return (
+    <SingleEventPage
+      eventDetails={paperPresentation}
+      formsLink={
+        "https://docs.google.com/forms/d/e/1FAIpQLSf11z7ci1xR8gMC1begGNfhfG3NeH7VBbrFuUe2s0MugQsAsQ/viewform?usp=sf_link"
+      }
+    />
+  );
 };
 
 export default PaperPresentation;

@@ -3,10 +3,10 @@ import MoviequizImg from "../../assets/event-images/moviequiz.jpg";
 
 const movieQuiz = {
   image: MoviequizImg,
-  description: "Find the movie by what you choose",
+  description: "Get ready to put your movie knowledge to the test with our exciting movie quiz event! With thrilling rounds and intense competition, this event is sure to capture the hearts of movie buffs everywhere.",
   type: "Non Technical Event",
   eventName: "Movie Quiz",
-  dateTime: "March 18, 3:00 PM to 4:00 PM",
+  dateTime: "March 18, 3:00PM - 4:00PM",
   venue: "IT-444",
   rules: [
     "Each team will consist of three members.",
@@ -19,16 +19,16 @@ const movieQuiz = {
   thirdprize: 0,
   contact: [
     {
-      name: "Darun sanjay",
-      phoneNo: "6383290077",
+      name: "Vikram",
+      phoneNo: "9025219606",
     },
     {
       name: "Dhanush",
       phoneNo: "93618 88341",
     },
     {
-      name: "Harshavardhan ",
-      phoneNo: "88252 52599",
+      name: "Sakthivel",
+      phoneNo: "9789745855",
     },
   ],
 };

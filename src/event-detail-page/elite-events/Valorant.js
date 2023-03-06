@@ -7,8 +7,8 @@ const valorant = {
     "Step into the near-future world of Valorant and experience heart-pumping action and intense strategy with your team. Choose your unique agent with special abilities and compete in a tactical shooter game that will test your skills and leave you wanting more",
   type: "Elite Event",
   eventName: "Valorant",
-  dateTime: "Mar 17,18, 6PM-9PM",
-  venue: "IT-201",
+  dateTime: "Mar 16 & 17, 6PM-9PM",
+  venue: "Online",
   rules: [
     "Teams must consist of 5 players and 2 substitutes.",
     "Substitutes can only be included at the start of a new match and the moderator must be informed.",
@@ -27,22 +27,22 @@ const valorant = {
   thirdprize: 0,
   contact: [
     {
-      name: "name1",
-      phoneNo: "9080714151",
-    },
-    {
-      name: "name2",
-      phoneNo: "9150223416",
-    },
-    {
-      name: "name3",
-      phoneNo: "7299067698",
+      name: "Aswin",
+      phoneNo: "8754799651",
     },
   ],
 };
 
 const Valorant = () => {
-  return <SingleEventPage eventDetails={valorant} />;
+  return (
+    <SingleEventPage
+      eventDetails={valorant}
+      formsLink={
+        "https://docs.google.com/forms/d/e/1FAIpQLSfoRM_a4d7ILZJljMtjxexxikehMd5bRuRXyAILx-f3U-Jl0Q/viewform?usp=sf_link"
+      }
+      noVenue={true}
+    />
+  );
 };
 
 export default Valorant;

@@ -8,26 +8,33 @@ const stumbleguys = {
     "Stumble Guys is a thrilling multiplayer game with quirky characters navigating challenging obstacle courses filled with traps and twists. With fast-paced gameplay and unpredictable challenges, it's a test of skill and agility against players from around the world.",
   type: "Online Games",
   eventName: "Stumble Guys",
-  dateTime: "Need Upadate da kapila ",
+  dateTime: "March 17",
   venue: "IT-442",
-  rules: ["Solo Participation.", "They will play online  along with one host (just to spectate).","Participant with highest position wins."],
+  rules: [
+    "Solo Participation.",
+    "They will play online  along with one host (just to spectate).",
+    "Participant with highest position wins.",
+  ],
   firstprize: 400,
   secondprize: 200,
   thirdprize: 100,
   contact: [
     {
-      name: "Name1",
-      phoneNo: "9876654322",
-    },
-    {
-      name: "Name2",
-      phoneNo: "78987998790",
+      name: "Madhu siddharth",
+      phoneNo: "9150223416",
     },
   ],
 };
 
 const StumbleGuys = () => {
-  return <SingleEventPage eventDetails={stumbleguys} />;
+  return (
+    <SingleEventPage
+      eventDetails={stumbleguys}
+      formsLink={
+        "https://docs.google.com/forms/d/e/1FAIpQLScMi2kHuBcimflCwZPN5PBRzVxKMlC0wRfXTncu-v77_29oCA/viewform?usp=sf_link"
+      }
+    />
+  );
 };
 
 export default StumbleGuys;
