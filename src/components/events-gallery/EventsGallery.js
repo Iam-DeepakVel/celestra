@@ -61,7 +61,7 @@ const eventsList = [
     ),
     image: AnimeQuiz,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt maiores similique quis, dicta veniam rerum, velit quae magnam optio sunt. Quidem harum adipisci maiores ex quaerat dolorem, molestiae culpa.",
+      "Are you ready for the ultimate anime showdown? Round one of our Anime Quiz event will test your knowledge with 20 challenging questions. Write down your answers on the provided sheet and prove you're a true otaku!",
     path: "/events/anime-quiz",
   },
   {
@@ -82,7 +82,7 @@ const eventsList = [
     ),
     image: Valorant,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt maiores similique quis, dicta veniam rerum, velit quae magnam optio sunt. Quidem harum adipisci maiores ex quaerat dolorem, molestiae culpa.",
+      "Step into the near-future world of Valorant and experience heart-pumping action and intense strategy with your team. Choose your unique agent with special abilities and compete in a tactical shooter game that will test your skills and leave you wanting more.",
     path: "/events/valorant",
   },
   {
@@ -124,7 +124,7 @@ const eventsList = [
     ),
     image: Workshop,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt maiores similique quis, dicta veniam rerum, velit quae magnam optio sunt. Quidem harum adipisci maiores ex quaerat dolorem, molestiae culpa.",
+      "DevOps is the combination of cultural philosophies, practices, and tools that increases an organisation’s ability to deliver applications and services at high velocity.",
     path: "/events/workshop",
   },
   {

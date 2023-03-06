@@ -5,12 +5,12 @@ import WorkshopImg from "../../assets/event-images/workshop.jpg";
 const workshop = {
   image: WorkshopImg,
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, totam deleniti consequuntur esse error libero omnis voluptatibus saepe facere cumque reprehenderit sint nostrum vitae iure aspernatur, cupiditate fuga mollitia aliquid.",
+    "DevOps is the combination of cultural philosophies, practices, and tools that increases an organisation’s ability to deliver applications and services at high velocity.",
   type: "Technical Event",
   eventName: "Work Shop",
   dateTime: "March 18, 11:00 AM to 1:00 PM ",
   venue: "IT-442",
-  rules: ["Rule 1", "Rule 2"],
+  rules: ["DevOps is the combination of cultural philosophies, practices, and tools that increases an organisation’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organisations using traditional software development and infrastructure management processes.","DevOps is a system that helps organisations work more efficiently together to meet these demands.", "DevOps Offers a Definite Career Path that Promises Steady Growth.In this workshop you will be walked through with a hands on experience with our expert associates from Accenture."],
   firstprize: 1000,
   secondprize: 500,
   contact: [

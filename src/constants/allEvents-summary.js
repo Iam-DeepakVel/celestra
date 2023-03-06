@@ -6,6 +6,7 @@ import Technicalquiz from "../assets/event-images/technical-quiz.jpg";
 import Ideathon from "../assets/event-images/ideathon.jpg";
 import Seminar from "../assets/event-images/seminar.jpg";
 import Workshop from "../assets/event-images/workshop.jpg";
+import Reversecoding from "../assets/event-images/reversecoding.jpg";
 
 // non-technical
 import TreasureHunt from "../assets/event-images/treasure-hunt.jpg"; //! Changed snapword to treasure hunt - change image
@@ -13,6 +14,8 @@ import AnimeQuiz from "../assets/event-images/animequiz.jpg";
 import Crossfire from "../assets/event-images/crossfire.jpg";
 import Moviequiz from "../assets/event-images/moviequiz.jpg";
 import Pictionary from "../assets/event-images/pictionary.jpeg";
+import SnapWord from "../assets/event-images/snapword.jpg";
+import BrainPower from "../assets/event-images/brainpower.jpg";
 
 // Elite
 import PaperPresentation from "../assets/event-images/paperpresentation.jpg";
@@ -72,16 +75,25 @@ export const technicalEvents = [
     title: "Seminar",
     href: "/events/seminar",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "In reality every industry is bound to be automated.There is already software that can efficiently perform the analysis. Artificial intelligence and Machine learning are bound to take the place of human beings in this field too.",
     imageUrl: Seminar,
     date: 17,
   },
   {
     id: 7,
+    title: "Reverse Codoing",
+    href: "/events/reversecoding",
+    description:
+      "Are you a passionate coder looking for an opportunity to showcase your skills? If yes, then join us for our upcoming Competitive Coding Challenge!",
+    imageUrl: Reversecoding,
+    date: 17,
+  },
+  {
+    id: 8,
     title: "Workshop",
     href: "/events/workshop",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "DevOps is the combination of cultural philosophies, practices, and tools that increases an organisation’s ability to deliver applications and services at high velocity.",
     imageUrl: Workshop,
     date: 18,
   },
@@ -131,6 +143,24 @@ export const nonTechnicalEvents = [
     description:
       "Get ready for a fun-filled pictionary event where you can put your guessing skills to the test! With simple rules and exciting gameplay, this event is perfect for participants of all skill levels. Join us for a chance to showcase your guessing talents and win big!",
     imageUrl: Pictionary,
+    date: 18,
+  },
+  {
+    id: 6,
+    title: "Snap Word",
+    href: "/events/snapword",
+    description:
+      "Get ready for a fun-filled pictionary event where you can put your guessing skills to the test! With simple rules and exciting gameplay, this event is perfect for participants of all skill levels. Join us for a chance to showcase your guessing talents and win big!",
+    imageUrl: SnapWord,
+    date: 18,
+  },
+  {
+    id: 7,
+    title: "Brain Power",
+    href: "/events/brainpower",
+    description:
+      "Get ready for a fun-filled pictionary event where you can put your guessing skills to the test! With simple rules and exciting gameplay, this event is perfect for participants of all skill levels. Join us for a chance to showcase your guessing talents and win big!",
+    imageUrl: BrainPower,
     date: 18,
   },
 ];
