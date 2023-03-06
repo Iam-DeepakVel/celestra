@@ -328,7 +328,7 @@ export default function ContactUs() {
                 type="submit"
                 className="rounded-md bg-red-500 celestraHeroFont tracking-widest px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500"
               >
-                Send message
+                Send Message
               </button>
             </motion.div>
           </div>
