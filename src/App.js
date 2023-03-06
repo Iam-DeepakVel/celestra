@@ -33,6 +33,15 @@ import { useEffect, useState } from "react";
 import celestraLogo from "./assets/logo.png";
 import { PropagateLoader } from "react-spinners";
 import LaserTag from "./event-detail-page/elite-events/LaserTag";
+import SnapWord from './event-detail-page/non-technical-events/SnapWord';
+import BrainPower from './event-detail-page/non-technical-events/BrainPower';
+import ReverseCoding from './event-detail-page/technical-events/ReverseCoding';
+import StumbleGuys from "./game-detail-page/online-games/StumbleGuys";
+import BombSquad from './game-detail-page/online-games/BombSquad';
+import SuperSus from "./game-detail-page/online-games/SuperSus";
+
+
+
 
 function App() {
   // Celestra Splash Loader
@@ -79,6 +88,7 @@ function App() {
               <Route path="/events/ideathon" element={<Ideathon />} />
               <Route path="/events/workshop" element={<Workshop />} />
               <Route path="/events/seminar" element={<Seminar />} />
+              <Route path="/events/reversecoding" element={<ReverseCoding />} />
 
               {/* Non-Technical Events */}
               <Route path="/events/treasure-hunt" element={<TreasureHunt />} />
@@ -86,6 +96,9 @@ function App() {
               <Route path="/events/cross-fire" element={<CrossFire />} />
               <Route path="/events/pictionary" element={<Pictionary />} />
               <Route path="/events/movie-quiz" element={<MovieQuiz />} />
+              <Route path="/events/snapword" element={<SnapWord />} />
+              <Route path="/events/brainpower" element={<BrainPower />} />
+
 
               {/* Elite Events */}
               <Route
@@ -98,6 +111,10 @@ function App() {
               {/*Online & Offline Games */}
               <Route path="/games/online" element={<OnlineGames />} />
               <Route path="/games/offline" element={<OfflineGames />} />
+              <Route path="/games/online/stumbleguys" element={<StumbleGuys />} />
+              <Route path="/games/online/bombsquad" element={<BombSquad />} />
+              <Route path="/games/online/supersus" element={<SuperSus />} />
+
             </Routes>
           </AnimatePresence>
         </>

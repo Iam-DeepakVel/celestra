@@ -1,6 +1,6 @@
 // Online Games
 import StumbleGuys from "../assets/games-images/online/stumble-guys.jpg";
-import AmongUs from "../assets/games-images/online/amongus1.jpg";
+import Supersus from "../assets/games-images/online/supersus.png";
 import BombSquad from "../assets/games-images/online/bombsquad1.jpg";
 
 // Offline Games
@@ -18,23 +18,23 @@ export const onlineGames = [
   {
     id: 1,
     title: "Stumble Guys",
-    href: "/games/online/stumble-guys",
+    href: "/games/online/stumbleguys",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     imageUrl: StumbleGuys,
   },
   {
     id: 2,
-    title: "Among Us",
-    href: "/games/online/among-us",
+    title: "Super SUS",
+    href: "/games/online/supersus",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    imageUrl: AmongUs,
+    imageUrl: Supersus,
   },
   {
     id: 3,
     title: "Bomb squad",
-    href: "/games/online/bomb-squad",
+    href: "/games/online/bombsquad",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     imageUrl: BombSquad,
