@@ -23,6 +23,14 @@ const supersus = {
       name: "Madhu siddharth",
       phoneNo: "9150223416",
     },
+    {
+      name: "Kiruthik Kumaar R",
+      phoneNo: "9629867451",
+    },
+    {
+      name: "Aswin",
+      phoneNo: "8754799651",
+    },
   ],
 };
 

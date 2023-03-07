@@ -13,7 +13,7 @@ import { GiBrightExplosion } from "react-icons/gi";
 
 // Events Gallery Images
 import AnimeQuiz from "../../assets/event-images/animequiz.jpg";
-import Pictionary from "../../assets/event-images/pictionary.jpeg";
+import Dart from "../../assets/games-images/offline/dart.jpg";
 import CelestraCoding from "../../assets/event-images/celestra-coding.jpg";
 import Workshop from "../../assets/event-images/workshop.jpg";
 import Valorant from "../../assets/event-images/valorantLogo2.jpg";
@@ -90,21 +90,21 @@ const eventsList = [
     name: (
       <h2 className="text-2xl mb-2 tracking-widest text-center">
         {" "}
-        <span className="text-4xl text-red-600 tracking-widest">P</span>
-        ictionary
+        <span className="text-4xl text-red-600 tracking-widest">D</span>
+        art
       </h2>
     ),
     hoverName: (
       <h2 className="text-2xl mb-3 tracking-widest">
         {" "}
-        <span className="text-4xl text-red-500 tracking-widest">P</span>
-        ictionary
+        <span className="text-4xl text-red-500 tracking-widest">D</span>
+        art
       </h2>
     ),
-    image: Pictionary,
+    image: Dart,
     description:
-      "Get ready for a fun-filled pictionary event where you can put your guessing skills to the test! With simple rules and exciting gameplay, this event is perfect for participants of all skill levels. Join us for a chance to showcase your guessing talents and win big!",
-    path: "/events/pictionary",
+      "Get ready to hit the bullseye and unleash your inner champion with our dart game event! Whether you're a seasoned pro or a beginner, come and join the fun as we throw darts and take aim at the target.",
+    path: "/games/offline",
   },
   {
     id: 5,

@@ -22,13 +22,21 @@ const valorant = {
     "The organizer will communicate match fixtures, tournament schedules, and updates through the Discord group.",
     "If a team fails to show up, their opponents will receive a walkover.",
   ],
-  firstprize: 500,
-  secondprize: 300,
+  firstprize: 2000,
+  secondprize: 1000,
   thirdprize: 0,
   contact: [
     {
-      name: "Aswin",
-      phoneNo: "8754799651",
+      name: "Rishi Ragavendar",
+      phoneNo: "7904097972",
+    },
+    {
+      name: "Fateen",
+      phoneNo: "9626996595",
+    },
+    {
+      name: "Tilak Chander S",
+      phoneNo: "7010056926",
     },
   ],
 };

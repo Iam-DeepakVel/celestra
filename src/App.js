@@ -32,7 +32,6 @@ import { useEffect, useState } from "react";
 
 import celestraLogo from "./assets/logo.png";
 import { PropagateLoader } from "react-spinners";
-import LaserTag from "./event-detail-page/elite-events/LaserTag";
 import SnapWord from "./event-detail-page/non-technical-events/SnapWord";
 import BrainPower from "./event-detail-page/non-technical-events/BrainPower";
 import ReverseCoding from "./event-detail-page/technical-events/ReverseCoding";
@@ -106,7 +105,6 @@ function App() {
                 element={<PaperPresentation />}
               />
               <Route path="/events/valorant" element={<Valorant />} />
-              <Route path="/events/laser-tag" element={<LaserTag />} />
               <Route path="/events/free-fire" element={<FreeFire />} />
 
               {/*Online & Offline Games */}

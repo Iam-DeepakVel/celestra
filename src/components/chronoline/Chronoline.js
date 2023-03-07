@@ -53,7 +53,7 @@ const march17Events = [
   {
     name: "Reverse Coding",
     time: "3:00 PM to 4:00 PM",
-    venue: "IT-206",
+    venue: "IT-207",
   },
 ];
 

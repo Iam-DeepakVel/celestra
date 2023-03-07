@@ -252,7 +252,7 @@ export default function SingleEventPage({
                   {/* third */}
                   {eventDetails.thirdprize !== 0 && (
                     <div className="flex mt-4">
-                      <RiMedal2Fill size={50} color="silver" />
+                      <RiMedal2Fill size={50} color="#CD7F32" />
                       <div className="flex flex-col items-center gap-1 ">
                         <h2 className="text-lg  celestraHeroFont tracking-widest text-white font-semibold">
                           Third Place

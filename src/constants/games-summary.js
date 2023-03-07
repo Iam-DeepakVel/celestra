@@ -94,7 +94,7 @@ export const offlineGames = [
   },
   {
     id: 8,
-    title: "Rubiks Cube",
+    title: "Rubik's Cube",
     description:
       "Get your cubes ready and let's get cubing! Join us for a Rubik's Cube competition that will test your speed, agility, and mental prowess. With a range of challenging puzzles and mind-bending twists and turns, this event promises to be an exciting and thrilling experience.",
     imageUrl: Cube,

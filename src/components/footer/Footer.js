@@ -58,7 +58,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="footer-items  ">
-              <Link to={"/our-team"} className="footer-links">
+              <Link to={"/team"} className="footer-links">
                 <span>O</span>ur
                 <span className=" ml-2">T</span>eam
               </Link>

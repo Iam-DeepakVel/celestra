@@ -10,32 +10,45 @@ const freeFire = {
   dateTime: "Mar 17,18, 6PM-9PM",
   venue: "Online",
   rules: [
-    "Teams must consist of 5 players and 2 substitutes.",
-    "Substitutes can only be included at the start of a new match and the moderator must be informed.",
-    "Players must be available in the lobby at least 15 minutes before the scheduled match time.",
-    "All team members must have reliable communication, such as a Discord server.",
-    "Failure of the entire team to show up on time will result in forfeiting the match.",
-    "The team captain must add all members and the coordinator (details will be given) as friends with their RIOT IDs.",
-    "Captains are responsible for adding their teammates to the game lobby well in advance of the match.",
-    "Cheating, including exploiting bugs, will not be tolerated and will disqualify the entire team from the event.",
+    "A team must contain minimum of 4 members",
+    "Based on number of teams BR Ranked match will be conducted and The winner of those two ranked matches have to play 1 vs 1 clash squad. Winner and Runner will be decided by the clash squad match.",
+    "Treat others how you wish to be treated, so be kind and courteous. Respect everyone regardless of gender, ethics and age.",
+    "No inappropriate usernames/nicknames.",
+    "No team up. Using emotes in final clash squad match is not fair.",
+    "verbal abuse in all chat will not be tolerated , proofs for it might get you banned from this tournament.",
+    "It is forbidden to cheat, modify the game files, exploit bugs, and/or use any third-party application which would give an unfair advantage against other users.",
+    "Cheating, including exploiting bugs and using hacks, will not be tolerated and will disqualify the entire team from the event.",
     "Team captains will be informed of any changes in match schedules.",
-    "The organizer will communicate match fixtures, tournament schedules, and updates through the Discord group.",
-    "If a team fails to show up, their opponents will receive a walkover.",
+    "If any 1 of the teammate does have any of the rule being voilated then the entire team will be banned.",
   ],
-  firstprize: 500,
-  secondprize: 300,
+  firstprize: 1000,
+  secondprize: 500,
   thirdprize: 0,
   contact: [
     {
       name: "Aswin",
       phoneNo: "8754799651",
     },
+    {
+      name: "Senthil",
+      phoneNo: "80980 86722",
+    },
+    {
+      name: "Jeevanand",
+      phoneNo: "9944927339",
+    },
   ],
 };
 
 const FreeFire = () => {
   return (
-    <SingleEventPage eventDetails={freeFire} formsLink={""} noVenue={true} />
+    <SingleEventPage
+      eventDetails={freeFire}
+      formsLink={
+        "https://docs.google.com/forms/d/e/1FAIpQLSdsSbB-GqMdraOTD9ShynxyweZu2gVASyPwvpf1T-Tp_fV9sA/viewform?usp=sf_link"
+      }
+      noVenue={true}
+    />
   );
 };
 

@@ -9,7 +9,7 @@ import Workshop from "../assets/event-images/workshop.jpg";
 import Reversecoding from "../assets/event-images/reversecoding.jpg";
 
 // non-technical
-import TreasureHunt from "../assets/event-images/treasure-hunt.jpg"; //! Changed snapword to treasure hunt - change image
+import TreasureHunt from "../assets/event-images/treasure-hunt.jpg"; 
 import AnimeQuiz from "../assets/event-images/animequiz.jpg";
 import Crossfire from "../assets/event-images/crossfire.jpg";
 import Moviequiz from "../assets/event-images/moviequiz.jpg";
@@ -20,8 +20,8 @@ import BrainPower from "../assets/event-images/brainpower.jpg";
 // Elite
 import PaperPresentation from "../assets/event-images/paperpresentation.jpg";
 import Valorant from "../assets/event-images/valorant.jpg";
-import FreeFire from "../assets/event-images/freefire.jpg"; //!Changed Bgmi to free fire - change image
-import LaserTagImg from "../assets/event-images/lasertag.jpg";
+import FreeFire from "../assets/event-images/freefire.jpg"; 
+
 
 // technical
 export const technicalEvents = [
@@ -203,14 +203,5 @@ export const eliteEvents = [
       "Step into the near-future world of Valorant and experience heart-pumping action and intense strategy with your team. Choose your unique agent with special abilities and compete in a tactical shooter game that will test your skills and leave you wanting more.",
     imageUrl: Valorant,
     date: 18,
-  },
-  {
-    id: 5,
-    title: "Laser Tag",
-    href: "/events/laser-tag",
-    description:
-      "Gear up and get ready to experience the ultimate adrenaline rush with laser tag! Step onto the battlefield and navigate through an immersive arena armed with laser guns, ready to take down your opponents.",
-    imageUrl: LaserTagImg,
-    date: 17,
   },
 ];

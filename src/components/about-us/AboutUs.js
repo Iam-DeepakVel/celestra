@@ -7,7 +7,7 @@ import Arul from "../../assets/staffs/arul-sir.jpg";
 import Devi from "../../assets/staffs/Devi_mam.jpg";
 import Geetha from "../../assets/staffs/Geetha-mam.jpg";
 import Sangeetha from "../../assets/staffs/M.Sangeetha.jpg";
-import Malarvizhi from "../../assets/staffs/malarvizhi mam.jpg";
+import Malarvizhi from "../../assets/staffs/malarvizhimam.jpg";
 import Murali from "../../assets/staffs/murali-sir.jpg";
 import NKK from "../../assets/staffs/nkk-sir.jpg";
 import Poornima from "../../assets/staffs/poornima-mam.jpg";
@@ -112,7 +112,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1.3 }}
+            transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
               visible: { opacity: 1, x: 0 },
@@ -127,7 +127,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 1.3 }}
+          transition={{ duration: 1 }}
           variants={{
             hidden: { opacity: 0, x: -120 },
             visible: { opacity: 1, x: 0 },
@@ -237,7 +237,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1.2 }}
+        transition={{ duration: 0.8 }}
         variants={{
           hidden: { opacity: 0, x: -120 },
           visible: { opacity: 1, x: 0 },
@@ -253,7 +253,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1.2 }}
+            transition={{ duration: 0.8 }}
             variants={{
               hidden: { opacity: 0, x: -120 },
               visible: { opacity: 1, x: 0 },
@@ -268,7 +268,7 @@ const About = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 1.2 }}
+                transition={{ duration: 0.9 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
                   visible: { opacity: 1, x: 0 },
@@ -283,7 +283,7 @@ const About = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 1.4 }}
+              transition={{ duration: 1 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },
                 visible: { opacity: 1, x: 0 },
@@ -296,7 +296,7 @@ const About = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 1.6 }}
+              transition={{ duration: 1.2 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },
                 visible: { opacity: 1, x: 0 },
@@ -315,7 +315,7 @@ const About = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 1.8 }}
+              transition={{ duration: 1.4 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },
                 visible: { opacity: 1, x: 0 },
@@ -342,7 +342,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1.2 }}
+            transition={{ duration: 0.9 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
               visible: { opacity: 1, x: 0 },
@@ -357,7 +357,7 @@ const About = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 1.2 }}
+                transition={{ duration: 1 }}
                 variants={{
                   hidden: { opacity: 0, x: -120 },
                   visible: { opacity: 1, x: 0 },
@@ -372,7 +372,7 @@ const About = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 1.4 }}
+              transition={{ duration: 1.2 }}
               variants={{
                 hidden: { opacity: 0, x: -120 },
                 visible: { opacity: 1, x: 0 },
@@ -385,7 +385,7 @@ const About = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 1.6 }}
+              transition={{ duration: 1.3 }}
               variants={{
                 hidden: { opacity: 0, x: -120 },
                 visible: { opacity: 1, x: 0 },
@@ -405,7 +405,7 @@ const About = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 1.8 }}
+              transition={{ duration: 1.4 }}
               variants={{
                 hidden: { opacity: 0, x: 50 },
                 visible: { opacity: 1, x: 0 },
@@ -435,7 +435,7 @@ const About = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 1.5 }}
+              transition={{ duration: 1.1 }}
               variants={{
                 hidden: { opacity: 0, x: -120 },
                 visible: { opacity: 1, x: 0 },
@@ -448,7 +448,7 @@ const About = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 1.5 }}
+              transition={{ duration: 1.3 }}
               variants={{
                 hidden: { opacity: 0, x: 120 },
                 visible: { opacity: 1, x: 0 },
@@ -467,7 +467,7 @@ const About = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 0.7 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
                   visible: { opacity: 1, x: 0 },

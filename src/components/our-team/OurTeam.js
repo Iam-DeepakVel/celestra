@@ -1,7 +1,7 @@
 import Navbar from "../../common/Navbar";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
-import GradientAvatar from "../../assets/team-images/gradientAvatar.avif";
+import GradientAvatar from "../../assets/team-images/personAvatar1.png";
 
 // Board Members
 import karthiImg from "../../assets/team-images/board-members/karthick.jpg";
@@ -10,46 +10,52 @@ import sriSakthiImg from "../../assets/team-images/board-members/sriSakthi.jpg";
 import sriAdityaImg from "../../assets/team-images/board-members/sriAditya.jpg";
 import arunKumarImg from "../../assets/team-images/board-members/arunKumar.jpg";
 
+// Fund Riser
+import hareshV from "../../assets/team-images/fund-riser/haresh.jpg";
+
 // Dev Team
 import deepakImg from "../../assets/team-images/dev-team/deepak.jpg";
 import gunaImg from "../../assets/team-images/dev-team/guna.jpg";
 import { Helmet } from "react-helmet";
+
+// Design Team
+import arun from "../../assets/team-images/design-team/arunkumar.jpg";
+import barath from "../../assets/team-images/design-team/barath.jpg";
+import hareeshRam from "../../assets/team-images/design-team/hareeshram.jpg";
+import harsha from "../../assets/team-images/design-team/harsha.jpg";
+import karthikeyan from "../../assets/team-images/design-team/karthikeyan.jpg";
+import pradeep from "../../assets/team-images/design-team/pradeep.jpg";
+import sakthivel from "../../assets/team-images/design-team/sakthivel.jpg";
+import tharan from "../../assets/team-images/design-team/tharan.jpg";
+import thurka from "../../assets/team-images/design-team/thurka.jpg";
+import kavi from "../../assets/team-images/design-team/kavi.jpg";
+import narendaran from "../../assets/team-images/design-team/narendaran.jpg";
 
 const boardMembers = [
   {
     name: "Karthick S",
     role: "Chairman",
     imageUrl: karthiImg,
-    twitterUrl: "#",
-    linkedinUrl: "#",
   },
   {
     name: "Rishi Ragavendar D",
     role: "President",
     imageUrl: rishiImg,
-    twitterUrl: "#",
-    linkedinUrl: "#",
   },
   {
     name: "Sri Sakthi B",
     role: "Vice President",
     imageUrl: sriSakthiImg,
-    twitterUrl: "#",
-    linkedinUrl: "#",
   },
   {
     name: "Adithya A",
     role: "Treasurer",
     imageUrl: sriAdityaImg,
-    twitterUrl: "#",
-    linkedinUrl: "#",
   },
   {
     name: "Arun Kumar V",
     role: "Treasurer",
     imageUrl: arunKumarImg,
-    twitterUrl: "#",
-    linkedinUrl: "#",
   },
 ];
 
@@ -62,14 +68,14 @@ const webDevelopers = [
     linkedinUrl: "https://www.linkedin.com/in/iamdeepakvel",
   },
   {
-    name: "Guna",
+    name: "Guna P",
     role: "Frontend Developer / UI Designer",
     imageUrl: gunaImg,
     githubUrl: "https://github.com/guna-pandi",
     linkedinUrl: "https://www.linkedin.com/in/guna-p-aa3357245",
   },
   {
-    name: "Khabilan",
+    name: "Khabilan S",
     role: "Web & App Developer",
     imageUrl: GradientAvatar,
     githubUrl: "#",
@@ -78,7 +84,7 @@ const webDevelopers = [
   {
     name: "Bharath S",
     role: "Backend Developer",
-    imageUrl: GradientAvatar,
+    imageUrl: barath,
     githubUrl: "#",
     linkedinUrl: "#",
   },
@@ -87,45 +93,68 @@ const webDevelopers = [
 const designTeam = [
   {
     name: "Thurkaraman R",
-    role: "Design Head",
-    imageUrl: GradientAvatar,
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    role: "Team Head",
+    imageUrl: thurka,
   },
   {
     name: "Arun Kumar S",
-    role: "Designer",
-    imageUrl: GradientAvatar,
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    role: "Member",
+    imageUrl: arun,
   },
   {
-    name: "Sajeev",
-    role: "Designer",
-    imageUrl: GradientAvatar,
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Kavikumar",
-    role: "Designer",
-    imageUrl: GradientAvatar,
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Harsha Vardhan",
-    role: "Designer",
-    imageUrl: GradientAvatar,
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    name: "Narendaran R",
+    role: "Member",
+    imageUrl: narendaran,
   },
   {
     name: "Aswin S",
-    role: "Designer",
+    role: "Member",
     imageUrl: GradientAvatar,
-    twitterUrl: "#",
-    linkedinUrl: "#",
+  },
+  {
+    name: "Jananitharan",
+    role: "Member",
+    imageUrl: tharan,
+  },
+  {
+    name: "Hareesh Ram",
+    role: "Member",
+    imageUrl: hareeshRam,
+  },
+  {
+    name: "Kavikumar C",
+    role: "Member",
+    imageUrl: kavi,
+  },
+  {
+    name: "Vikram",
+    role: "Member",
+    imageUrl: GradientAvatar,
+  },
+  {
+    name: "Sajeev",
+    role: "Member",
+    imageUrl: GradientAvatar,
+  },
+  {
+    name: "Pradeep",
+    role: "Member",
+    imageUrl: pradeep,
+  },
+  {
+    name: "Sakthivel",
+    role: "Member",
+    imageUrl: sakthivel,
+  },
+  {
+    name: "Harshavardhan",
+    role: "Member",
+    imageUrl: harsha,
+  },
+  {
+    name: "Karthikeyan",
+    role: "Member",
+    imageUrl: karthikeyan,
   },
 ];
 
@@ -144,7 +173,7 @@ export default function OurTeam() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
               visible: { opacity: 1, x: 0 },
@@ -157,7 +186,7 @@ export default function OurTeam() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, x: -120 },
               visible: { opacity: 1, x: 0 },
@@ -175,7 +204,7 @@ export default function OurTeam() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1.1 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
               visible: { opacity: 1, x: 0 },
@@ -185,13 +214,13 @@ export default function OurTeam() {
             <span className="text-5xl text-red-600">B</span>oard{" "}
             <span className="text-5xl text-red-600">M</span>embers
           </motion.h2>
-          <ul className="mx-auto px-2 mt-10 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+          <ul className="mx-auto px-4 mt-10 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
             {boardMembers.map((person) => (
               <motion.li
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.9 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
                   visible: { opacity: 1, x: 0 },
@@ -210,46 +239,52 @@ export default function OurTeam() {
                 <p className="text-md leading-6 font-semibold tracking-wider font-poppins text-gray-400">
                   {person.role}
                 </p>
-                <ul className="mt-6 flex justify-center gap-x-6">
-                  <li>
-                    <a
-                      href={person.twitterUrl}
-                      className="text-gray-400 hover:text-gray-300"
-                    >
-                      <span className="sr-only">Twitter</span>
-                      <svg
-                        className="h-5 w-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href={person.linkedinUrl}
-                      className="text-gray-400 hover:text-gray-300"
-                    >
-                      <span className="sr-only">LinkedIn</span>
-                      <svg
-                        className="h-5 w-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
               </motion.li>
             ))}
+          </ul>
+        </div>
+
+        {/* Special Thanks to  */}
+        <div className="mt-20">
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1.1 }}
+            variants={{
+              hidden: { opacity: 0, x: 120 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="text-4xl text-white celestraHeroFont tracking-widest"
+          >
+            <span className="text-5xl text-red-600">S</span>pecial{" "}
+            <span className="text-5xl text-red-600">T</span>hanks to
+          </motion.h2>
+          <ul className="mx-auto px-4 mt-10 grid max-w-full sm:max-w-md gap-8">
+            <motion.li
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.9 }}
+              variants={{
+                hidden: { opacity: 0, x: 120 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              key="Haresh"
+              className="rounded-2xl transition-shadow ease-in-out duration-300 shadow-md hover:shadow-lg hover:shadow-red-500  shadow-red-400 bg-[#111111] py-10 px-8"
+            >
+              <img
+                className="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56"
+                src={hareshV}
+                alt="Haresh"
+              />
+              <h3 className="mt-6 text-xl font-semibold leading-7 celestraHeroFont tracking-widest text-white">
+                Haresh V
+              </h3>
+              <p className="text-md leading-6 font-semibold tracking-wider font-poppins text-gray-400">
+                Joint Secretary of IT / Treasurer
+              </p>
+            </motion.li>
           </ul>
         </div>
 
@@ -259,7 +294,7 @@ export default function OurTeam() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1.1 }}
             variants={{
               hidden: { opacity: 0, x: -120 },
               visible: { opacity: 1, x: 0 },
@@ -269,13 +304,13 @@ export default function OurTeam() {
             <span className="text-5xl text-red-600">W</span>eb{" "}
             <span className="text-5xl text-red-600">D</span>evelopers
           </motion.h2>
-          <ul className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+          <ul className="mx-auto px-4 mt-10 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
             {webDevelopers.map((person) => (
               <motion.li
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.9 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
                   visible: { opacity: 1, x: 0 },
@@ -327,7 +362,7 @@ export default function OurTeam() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 0.8 }}
             variants={{
               hidden: { opacity: 0, x: 120 },
               visible: { opacity: 1, x: 0 },
@@ -337,13 +372,13 @@ export default function OurTeam() {
             <span className="text-5xl text-red-600">D</span>esign{" "}
             <span className="text-5xl text-red-600">T</span>eam
           </motion.h2>
-          <ul className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+          <ul className="mx-auto mt-10 px-4 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
             {designTeam.map((person) => (
               <motion.li
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.6 }}
                 variants={{
                   hidden: { opacity: 0, x: 120 },
                   visible: { opacity: 1, x: 0 },
@@ -362,44 +397,6 @@ export default function OurTeam() {
                 <p className="text-md leading-6 tracking-wider font-semibold font-poppins text-gray-400">
                   {person.role}
                 </p>
-                <ul className="mt-6 flex justify-center gap-x-6">
-                  <li>
-                    <a
-                      href={person.twitterUrl}
-                      className="text-gray-400 hover:text-gray-300"
-                    >
-                      <span className="sr-only">Twitter</span>
-                      <svg
-                        className="h-5 w-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href={person.linkedinUrl}
-                      className="text-gray-400 hover:text-gray-300"
-                    >
-                      <span className="sr-only">LinkedIn</span>
-                      <svg
-                        className="h-5 w-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
               </motion.li>
             ))}
           </ul>
