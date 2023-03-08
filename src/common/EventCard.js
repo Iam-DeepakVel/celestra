@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const EventCard = ({ event, noQuicklook }) => {
+const EventCard = ({ event }) => {
   return (
     <motion.article
       initial="hidden"
@@ -26,14 +26,12 @@ const EventCard = ({ event, noQuicklook }) => {
         <p>{event.title}</p>
       </h3>
       <p className="text-white mb-4">{event.description}</p>
-      {noQuicklook ? null : (
-        <Link
-          to={event.href}
-          className="bg-[#111111] celestraHeroFont text-xl text-white text-center rounded-md p-4   hover:bg-red-500 hover:text-black tracking-widest transition-all duration-300 ease-in-out"
-        >
-          Quicklook
-        </Link>
-      )}
+      <Link
+        to={event.href}
+        className="bg-[#111111] celestraHeroFont text-xl text-white text-center rounded-md p-4   hover:bg-red-500 hover:text-black tracking-widest transition-all duration-300 ease-in-out"
+      >
+        Quicklook
+      </Link>
     </motion.article>
   );
 };

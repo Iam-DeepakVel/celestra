@@ -46,6 +46,11 @@ const march17Events = [
     venue: "IT-201",
   },
   {
+    name: "Bomb Squad",
+    time: "2:30 PM to 3:30 PM",
+    venue: "IT-201",
+  },
+  {
     name: "Cross Fire",
     time: "3:00 PM to 4:00 PM",
     venue: "IT-206",
@@ -53,6 +58,11 @@ const march17Events = [
   {
     name: "Reverse Coding",
     time: "3:00 PM to 4:00 PM",
+    venue: "IT-207",
+  },
+  {
+    name: "Stumble Guys",
+    time: "4:00 PM to 5:00 PM",
     venue: "IT-207",
   },
 ];
@@ -81,6 +91,11 @@ const march18Events = [
   {
     name: "Web Masters",
     time: "2:00 PM to 4:00 PM",
+    venue: "IT-201",
+  },
+  {
+    name: "Super Sus",
+    time: "2:30 PM to 3:30 PM",
     venue: "IT-201",
   },
   {
@@ -163,13 +178,15 @@ const Chronoline = () => {
               visible: { opacity: 1, x: 0 },
             }}
             onClick={() => setOpen(!open)}
-            className="relative flex items-center gap-2 mb-3 mr-4 lg:absolute lg:right-10 lg:top-20 cursor-pointer">
+            className="relative flex items-center gap-2 mb-3 mr-4 lg:absolute lg:right-10 lg:top-20 cursor-pointer"
+          >
             <p className="text-xl text-white celestraHeroFont tracking-widest">
               {" "}
               {open ? (
                 <motion.div
                   whileTap={{ scale: 0.6 }}
-                  className="flex items-center">
+                  className="flex items-center"
+                >
                   <span className="text-4xl text-red-500">C</span>
                   <span className="mt-1">lose</span>
                 </motion.div>
@@ -189,11 +206,13 @@ const Chronoline = () => {
                 initial={{ opacity: 0, scale: 0.2 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.6 }}
-                className="absolute top-14 right-0 lg:-right-10 opacity-95 w-72 h-auto bg-white rounded-lg celestraHeroFont">
+                className="absolute top-14 right-0 lg:-right-10 opacity-95 w-72 h-auto bg-white rounded-lg celestraHeroFont"
+              >
                 <ul>
                   <Link
                     to={"/"}
-                    className="flex text-lg px-4 py-4 items-center gap-3 rounded-t-lg  transition-all duration-300 ease-in-out  hover:bg-red-300 ">
+                    className="flex text-lg px-4 py-4 items-center gap-3 rounded-t-lg  transition-all duration-300 ease-in-out  hover:bg-red-300 "
+                  >
                     <HiOutlineHome size={20} />{" "}
                     <div className="text-red-500 text-2xl ">
                       H<span className="text-black text-xl">ome</span>{" "}
@@ -201,7 +220,8 @@ const Chronoline = () => {
                   </Link>
                   <Link
                     to={"/about-us"}
-                    className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-red-300 ">
+                    className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-red-300 "
+                  >
                     <TbUnlink size={20} />{" "}
                     <div className="text-red-500 text-2xl ">
                       A<span className="text-black text-xl">bout Us</span>{" "}
@@ -209,7 +229,8 @@ const Chronoline = () => {
                   </Link>
                   <Link
                     to={"/events"}
-                    className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-red-300 ">
+                    className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-red-300 "
+                  >
                     <SiEventstore size={20} />{" "}
                     <div className="text-red-500 text-2xl ">
                       E<span className="text-black text-xl">vents</span>{" "}
@@ -217,7 +238,8 @@ const Chronoline = () => {
                   </Link>
                   <Link
                     to={"/games/online"}
-                    className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-red-300 ">
+                    className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-red-300 "
+                  >
                     <SiRiotgames size={20} />{" "}
                     <div className="text-red-500 text-2xl ">
                       G<span className="text-black text-xl">ames</span>{" "}
@@ -225,7 +247,8 @@ const Chronoline = () => {
                   </Link>
                   <Link
                     to={"/team"}
-                    className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-red-300 ">
+                    className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-red-300 "
+                  >
                     <VscOrganization size={20} />{" "}
                     <div className="text-red-500 text-2xl ">
                       O<span className="text-black text-xl">ur Team</span>{" "}
@@ -233,7 +256,8 @@ const Chronoline = () => {
                   </Link>
                   <Link
                     to={"/contact-us"}
-                    className="flex text-lg px-4 py-4 items-center gap-3 rounded-b-lg  transition-all duration-300 ease-in-out hover:bg-red-300 ">
+                    className="flex text-lg px-4 py-4 items-center gap-3 rounded-b-lg  transition-all duration-300 ease-in-out hover:bg-red-300 "
+                  >
                     <FaTeamspeak size={20} />{" "}
                     <div className="text-red-500 text-2xl ">
                       C<span className="text-black text-xl">ontact Us</span>{" "}
@@ -253,7 +277,8 @@ const Chronoline = () => {
             hidden: { opacity: 0, x: 120 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="text-4xl mt-10 lg:mt-20 tracking-wider text-white celestraHeroFont text-center mb-12 lg:mb-20">
+          className="text-4xl mt-10 lg:mt-20 tracking-wider text-white celestraHeroFont text-center mb-12 lg:mb-20"
+        >
           <span className="text-6xl text-[rgb(255,0,0)] tracking-widest">
             C
           </span>

@@ -8,7 +8,7 @@ const supersus = {
     "Super Sus is a force to be reckoned with. With her lightning-fast reflexes and razor-sharp instincts, she can take on any challenge that comes her way. Her strategic mind is always analyzing the situation, looking for the best course of action.",
   type: "Online Games",
   eventName: "Super SUS",
-  dateTime: "March 17",
+  dateTime: "March 18,2:30PM - 3:30PM",
   venue: "IT-442",
   rules: [
     "Solo participation.",

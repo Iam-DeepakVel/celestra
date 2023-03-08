@@ -105,7 +105,7 @@ export const nonTechnicalEvents = [
     id: 1,
     title: "Treasure Hunt",
     href: "/events/treasure-hunt",
-    description: "Treasure Hunt",
+    description: "Are you ready for the ultimate adventure of a lifetime? Join us on an exhilarating treasure hunt where hidden riches and thrilling clues await! Uncover the mystery and follow the trail to claim your treasure trove before time runs out. Get your adrenaline pumping and embark on a journey like no other",
     imageUrl: TreasureHunt,
     date: 17,
   },

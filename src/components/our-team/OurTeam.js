@@ -1,7 +1,7 @@
 import Navbar from "../../common/Navbar";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
-import GradientAvatar from "../../assets/team-images/personAvatar1.png";
+import GradientAvatar from "../../assets/team-images/personAvatar.png";
 
 // Board Members
 import karthiImg from "../../assets/team-images/board-members/karthick.jpg";

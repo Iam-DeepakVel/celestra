@@ -8,7 +8,7 @@ const bombsquard = {
     "The Bomb Squad is a highly trained and specialized unit that deals with the most dangerous and explosive situations imaginable. These brave men and women put their lives on the line every day to protect the public from the threat of bombs and other explosive devices.",
   type: "Online Games",
   eventName: "Bomb Squad",
-  dateTime: "March 17",
+  dateTime: "March 17, 2:30PM - 3:30PM",
   venue: "IT-442",
   rules: [
     "1-2 members per team.",

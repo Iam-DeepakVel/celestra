@@ -9,7 +9,7 @@ export default function Sponsors() {
     <div className="bg-black-900 py-8 sm:py-8">
       <div className="mx-auto max-w-full px-6 lg:px-8">
         <h2 className="text-center text-4xl tracking-wider font-semibold celestraHeroFont leading-8 text-white">
-          Sponsored By
+          <span className="text-5xl text-red-500">S</span>ponsored By
         </h2>
         <div className="mx-auto mt-16 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
           <img

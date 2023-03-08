@@ -49,6 +49,16 @@ export const offlineGames = [
     description:
       "Ready to feel the thrill of every flick, every strike, and every point won? Look no further than our Carrom Board game event! With its simple yet addictive gameplay, Carrom Board promises a fun and challenging experience for players of all levels.",
     imageUrl: Carrom,
+    commingSoon: true,
+  },
+  {
+    id: 6,
+    title: "Chess",
+    href: "https://forms.gle/yaKNoQVLiVNkysoU7",
+    description:
+      "Calling all masterminds and strategic thinkers! It's time to showcase your skills and dominate the chessboard in our epic Chess tournament. With each move, you'll be testing your opponent's wit and cunning while challenging your own.",
+    imageUrl: Chess,
+    isOnlineRegister: true,
   },
   {
     id: 2,
@@ -77,13 +87,6 @@ export const offlineGames = [
     description:
       "Are you ready to ring in the fun? Come join us for the ultimate toss ring challenge! With colorful rings and targets, this classic game will have you aiming for the bullseye and competing against your friends and family for hours of entertainment.",
     imageUrl: Ring,
-  },
-  {
-    id: 6,
-    title: "Chess",
-    description:
-      "Calling all masterminds and strategic thinkers! It's time to showcase your skills and dominate the chessboard in our epic Chess tournament. With each move, you'll be testing your opponent's wit and cunning while challenging your own.",
-    imageUrl: Chess,
   },
   {
     id: 7,
