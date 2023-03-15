@@ -30,6 +30,7 @@ export const onlineGames = [
     description:
       "Super Sus is a force to be reckoned with. With her lightning-fast reflexes and razor-sharp instincts, she can take on any challenge that comes her way. Her strategic mind is always analyzing the situation, looking for the best course of action.",
     imageUrl: Supersus,
+    isRegistrationClosed:true
   },
   {
     id: 3,
@@ -38,6 +39,7 @@ export const onlineGames = [
     description:
       "The Bomb Squad is a highly trained and specialized unit that deals with the most dangerous and explosive situations imaginable. These brave men and women put their lives on the line every day to protect the public from the threat of bombs and other explosive devices.",
     imageUrl: BombSquad,
+    isRegistrationClosed:true
   },
 ];
 
@@ -46,10 +48,11 @@ export const offlineGames = [
   {
     id: 1,
     title: "Carrom",
+    href:"https://forms.gle/srEWyLLfFXVR3PBq7",
     description:
       "Ready to feel the thrill of every flick, every strike, and every point won? Look no further than our Carrom Board game event! With its simple yet addictive gameplay, Carrom Board promises a fun and challenging experience for players of all levels.",
     imageUrl: Carrom,
-    commingSoon: true,
+    isOnlineRegister: true,
   },
   {
     id: 6,

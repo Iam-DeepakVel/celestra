@@ -2,13 +2,16 @@
   /*  larger font size, more shadow distance  */
   text-shadow: 0.1em 0.1em 0.2rem #be2520;
 }
+
 .dynamic-celestra-shadow {
   /*  larger font size, more shadow distance  */
   text-shadow: 0.12em 0.12em 0 #be2520;
 }
+
 .dynamic-celestra-white-shadow {
   text-shadow: -4px 8px 0 white;
 }
+
 .dynamic-celestra-white-shadow-mobile {
   text-shadow: -4px 4px 0 white;
 }

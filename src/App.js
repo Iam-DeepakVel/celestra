@@ -11,7 +11,6 @@ import CelestraCoding from "./event-detail-page/technical-events/CelestraCoding"
 import BugBusters from "./event-detail-page/technical-events/BugBusters";
 import TechnicalQuiz from "./event-detail-page/technical-events/TechnicalQuiz";
 import WebMasters from "./event-detail-page/technical-events/WebMasters";
-import Ideathon from "./event-detail-page/technical-events/Ideathon";
 import Workshop from "./event-detail-page/technical-events/Workshop";
 import Seminar from "./event-detail-page/technical-events/Seminar";
 
@@ -39,6 +38,7 @@ import StumbleGuys from "./game-detail-page/online-games/StumbleGuys";
 import BombSquad from "./game-detail-page/online-games/BombSquad";
 import SuperSus from "./game-detail-page/online-games/SuperSus";
 import FreeFire from "./event-detail-page/elite-events/FreeFire";
+import Ideathon from "./event-detail-page/elite-events/Ideathon";
 
 function App() {
   // Celestra Splash Loader
@@ -82,7 +82,6 @@ function App() {
                 element={<TechnicalQuiz />}
               />
               <Route path="/events/web-masters" element={<WebMasters />} />
-              <Route path="/events/ideathon" element={<Ideathon />} />
               <Route path="/events/workshop" element={<Workshop />} />
               <Route path="/events/seminar" element={<Seminar />} />
               <Route
@@ -104,6 +103,7 @@ function App() {
                 path="/events/paper-presentation"
                 element={<PaperPresentation />}
               />
+              <Route path="/events/ideathon" element={<Ideathon />} />
               <Route path="/events/valorant" element={<Valorant />} />
               <Route path="/events/free-fire" element={<FreeFire />} />
 

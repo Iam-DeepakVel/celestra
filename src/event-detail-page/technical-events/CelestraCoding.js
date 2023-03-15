@@ -12,7 +12,7 @@ const celestraCoding = {
   venue: "IT-443",
   rules: [
     "Solo Participation",
-    "The logic can be implemented can in any languages.",
+    "The logic can be implemented in any languages.",
     "Participants may bring their own laptops.",
     "Plagiarism leads to direct disqualification",
   ],
@@ -36,7 +36,7 @@ const celestraCoding = {
 };
 
 const CelestraCoding = () => {
-  return <SingleEventPage eventDetails={celestraCoding} />;
+  return <SingleEventPage eventDetails={celestraCoding}  />;
 };
 
 export default CelestraCoding;

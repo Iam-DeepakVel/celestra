@@ -19,6 +19,7 @@ const reverseCoding = {
     "Any form of academic dishonesty, including plagiarism and cheating, is not permitted.",
     "One who solve more test cases in given amount of time is declared as winner",
   ],
+
   firstprize: 1000,
   secondprize: 500,
   thirdprize:0,

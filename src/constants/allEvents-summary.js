@@ -53,15 +53,6 @@ export const technicalEvents = [
     date: 18,
   },
   {
-    id: 4,
-    title: "Ideathon",
-    href: "/events/ideathon",
-    description:
-      "IDEATHON inspires and empower participants to think outside the box and develop innovative solutions that can have a positive impact on society,making it an ideal platform for aspiring Entrepreneurs.",
-    imageUrl: Ideathon,
-    date: 17,
-  },
-  {
     id: 5,
     title: "Web Masters",
     href: "/events/web-masters",
@@ -93,7 +84,7 @@ export const technicalEvents = [
     title: "Workshop",
     href: "/events/workshop",
     description:
-      "DevOps is the combination of cultural philosophies, practices, and tools that increases an organisation’s ability to deliver applications and services at high velocity.",
+      "This workshop focuses on leveraging the Python programming language and the Django framework for the purpose of developing a robust backend. Participants will have the opportunity to acquire practical experience through interactive training sessions.",
     imageUrl: Workshop,
     date: 18,
   },
@@ -149,8 +140,7 @@ export const nonTechnicalEvents = [
     id: 6,
     title: "Snap Word",
     href: "/events/snap-word",
-    description:
-      "Snap Word is a language magician, able to conjure up words and phrases with lightning speed and unparalleled accuracy. With a snap of their fingers, Snap Word can turn a blank page into a masterpiece of prose, leaving their audience awestruck.",
+    description:"Join us for a visual puzzle adventure! Can you spot the hidden word that ties together four seemingly unrelated pictures? Test your skills and have some fun at our picture-perfect event!",
     imageUrl: SnapWord,
     date: 18,
   },
@@ -178,6 +168,15 @@ export const eliteEvents = [
   },
   {
     id: 2,
+    title: "Ideathon",
+    href: "/events/ideathon",
+    description:
+      "IDEATHON inspires and empower participants to think outside the box and develop innovative solutions that can have a positive impact on society,making it an ideal platform for aspiring Entrepreneurs.",
+    imageUrl: Ideathon,
+    date: 17,
+  },
+  {
+    id: 3,
     title: "Free Fire",
     href: "/events/free-fire",
     description:
@@ -187,7 +186,7 @@ export const eliteEvents = [
   },
   // Valorant conducted for both March 17 & 18
   {
-    id: 3,
+    id: 4,
     title: "Valorant",
     href: "/events/valorant",
     description:
@@ -196,7 +195,7 @@ export const eliteEvents = [
     date: 17,
   },
   {
-    id: 4,
+    id: 5,
     title: "Valorant",
     href: "/events/valorant",
     description:

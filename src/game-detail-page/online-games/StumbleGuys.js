@@ -15,6 +15,7 @@ const stumbleguys = {
     "They will play online  along with one host (just to spectate).",
     "Participant with highest position wins.",
   ],
+
   firstprize: 400,
   secondprize: 200,
   thirdprize: 100,

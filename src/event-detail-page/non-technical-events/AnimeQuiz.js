@@ -15,6 +15,7 @@ const animeQuiz = {
     "In round two, only the team that has hit the buzzer first will be allowed to answer the question. If the answer is incorrect, the next team with the correct answer will have a chance to score.",
     "The quiz master's decision is final and cannot be challenged by any of the teams. Any team found violating the rules may be disqualified from the quiz.",
   ],
+ 
   firstprize: 300,
   secondprize: 200,
   thirdprize: 0,

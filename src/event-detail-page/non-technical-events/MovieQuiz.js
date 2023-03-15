@@ -14,6 +14,7 @@ const movieQuiz = {
     "If connecting images are chosen, a set of images related to the movie will be projected on the screen. If acting is chosen, the team will have to act out the name of the movie.",
     "The winners will be determined by the team that correctly guesses the highest number of movies.",
   ],
+
   firstprize: 300,
   secondprize: 200,
   thirdprize: 0,
@@ -34,7 +35,7 @@ const movieQuiz = {
 };
 
 const MovieQuiz = () => {
-  return <SingleEventPage eventDetails={movieQuiz} />;
+  return <SingleEventPage eventDetails={movieQuiz}  />;
 };
 
 export default MovieQuiz;

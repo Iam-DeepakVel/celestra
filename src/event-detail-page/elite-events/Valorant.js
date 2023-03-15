@@ -41,15 +41,18 @@ const valorant = {
   ],
 };
 
-const Valorant = () => {
+export const Valorant = (discordlink) => {
   return (
-    <SingleEventPage
-      eventDetails={valorant}
-      formsLink={
-        "https://docs.google.com/forms/d/e/1FAIpQLSfoRM_a4d7ILZJljMtjxexxikehMd5bRuRXyAILx-f3U-Jl0Q/viewform?usp=sf_link"
-      }
-      noVenue={true}
-    />
+    <div>
+      <SingleEventPage
+        eventDetails={valorant}
+        formsLink={
+          "https://docs.google.com/forms/d/e/1FAIpQLSfoRM_a4d7ILZJljMtjxexxikehMd5bRuRXyAILx-f3U-Jl0Q/viewform?usp=sf_link"
+        }
+        noVenue={true}
+        discordlink={true}
+      />
+    </div>
   );
 };
 

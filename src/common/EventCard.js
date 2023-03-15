@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { BiErrorAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 const EventCard = ({ event }) => {
@@ -26,12 +27,21 @@ const EventCard = ({ event }) => {
         <p>{event.title}</p>
       </h3>
       <p className="text-white mb-4">{event.description}</p>
-      <Link
-        to={event.href}
-        className="bg-[#111111] celestraHeroFont text-xl text-white text-center rounded-md p-4   hover:bg-red-500 hover:text-black tracking-widest transition-all duration-300 ease-in-out"
-      >
-        Quicklook
-      </Link>
+      {event.isRegistrationClosed ? (
+        <div class="flex items-center justify-center gap-4 font-medium celestraHeroFont text-red-600">
+          <BiErrorAlt size={15} color="red" />
+          <p className="text-lg tracking-wider text-center">
+            Registration Closed!!
+          </p>
+        </div>
+      ) : (
+        <Link
+          to={event.href}
+          className="bg-[#111111] celestraHeroFont text-xl text-white text-center rounded-md p-4   hover:bg-red-500 hover:text-black tracking-widest transition-all duration-300 ease-in-out"
+        >
+          Quicklook
+        </Link>
+      )}
     </motion.article>
   );
 };

@@ -15,6 +15,7 @@ const bombsquard = {
     "Maps will be chosen be the event organizer.",
     "Player who stays till the last wind.",
   ],
+
   firstprize: 400,
   secondprize: 200,
   thirdprize: 100,
@@ -41,6 +42,7 @@ const BombSquad = () => {
       formsLink={
         "https://docs.google.com/forms/d/e/1FAIpQLSfm5H9WDFME54WUn0yvyuRy6ZZt4vRfp9FqpLWMmsqjIP8yWg/viewform?usp=sf_link"
       }
+     
     />
   );
 };

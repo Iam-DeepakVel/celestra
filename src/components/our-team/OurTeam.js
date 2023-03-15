@@ -1,7 +1,7 @@
 import Navbar from "../../common/Navbar";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
-import GradientAvatar from "../../assets/team-images/personAvatar.png";
+import GradientAvatar from "../../assets/team-images/personAvatar1.png";
 
 // Board Members
 import karthiImg from "../../assets/team-images/board-members/karthick.jpg";
@@ -78,15 +78,15 @@ const webDevelopers = [
     name: "Khabilan S",
     role: "Web & App Developer",
     imageUrl: GradientAvatar,
-    githubUrl: "#",
-    linkedinUrl: "#",
+    githubUrl: "https://github.com/Khabilan1003",
+    linkedinUrl: "https://www.linkedin.com/in/khabilan-somasundaram-0335971b0/ ",
   },
   {
     name: "Bharath S",
     role: "Backend Developer",
     imageUrl: barath,
-    githubUrl: "#",
-    linkedinUrl: "#",
+    githubUrl: "https://github.com/BarathOfficial",
+    linkedinUrl: "https://www.linkedin.com/in/barath-sreedharan-50a5a020a",
   },
 ];
 
@@ -102,12 +102,12 @@ const designTeam = [
     imageUrl: arun,
   },
   {
-    name: "Narendaran R",
+    name: "Narendran S",
     role: "Member",
     imageUrl: narendaran,
   },
   {
-    name: "Aswin S",
+    name: "Ashwin S",
     role: "Member",
     imageUrl: GradientAvatar,
   },
@@ -137,7 +137,7 @@ const designTeam = [
     imageUrl: GradientAvatar,
   },
   {
-    name: "Pradeep",
+    name: "Pratheep",
     role: "Member",
     imageUrl: pradeep,
   },
@@ -178,9 +178,11 @@ export default function OurTeam() {
               hidden: { opacity: 0, x: 120 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="text-3xl font-bold tracking-wider celestraHeroFont  text-white sm:text-4xl"
+            className="text-3xl font-bold tracking-widest celestraHeroFont  text-white sm:text-4xl"
           >
-            Meet our team
+            <span className="text-5xl text-red-600">M</span>eet{" "}
+            <span className="text-5xl text-red-600">O</span>ur{" "}
+            <span className="text-5xl text-red-600">T</span>eam
           </motion.h2>
           <motion.p
             initial="hidden"

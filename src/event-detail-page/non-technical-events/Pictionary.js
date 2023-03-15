@@ -37,7 +37,7 @@ const pictionary = {
 };
 
 const Pictionary = () => {
-  return <SingleEventPage eventDetails={pictionary} />;
+  return <SingleEventPage eventDetails={pictionary}  />;
 };
 
 export default Pictionary;

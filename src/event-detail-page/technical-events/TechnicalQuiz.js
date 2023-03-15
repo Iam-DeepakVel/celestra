@@ -17,6 +17,7 @@ const technicalQuiz = {
     "3 rounds will be held, [1st Round : 25 Questions, 25 minutes], [2nd Round : 10 Questions, 15 minutes], [3rd Round : 10 Questions, 20 minutes]",
     "Pen-Paper Test",
   ],
+
   firstprize: 800,
   secondprize: 500,
   thirdprize: 0,

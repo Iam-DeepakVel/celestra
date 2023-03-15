@@ -16,6 +16,7 @@ const brainPower = {
     "Decision of event organizers will be final.",
     "At each round,the participants will be eliminated until there is only one winner at the end ",
   ],
+
   firstprize: 300,
   secondprize: 200,
   thirdprize:0,

@@ -21,12 +21,13 @@ const freeFire = {
     "Team captains will be informed of any changes in match schedules.",
     "If any 1 of the teammate does have any of the rule being voilated then the entire team will be banned.",
   ],
-  firstprize: 1000,
-  secondprize: 500,
+
+  firstprize: 700,
+  secondprize: 300,
   thirdprize: 0,
   contact: [
     {
-      name: "Aswin",
+      name: "Ashwin",
       phoneNo: "8754799651",
     },
     {
@@ -47,7 +48,7 @@ const FreeFire = () => {
       formsLink={
         "https://docs.google.com/forms/d/e/1FAIpQLSdsSbB-GqMdraOTD9ShynxyweZu2gVASyPwvpf1T-Tp_fV9sA/viewform?usp=sf_link"
       }
-      noVenue={true}
+      noVenue={true} 
     />
   );
 };

@@ -40,7 +40,7 @@ const bugBusters = {
 };
 
 const BugBusters = () => {
-  return <SingleEventPage eventDetails={bugBusters} />;
+  return <SingleEventPage eventDetails={bugBusters}  />;
 };
 
 export default BugBusters;

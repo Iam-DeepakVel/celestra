@@ -48,7 +48,7 @@ const march17Events = [
   {
     name: "Bomb Squad",
     time: "2:30 PM to 3:30 PM",
-    venue: "IT-201",
+    venue: "Online",
   },
   {
     name: "Cross Fire",
@@ -63,7 +63,7 @@ const march17Events = [
   {
     name: "Stumble Guys",
     time: "4:00 PM to 5:00 PM",
-    venue: "IT-207",
+    venue: "Online",
   },
 ];
 
@@ -77,6 +77,11 @@ const march18Events = [
     name: "Bug Busters",
     time: "9:00 AM to 11:00 AM",
     venue: "IT-443",
+  },
+  {
+    name: "WorkShop",
+    time: " 11:00 AM to 1:00 PM",
+    venue: "IT-442",
   },
   {
     name: "Snap Word",
@@ -96,7 +101,7 @@ const march18Events = [
   {
     name: "Super Sus",
     time: "2:30 PM to 3:30 PM",
-    venue: "IT-201",
+    venue: "Online",
   },
   {
     name: "Pictionary",

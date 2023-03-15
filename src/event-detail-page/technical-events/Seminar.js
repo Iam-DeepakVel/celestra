@@ -17,6 +17,7 @@ const seminar = {
     "Today almost all the major industries use data science to improve the efficiency of their operations and make smarter decisions based on predictive models for the future.",
     "In this seminar you will be walked through the industrial trends in Data Science and Artificial intelligence with our expect associates from Robert Bosch",
   ],
+
   contact: [
     {
       name: "Karthick",
@@ -39,7 +40,7 @@ const seminar = {
 
 const Seminar = () => {
   return (
-    <SingleEventPage eventDetails={seminar} noPrize={true} isDetails={true} />
+    <SingleEventPage eventDetails={seminar} noPrize={true} isDetails={true}  />
   );
 };
 

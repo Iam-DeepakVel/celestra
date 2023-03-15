@@ -7,12 +7,14 @@ import { TfiControlBackward } from "react-icons/tfi";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { BiErrorAlt } from "react-icons/bi";
+import { SiDiscord } from "react-icons/si";
 
 export default function SingleEventPage({
   eventDetails,
   noPrize,
   spotRegistration,
   formsLink,
+  discordlink,
   isDetails,
   noVenue,
 }) {
@@ -193,6 +195,34 @@ export default function SingleEventPage({
                 ))}
               </div>
             </div>
+            {/* discord */}
+            {discordlink ? (
+              <motion.div
+                className="flex mt-8"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 1 }}
+                variants={{
+                  hidden: { opacity: 0, x: 120 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                <div className="flex flex-col items-center  ">
+                  <div className="flex justify-center flex-row gap-3">
+                    <SiDiscord className=" text-red-600 text-4xl" />
+                    <h2 className=" text-lg  celestraHeroFont underline underline-offset-8  tracking-widest text-red-500 font-semibold">
+                      <a href="https://discord.gg/ZJcpc2QH">
+                        Click Here To Join Discord...
+                      </a>
+                    </h2>
+                  </div>
+                  <h2 className="text-lg  font-poppins tracking-widest text-white font-semibold">
+                    {eventDetails.discord}
+                  </h2>
+                </div>
+              </motion.div>
+            ) : null}
             {/* Price Section */}
             {noPrize ? null : (
               <div>
@@ -205,7 +235,7 @@ export default function SingleEventPage({
                     hidden: { opacity: 0, x: 120 },
                     visible: { opacity: 1, x: 0 },
                   }}
-                  className="text-xl sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold mt-12"
+                  className="text-xl  sm:text-2xl celestraHeroFont tracking-widest text-white font-semibold mt-12"
                 >
                   Prize
                 </motion.h2>
@@ -220,7 +250,7 @@ export default function SingleEventPage({
                     hidden: { opacity: 0, x: 120 },
                     visible: { opacity: 1, x: 0 },
                   }}
-                  className="flex gap-12"
+                  className="flex flex-wrap md:flex-nowrap gap-12"
                 >
                   {/* Winner Medal */}
                   <div className="flex mt-4">

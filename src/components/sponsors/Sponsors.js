@@ -2,7 +2,6 @@ import sabu from "../../assets/sponsors/sabu.jpg";
 import cookery from "../../assets/sponsors/cookery.jpg";
 import madhuBuilders from "../../assets/sponsors/madhuBuilders.jpg";
 import HAC from "../../assets/sponsors/HAC.jpg";
-import profDecors from "../../assets/sponsors/profDecors.jpg";
 
 export default function Sponsors() {
   return (
@@ -11,7 +10,7 @@ export default function Sponsors() {
         <h2 className="text-center text-4xl tracking-wider font-semibold celestraHeroFont leading-8 text-white">
           <span className="text-5xl text-red-500">S</span>ponsored By
         </h2>
-        <div className="mx-auto mt-16 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+        <div className="mx-auto mt-16 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           <img
             className="col-span-2 max-h-32  w-full object-contain lg:col-span-1"
             src={sabu}
@@ -40,13 +39,7 @@ export default function Sponsors() {
             width={158}
             height={48}
           />
-          <img
-            className="col-span-4  max-h-32  w-full  object-cover lg:col-span-1"
-            src={profDecors}
-            alt="Professional Decors"
-            width={158}
-            height={48}
-          />
+      
         </div>
       </div>
     </div>

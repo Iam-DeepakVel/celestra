@@ -15,6 +15,7 @@ const supersus = {
     "Players must join the given room code and compete against co-participants.",
     "Players must join the given room code and compete against co-participants.",
   ],
+
   firstprize: 400,
   secondprize: 200,
   thirdprize: 100,
@@ -28,7 +29,7 @@ const supersus = {
       phoneNo: "9629867451",
     },
     {
-      name: "Aswin",
+      name: "Ashwin",
       phoneNo: "8754799651",
     },
   ],

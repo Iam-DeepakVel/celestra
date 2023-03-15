@@ -17,6 +17,7 @@ const crossFire = {
     "No malpractice if found will be disqualified ",
     "No discussion among another team allowed during the game",
   ],
+
   firstprize: 300,
   secondprize: 200,
   thirdprize: 0,
@@ -37,7 +38,7 @@ const crossFire = {
 };
 
 const CrossFire = () => {
-  return <SingleEventPage eventDetails={crossFire} />;
+  return <SingleEventPage eventDetails={crossFire}  />;
 };
 
 export default CrossFire;

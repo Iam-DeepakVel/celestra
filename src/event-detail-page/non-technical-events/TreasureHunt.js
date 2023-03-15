@@ -15,6 +15,7 @@ const treasureHunt = {
     "The first two teams to crack the codes and reach the endpoint will claim victory and bragging rights",
     "Feel free to use your smartphones during the event.",
   ],
+ 
   firstprize: 300,
   secondprize: 200,
   thirdprize: 0,
@@ -35,7 +36,7 @@ const treasureHunt = {
 };
 
 const TreasureHunt = () => {
-  return <SingleEventPage eventDetails={treasureHunt} />;
+  return <SingleEventPage eventDetails={treasureHunt}  />;
 };
 
 export default TreasureHunt;

@@ -10,16 +10,17 @@ const paperPresentation = {
   dateTime: "March 18, 9:00AM - 11:00AM",
   venue: "IT-206",
   rules: [
-    "Maximum team size: 3.",
-    "The paper needs to be in the format of a standard IEEE paper. ",
-    "The abstract of the paper submitted must not exceed the limit of 250 words by any chance.",
-    "Your paper should be original work, meaning that it has not been previously published or submitted to any other competitions or conferences. ",
-    "You are free to choose the topic for your paper. We recommend focusing on one specific topic to make your presentation more effective.",
-    "To participate, please email your abstract to <itcelestra2k23@gmail.com>. Our panel of judges will evaluate the submissions and select the top candidates to present their papers on the day of the event. If your paper is shortlisted, you will be asked to provide a soft copy of your paper and PowerPoint presentation. Please ensure that you have both of these ready in advance.",
-    "Each team will have 10 minutes to present their paper, followed by a question and answer session.",
-    "Teams can be composed of individuals from different institutions. However, participants may not be a part of multiple teams for the same event.",
-    "If you encounter any difficulties, please contact the incharges.",
+    "The maximum team size allowed is four members.",
+    "Your paper abstract must not exceed 250 words.",
+    "Your paper should be original.",
+    "You are free to choose your paper topic(related to Information Technology), but we recommend focusing on one specific area for a more effective presentation.",
+    "Each team will have a 10-minute presentation slot, followed by a Q&A session.",
+    "Teams can be composed of individuals from different institutions.",
+    "Participants can participate in two different teams, but they must register separately.",
+    "Participants may present multiple topics, but they must register each one separately.",
+    "If you encounter any difficulties, please contact the designated person in charge.",
   ],
+
   firstprize: 2000,
   secondprize: 1000,
   thirdprize: 0,
@@ -46,6 +47,7 @@ const PaperPresentation = () => {
       formsLink={
         "https://docs.google.com/forms/d/e/1FAIpQLSf11z7ci1xR8gMC1begGNfhfG3NeH7VBbrFuUe2s0MugQsAsQ/viewform?usp=sf_link"
       }
+     
     />
   );
 };
