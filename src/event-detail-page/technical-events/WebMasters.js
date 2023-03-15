@@ -9,7 +9,7 @@ const webMasters = {
   type: "Web Masters",
   eventName: "Web Masters",
   dateTime: "Mar 18, 2:00PM - 4:00PM",
-  venue: "IT-444",
+  venue: "IT-442",
   rules: [
     "Participants will be provided with a webpage design and a list of required assets.",
     "Participants have to recreate the design within a given time",

@@ -39,6 +39,7 @@ import BombSquad from "./game-detail-page/online-games/BombSquad";
 import SuperSus from "./game-detail-page/online-games/SuperSus";
 import FreeFire from "./event-detail-page/elite-events/FreeFire";
 import Ideathon from "./event-detail-page/elite-events/Ideathon";
+import Chess from "./game-detail-page/online-games/Chess";
 
 function App() {
   // Celestra Splash Loader
@@ -110,10 +111,12 @@ function App() {
               {/*Online & Offline Games */}
               <Route path="/games/online" element={<OnlineGames />} />
               <Route path="/games/offline" element={<OfflineGames />} />
+              {/* Online Games */}
               <Route
                 path="/games/online/stumble-guys"
                 element={<StumbleGuys />}
               />
+              <Route path="/games/online/chess" element={<Chess />} />
               <Route path="/games/online/bomb-squad" element={<BombSquad />} />
               <Route path="/games/online/super-sus" element={<SuperSus />} />
             </Routes>

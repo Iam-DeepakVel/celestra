@@ -8,7 +8,7 @@ const brainPower = {
   type: "Non Technical Event",
   eventName: "Brain Power",
   dateTime: "March 18, 12:00PM - 1:00PM",
-  venue: "IT-442",
+  venue: "IT-206",
   rules: [
     "individual",
     "A pen and a paper is enough",

@@ -8,7 +8,7 @@ const treasureHunt = {
   type: "Non-Technical Event",
   eventName: "Treasure Hunt",
   dateTime: "Mar 17, 2:00PM - 4:00PM",
-  venue: "IT-442",
+  venue: "IT-206",
   rules: [
     "Each team must consist of two members.",
     "Each team kicks off with a distinctive clue, but they're all headed to the same spot.",

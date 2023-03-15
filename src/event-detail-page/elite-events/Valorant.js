@@ -7,7 +7,7 @@ const valorant = {
     "Step into the near-future world of Valorant and experience heart-pumping action and intense strategy with your team. Choose your unique agent with special abilities and compete in a tactical shooter game that will test your skills and leave you wanting more",
   type: "Elite Event",
   eventName: "Valorant",
-  dateTime: "Mar 16 & 17, 6PM-9PM",
+  dateTime: "Mar 18, 6PM-9PM",
   venue: "Online",
   rules: [
     "Teams must consist of 5 players and 2 substitutes.",

@@ -9,7 +9,7 @@ const reverseCoding = {
   type: "Technical Event",
   eventName: "Reverse Coding",
   dateTime: "March 17, 3:00PM - 4:30PM",
-  venue: "IT-442",
+  venue: "IT-443",
   rules: [
     "Solo Participation",
     "Analyzing the input and output is necessary to determine the logic",

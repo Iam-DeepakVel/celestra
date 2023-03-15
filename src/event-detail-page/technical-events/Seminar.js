@@ -9,7 +9,7 @@ const seminar = {
   type: "Technical Event",
   eventName: "Seminar",
   dateTime: "Mar 17, 11:30AM - 1:30PM",
-  venue: "IT-442",
+  venue: "IT-443",
   rules: [
     "Artificial intelligence and data science are the well known growing fields on computer science.",
     "In reality every industry is bound to be automated.There is already software that can efficiently perform the analysis. Artificial intelligence and Machine learning are bound to take the place of human beings in this field too.",

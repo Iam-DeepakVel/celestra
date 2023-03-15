@@ -7,7 +7,7 @@ const freeFire = {
     "Step into the near-future world of FreeFire and experience heart-pumping action and intense strategy with your team. Choose your unique agent with special abilities and compete in a tactical shooter game that will test your skills and leave you wanting more",
   type: "Elite Event",
   eventName: "Free Fire",
-  dateTime: "Mar 17,18, 6PM-9PM",
+  dateTime: "Mar 17 & 18, 6PM-9PM",
   venue: "Online",
   rules: [
     "A team must contain minimum of 4 members",

@@ -9,7 +9,7 @@ const workshop = {
   type: "Technical Event",
   eventName: "Work Shop",
   dateTime: "March 18, 11:00AM - 1:00PM ",
-  venue: "IT-442",
+  venue: "IT-444",
   rules: [
     "Python is a highly popular programming language that is widely used in backend development due to its simplicity and readability.",
     "Python has a vast collection of libraries and frameworks, such as Django, Flask, and Pyramid, which make backend development faster and more efficient.",

@@ -8,7 +8,7 @@ const animeQuiz = {
   type: "Non Technical Event",
   eventName: "Anime Quiz",
   dateTime: "Mar 17, 11:30AM - 12:30PM",
-  venue: "IT-204",
+  venue: "IT-444",
   rules: [
     "Each team should consist of Two members. No additional team members will be allowed once the quiz has started.",
     "During round one, each team will have a fixed amount of time to answer each question. No additional time will be given.",

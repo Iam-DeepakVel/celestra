@@ -7,7 +7,7 @@ const snapWord = {
   type: "Non-Technical Event",
   eventName: "Snap Word",
   dateTime: "Mar 18, 11:00AM - 12:00PM",
-  venue: "IT-206",
+  venue: "IT-443",
   rules: ["2 members per team","Mobile phone with internet connectivity required","Arguments will not be appreciated.", "Decision of event organizers will be final.","At each round,the participants will be eliminated until there is only one winner at the end"],
   firstprize: 300,
   secondprize: 200,

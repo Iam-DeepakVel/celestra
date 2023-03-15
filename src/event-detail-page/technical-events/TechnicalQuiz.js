@@ -9,7 +9,7 @@ const technicalQuiz = {
   type: "Technical Event",
   eventName: "Technical Quiz",
   dateTime: "Mar 17, 2:00PM - 3:00PM",
-  venue: "IT-443",
+  venue: "IT-442",
   rules: [
     "Minimum of 2 members per team",
     "Team name must be decided",

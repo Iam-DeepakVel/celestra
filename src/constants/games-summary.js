@@ -17,6 +17,14 @@ import Cube from "../assets/games-images/offline/cube.jpg";
 export const onlineGames = [
   {
     id: 1,
+    title: "Chess",
+    href: "/games/online/chess",
+    description:
+      "Calling all masterminds and strategic thinkers! It's time to showcase your skills and dominate the chessboard in our epic Chess tournament. With each move, you'll be testing your opponent's wit and cunning while challenging your own.",
+    imageUrl: Chess,
+  },
+  {
+    id: 2,
     title: "Stumble Guys",
     href: "/games/online/stumble-guys",
     description:
@@ -24,7 +32,7 @@ export const onlineGames = [
     imageUrl: StumbleGuys,
   },
   {
-    id: 2,
+    id: 3,
     title: "Super SUS",
     href: "/games/online/super-sus",
     description:
@@ -33,7 +41,7 @@ export const onlineGames = [
     isRegistrationClosed:true
   },
   {
-    id: 3,
+    id: 4,
     title: "Bomb squad",
     href: "/games/online/bomb-squad",
     description:
@@ -52,15 +60,6 @@ export const offlineGames = [
     description:
       "Ready to feel the thrill of every flick, every strike, and every point won? Look no further than our Carrom Board game event! With its simple yet addictive gameplay, Carrom Board promises a fun and challenging experience for players of all levels.",
     imageUrl: Carrom,
-    isOnlineRegister: true,
-  },
-  {
-    id: 6,
-    title: "Chess",
-    href: "https://forms.gle/yaKNoQVLiVNkysoU7",
-    description:
-      "Calling all masterminds and strategic thinkers! It's time to showcase your skills and dominate the chessboard in our epic Chess tournament. With each move, you'll be testing your opponent's wit and cunning while challenging your own.",
-    imageUrl: Chess,
     isOnlineRegister: true,
   },
   {
@@ -92,14 +91,14 @@ export const offlineGames = [
     imageUrl: Ring,
   },
   {
-    id: 7,
+    id: 6,
     title: "Dart",
     description:
       "Get ready to hit the bullseye and unleash your inner champion with our dart game event! Whether you're a seasoned pro or a beginner, come and join the fun as we throw darts and take aim at the target.",
     imageUrl: Dart,
   },
   {
-    id: 8,
+    id: 7,
     title: "Rubik's Cube",
     description:
       "Get your cubes ready and let's get cubing! Join us for a Rubik's Cube competition that will test your speed, agility, and mental prowess. With a range of challenging puzzles and mind-bending twists and turns, this event promises to be an exciting and thrilling experience.",

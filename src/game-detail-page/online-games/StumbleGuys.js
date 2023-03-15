@@ -12,8 +12,10 @@ const stumbleguys = {
   venue: "IT-442",
   rules: [
     "Solo Participation.",
-    "They will play online  along with one host (just to spectate).",
-    "Participant with highest position wins.",
+    "Maps will be chosen by the host",
+    "The player must come atleast once in top 8 in the first 2 preliminary rounds to qualify for the finals",
+    "3 rounds of final will be conducted.",
+    "Winner of each round (need not play next) will be awarded in order",
   ],
 
   firstprize: 400,

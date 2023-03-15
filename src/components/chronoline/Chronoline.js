@@ -17,53 +17,43 @@ import { Link } from "react-router-dom";
 const march17Events = [
   {
     name: "Celestra Coding",
-    time: "9:30 AM to 11:30 AM",
-    venue: "IT-201",
+    time: "9:00 AM to 11:30 AM",
+    venue: "IT-442",
   },
   {
     name: "Ideathon",
-    time: "9:30 AM to 11:30 AM",
+    time: "9:00 AM to 11:30 AM",
     venue: "IT-206",
   },
   {
     name: "Seminar",
     time: "11:30 AM to 01:30 PM",
-    venue: "IT-442",
+    venue: "IT-443",
   },
   {
     name: "Anime Quiz",
     time: "11:30 AM to 12:30 PM",
-    venue: "IT-443",
+    venue: "IT-444",
   },
   {
     name: "Treasure Hunt",
     time: "2:00 PM to 4:00 PM",
-    venue: "IT-444",
+    venue: "IT-206",
   },
   {
     name: "Technical Quiz",
     time: "2:00 PM to 3:00 PM",
-    venue: "IT-201",
-  },
-  {
-    name: "Bomb Squad",
-    time: "2:30 PM to 3:30 PM",
-    venue: "Online",
+    venue: "IT-442",
   },
   {
     name: "Cross Fire",
     time: "3:00 PM to 4:00 PM",
-    venue: "IT-206",
-  },
-  {
-    name: "Reverse Coding",
-    time: "3:00 PM to 4:00 PM",
     venue: "IT-207",
   },
   {
-    name: "Stumble Guys",
-    time: "4:00 PM to 5:00 PM",
-    venue: "Online",
+    name: "Reverse Coding",
+    time: "3:00 PM to 4:30 PM",
+    venue: "IT-443",
   },
 ];
 
@@ -71,37 +61,42 @@ const march18Events = [
   {
     name: "Paper Presentation",
     time: "9:00 AM to 11:00 AM",
-    venue: "IT-442",
+    venue: "IT-206",
+  },
+  {
+    name: "Carrom",
+    time: "9:30AM to Evening",
+    venue: "IT-207",
+  },
+  {
+    name: "Chess",
+    time: "9:30AM to Evening",
+    venue: "Online",
   },
   {
     name: "Bug Busters",
     time: "9:00 AM to 11:00 AM",
-    venue: "IT-443",
+    venue: "IT-442",
   },
   {
     name: "WorkShop",
     time: " 11:00 AM to 1:00 PM",
-    venue: "IT-442",
+    venue: "IT-444",
   },
   {
     name: "Snap Word",
     time: " 11:00 AM to 12:00 PM",
-    venue: "IT-444",
+    venue: "IT-443",
   },
   {
     name: "Brain Power",
     time: "12:00 PM to 1:00 PM",
-    venue: "IT-201",
+    venue: "IT-206",
   },
   {
     name: "Web Masters",
     time: "2:00 PM to 4:00 PM",
-    venue: "IT-201",
-  },
-  {
-    name: "Super Sus",
-    time: "2:30 PM to 3:30 PM",
-    venue: "Online",
+    venue: "IT-442",
   },
   {
     name: "Pictionary",
@@ -111,7 +106,12 @@ const march18Events = [
   {
     name: "Movie Quiz",
     time: "3:00 PM to 4:00 PM",
-    venue: "IT-442",
+    venue: "IT-444",
+  },
+  {
+    name: "Stumble Guys",
+    time: "6:00 PM to 7:00 PM",
+    venue: "Online",
   },
 ];
 

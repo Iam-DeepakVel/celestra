@@ -9,7 +9,7 @@ const bugBusters = {
   type: "Technical Event",
   eventName: "Bug Busters",
   dateTime: "March 18, 9:00AM - 11:00AM",
-  venue: "IT-443",
+  venue: "IT-442",
   rules: [
     "Programming languages given - Python, C, C++, Java",
     "Plagiarism leads to direct disqualification",
