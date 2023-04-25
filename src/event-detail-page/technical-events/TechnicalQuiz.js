@@ -11,11 +11,10 @@ const technicalQuiz = {
   dateTime: "Mar 17, 2:00PM - 3:00PM",
   venue: "IT-442",
   rules: [
-    "Minimum of 2 members per team",
-    "Team name must be decided",
+    "Individual or team (Maximum 2 members)",
     "Use of Internet is prohibited",
-    "3 rounds will be held, [1st Round : 25 Questions, 25 minutes], [2nd Round : 10 Questions, 15 minutes], [3rd Round : 10 Questions, 20 minutes]",
-    "Pen-Paper Test",
+    "1 round will be held, [1st Round : 50 Questions, 90 minutes]",
+    "Feel free to bring your own laptops"
   ],
 
   firstprize: 800,

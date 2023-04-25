@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import CountDown from "../countDown/CountDown";
 import EventsGallery from "../events-gallery/EventsGallery";
 import Footer from "../footer/Footer";
 import Hero from "../hero/Hero";
@@ -17,7 +16,6 @@ const Home = () => {
       </Helmet>
       <Hero />
       <Venue />
-      <CountDown />
       <EventsGallery />
       <Sponsors />
       <WorkshopSeminar />
