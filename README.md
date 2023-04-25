@@ -1,4 +1,4 @@
-# celestra
+# celestra 2k23⚡
 Welcome to the repository for the official website of Celestra 2k23, a National Level technical symposium organized by the IT Department. This website is built using Reactjs, tailwindcss, and framer motion.
 
 Celestra 2k23 is an exciting event that brings together students from all over the nation to showcase their skills, learn from experts, and network with like-minded individuals. This repository contains all the code and resources needed to run the Celestra 2k23 website.
