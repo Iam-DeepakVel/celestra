@@ -9,4 +9,6 @@ The website is designed to provide information about the event, including schedu
 
 We hope you find this repository useful and informative. If you have any questions or feedback, feel free to reach out to us. Thank you for visiting the Celestra 2k23 website repository.
 
+Celestra website is live ❤️ at https://celestra.in 
+
 If you'd like to get in touch with me to discuss potential collaborations or projects, please feel free to visit my website at ✨ https://deepakwings.netlify.app. I'm always open to exploring new opportunities and ideas, and would be happy to hear from you
